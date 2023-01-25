@@ -22,7 +22,7 @@ a{
 
 
                                             /* Header  */
-#header{
+.header{
     padding:5px 0 0px 0;
     &__div{
         margin-bottom: 5px;
@@ -46,7 +46,7 @@ a{
         }
     }
 }
-#home{
+.home{
     padding:0;
     &-proc{
         &__div{
@@ -63,7 +63,7 @@ a{
         &__subtitle{
             font-size:16px;
             margin:10px 0;
-            color:#8f8f8f;
+            color:.8f8f8f;
         }
         &__cta-btn{
             color:white;
@@ -76,18 +76,16 @@ a{
             margin:20px auto 50px;
         }
     }
-    &-function{
-        &__div{
+    &-steps__div{
             padding:0 20px;
-        }
-        &__btn{
-            .function--btn{
+    }
+    &-step__div{
+            .step{
                 i{
                     color: #353535;
-                    padding:0 20px 0 10px;
-                    
+                    padding:0 20px 0 10px; 
                 }
-                justify-items: start;
+            justify-items: start;
             color:black;
             font-weight:700;
             border:none;
@@ -96,8 +94,7 @@ a{
             width:90%;
             border-radius: 20px;
             background-color: white;
-        }
-        }
+            }
     }
 }
 
