@@ -1,4 +1,17 @@
-.header__div{
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+//@import "../utils/extensions";
+//@import "../base/typography";
+//@import "../components/buttons";
+@import "../layout/nav";
+//@import "../layouts/container";
+//@import "../layouts/form";
+
+
+
+.header{
+    @include column;
     padding:5px 0 0px 0;
     &__div{
         margin-bottom: 5px;
@@ -10,7 +23,7 @@
         margin:0 auto;
         padding:15px 0;
     }
-    &--location{
+    &__location{
         color:#353535;
         font-weight:650;
         justify-content: center;
