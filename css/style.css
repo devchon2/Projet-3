@@ -22,6 +22,10 @@ section {
   margin-bottom: 40px;
 }
 
+.section__title {
+  padding: 50px 0 20px 20px;
+}
+
 .header {
   padding: 5px 0 0px 0;
 }
@@ -118,30 +122,46 @@ section {
 .card {
   overflow: hidden;
   border-radius: 25px;
-  height: 300px;
   width: 90%; /*1*/
   margin: 20px auto; /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 5px 20px #999; /*4*/
 }
+.card__figure-figcaption {
+  width: 90%;
+}
 .card__figure-img {
   width: 100%;
-  height: 230px;
-  box-sizing: border-box;
+  height: 160px;
   object-fit: cover;
   object-position: center;
 }
 .card__content {
   height: 50px;
-  padding: 5px 10px 10px 20px;
+  padding: 0 5px 5px 20px;
   display: flex;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
-.card__content p {
-  font-size: 16px;
+.card__content div {
+  width: 0px;
+}
+.card__content span {
+  overflow: visible;
+  color: green;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  font-size: 14px;
+  background-color: lightgreen;
+  position: relative;
+  left: -50px;
+  bottom: 160px;
 }
 .card__content i {
   margin: 0 10px;
@@ -189,12 +209,6 @@ section {
   justify-content: center;
   align-items: center;
   margin: 25px auto;
-}
-.section-steps__div {
-  margin: 0 10px;
-}
-.section-steps__title {
-  margin: 40px 0 20px 15px;
 }
 .section__div-step-full {
   width: 90%;

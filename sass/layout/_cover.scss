@@ -41,15 +41,7 @@
             margin:25px auto;
         }
     }
-    &-steps{
-        &__div{
-            margin:0 10px;
-        }
-        &__title{
-            margin:40px 0 20px 15px;
-        }
-
-    }
+    
     &__div-step-full{
         width:90%;
         @include row;
