@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6b75d90fa.js" crossorigin="anonymous"></script>
     <title>Accueil HoMyFood!</title>
 </head>
@@ -21,49 +21,62 @@
         </header>
 
         <main>
-            <section class="section section-home"> 
+            <section class="section-home"> 
                 <div class="section-home__div-location">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i> 
+                    <i class="fa-sharp fa-solid fa-location-dot section-home__icn"></i> 
                         Paris, Belleville
-                </div>  
-                <div class="section-home__presentation-div">
+                </div>
+              
+                <div class="section-home__div">
                         <h1 class="section-home__title">Reservez le menu qui <br> vous convient</h1>
                         <p class="section-home__subtitle">Decouvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                        <p class="section-home__btn">Explorer nos restaurants</p>
+                        <button class="section-home__btn cta-btn">Explorer nos restaurants</button>
                 </div>
-                <div class="section-home__steps-div">
-                        <h2 class="section-home__steps-title">Fonctionnement</h2>
-                        <div class="section-home__one-step">
-                            <div class="step">
-                                <i class="section-home__one-step-icn fa-solid fa-mobile-screen-button"></i>
-                                    Choisissez un restaurant
+            </section>
+
+            <section class="section-steps">
+                <div class="section-steps__div">
+                        <h2 class="section-steps__title">Fonctionnement</h2>
+                        <div class="section__div-step">
+                            <div class="section__div-step-full">
+                                <i class="fa-1 step-number"></i>
+                                <div class="section-step__btn step__btn">
+                                    <i class="section-step__icn fa-solid fa-mobile-screen-button"></i>
+                                        Choisissez un restaurant
+                                </div>
                             </div>
-                            <div class="step">
-                                <i class="section-home__one-step-icn fa-solid fa-list"></i>
-                                Composez votre menu
+                            <div class="section__div-step-full">
+                                <i class="fa-2"></i>
+                                <div class="section-step__btn step__btn">
+                                    <i class="section-home__one-step-icn fa-solid fa-list"></i>
+                                    Composez votre menu
+                                </div>
                             </div>
-                            <div class="step">
-                                <i class="section-home__one-step-icn fa-solid fa-store"></i>
-                                Dégustez au restaurant
+                            <div class="section__div-step-full">
+                                <i class="fa-3"></i>
+                                <div class="section-step__btn step__btn">
+                                    <i class="section-home__one-step-icn fa-solid fa-store"></i>
+                                    Dégustez au restaurant
+                                </div>
                             </div>
                         </div>
             </section>
-
+<!--
             <section class="section section-restaurant">
                 <h2 class="section__title">Restaurants</h2>
                 <div class="restaurants-list"> 
                     <article class="restaurant-section_card">
                         <a href="#">
-                            <div class="card__div">
-                                <img class="card__img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un lit dans une chambre d'hotel" >
-                            </div>
-                            <div class="card__content">
-                                <div class="card__rich">
+                            <figure class="card_figure">
+                                <img class="card__img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="card__content">
+                                <figcaption>
                                     <h3 class="card__title">Le délice des sens</h3>
                                     <p class="card__p">Folie-Méricourt</p>
-                                </div>
-                                <div class="card__icn"><i class="fa-regular fa-heart "></i></i></div>
-                            </div>
+                                    <div class="card__icn">
+                                        <i class="fa-regular fa-heart "></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </a>
                     </article>
                     <article class="card">

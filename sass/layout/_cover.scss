@@ -1,0 +1,63 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+@import "../components/buttons";
+
+
+
+.section{
+    &-home{
+        background-color: $bg-lightgrey;
+        margin:0;
+        &__div{
+            padding-bottom:20px;
+        }
+        &__div-location{
+            @include center;
+            padding:15px 0;
+            background-color: #eaeaea ;
+            font-weight:700;
+            color:#525252;
+        }
+        &__icn{
+            margin:0 15px 0 0;
+        }
+        &__title{
+            font-size:28px;
+            font-weight:900;
+            margin:40px 0 20px 0;
+            @include text-center;
+        }
+        &__subtitle {
+            font-size:18px;
+            width:90%;
+            margin:30px auto;
+            @include text-center;
+               
+        }
+        &__btn{
+            @include center;
+            margin:25px auto;
+        }
+    }
+    &-steps{
+        &__div{
+            padding:0 20px;
+        }
+        &__title{
+            margin-bottom:20px;
+        }
+    } 
+    &__div-step-full{
+        @include row;
+        align-items:center;
+        .step-number{
+            vertical-align: center;
+            height: 10px;
+            width:10px;
+            padding:10px;
+            border-radius:50%;
+            background-color: $pink;
+        }
+    }
+}

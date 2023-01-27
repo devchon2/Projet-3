@@ -5,3 +5,14 @@
     @include row();
     flex-direction: column;
 }
+
+@mixin center{
+    @include row;
+    justify-content:center;
+}
+
+@mixin text-center{
+    @include center;
+    text-align: center;
+}
+

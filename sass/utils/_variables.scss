@@ -2,5 +2,11 @@
 $violet: #9356DC;
 $pink:#FF79DA;
 $heart-color:#99E2D0;
+$bg-lightgrey:#f7f7f7;
 
+// cta button
+$cta-btn-radius:25px;
+$cta-btn-bg-color:linear-gradient(170deg,$pink, $violet);
 
+//step-buttons
+$step-btn-bg-color:$bg-lightgrey;

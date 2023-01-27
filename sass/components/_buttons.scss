@@ -1,0 +1,34 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+//@import "../utils/extensions";
+
+
+
+.cta-btn{
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    font-weight:600;
+    border: none;
+    padding:15px 20px;
+    border-radius: $cta-btn-radius;
+    background: $cta-btn-bg-color;
+}
+
+.step__btn{
+    justify-items: flex-start;
+    box-sizing: border-box;
+    @include text-center;
+    margin:30px 0;
+    width:90%;
+    padding:25px;
+    font-weight:bold;
+    background-color: $step-btn-bg-color;
+    border-radius: $cta-btn-radius;
+    box-shadow: 0px 5px 15px #cfcfcf;
+    &:hover{
+        background-color: darken($color: $step-btn-bg-color, $amount: 0);
+    }
+}
+
