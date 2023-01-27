@@ -17,9 +17,9 @@
 }
 
 .step__btn{
-    justify-items: flex-start;
+    @include row;
+    justify-content: flex-start;
     box-sizing: border-box;
-    @include text-center;
     margin:30px 0;
     width:90%;
     padding:25px;
@@ -27,6 +27,16 @@
     background-color: $step-btn-bg-color;
     border-radius: $cta-btn-radius;
     box-shadow: 0px 5px 15px #cfcfcf;
+    > p{
+        font-size: 14px;
+    }
+    .step-number{
+        position:relative;
+        right:40px;
+    }
+    &-step__icn{
+        margin-right:30px;
+    }
     &:hover{
         background-color: darken($color: $step-btn-bg-color, $amount: 0);
     }

@@ -60,11 +60,9 @@ section {
 }
 
 .step__btn {
-  justify-items: flex-start;
-  box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
   margin: 30px 0;
   width: 90%;
   padding: 25px;
@@ -72,6 +70,16 @@ section {
   background-color: #f7f7f7;
   border-radius: 25px;
   box-shadow: 0px 5px 15px #cfcfcf;
+}
+.step__btn > p {
+  font-size: 14px;
+}
+.step__btn .step-number {
+  position: relative;
+  right: 40px;
+}
+.step__btn-step__icn {
+  margin-right: 30px;
 }
 .step__btn:hover {
   background-color: #f7f7f7;
@@ -117,22 +125,32 @@ section {
   margin: 25px auto;
 }
 .section-steps__div {
-  padding: 0 20px;
+  margin: 0 10px;
 }
 .section-steps__title {
   margin-bottom: 20px;
 }
 .section__div-step-full {
+  width: 100%;
   display: flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .section__div-step-full .step-number {
-  vertical-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   height: 10px;
   width: 10px;
   padding: 10px;
   border-radius: 50%;
-  background-color: #FF79DA;
+  background-color: #9356DC;
+}
+.section-step__icn {
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
