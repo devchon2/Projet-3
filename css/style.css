@@ -12,12 +12,14 @@ ul {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
 section {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .header {
@@ -51,38 +53,66 @@ section {
 .cta-btn {
   box-sizing: border-box;
   color: white;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 550;
   border: none;
   padding: 15px 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
+.cta-btn a {
+  color: white;
+}
 
 .step__btn {
   display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   justify-content: flex-start;
   box-sizing: border-box;
-  margin: 30px 0;
+  margin: 20px auto;
   width: 90%;
-  padding: 25px;
+  padding: 20px 0;
   font-weight: bold;
   background-color: #f7f7f7;
   border-radius: 25px;
   box-shadow: 0px 5px 15px #cfcfcf;
 }
 .step__btn > p {
-  font-size: 14px;
+  font-size: 16px;
+  align-content: center;
 }
 .step__btn .step-number {
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  height: 10px;
+  width: 10px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #9356DC;
   position: relative;
-  right: 40px;
+  right: 10px;
 }
-.step__btn-step__icn {
-  margin-right: 30px;
+.step__btn > i {
+  margin: 0 20px 0 10px;
+  color: #525252;
 }
 .step__btn:hover {
-  background-color: #f7f7f7;
+  background-color: #f5edff;
+}
+.step__btn:hover > i {
+  color: #9356DC;
 }
 
 .section-home {
@@ -95,6 +125,7 @@ section {
 .section-home__div-location {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 15px 0;
   background-color: #eaeaea;
   font-weight: 700;
@@ -109,48 +140,36 @@ section {
   margin: 40px 0 20px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .section-home__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   width: 90%;
   margin: 30px auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .section-home__btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 25px auto;
 }
 .section-steps__div {
   margin: 0 10px;
 }
 .section-steps__title {
-  margin-bottom: 20px;
+  margin: 40px 0 20px 15px;
 }
 .section__div-step-full {
-  width: 100%;
+  width: 90%;
   display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section__div-step-full .step-number {
-  color: white;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  height: 10px;
-  width: 10px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #9356DC;
-}
-.section-step__icn {
-  margin-right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@
             padding:15px 0;
             background-color: #eaeaea ;
             font-weight:700;
-            color:#525252;
+            color:$darkgrey;
         }
         &__icn{
             margin:0 15px 0 0;
@@ -29,7 +29,7 @@
             @include text-center;
         }
         &__subtitle {
-            font-size:18px;
+            font-size:16px;
             width:90%;
             margin:30px auto;
             @include text-center;
@@ -45,27 +45,14 @@
             margin:0 10px;
         }
         &__title{
-            margin-bottom:20px;
+            margin:40px 0 20px 15px;
         }
-    } 
+
+    }
     &__div-step-full{
-        width:100%;
+        width:90%;
         @include row;
-        @include center;
-        align-items:center;
-        .step-number{
-            color:white;
-            @include text-center;
-            align-items:center;
-            height: 10px;
-            width:10px;
-            padding:10px;
-            border-radius:50%;
-            background-color: $violet;
-        }
-        
+        @include center;        
     }
-    &-step__icn{
-        margin-right:30px;
-    }
+    
 }
