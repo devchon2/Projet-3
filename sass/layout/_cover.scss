@@ -47,5 +47,8 @@
         @include row;
         @include center;        
     }
+    &-restaurant{
+        background-color: $bg-lightgrey;
+    }
     
 }

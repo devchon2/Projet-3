@@ -4,11 +4,11 @@
 
 .header{
     
-    padding:5px 0 0px 0;
+    
     &__div{
         @include row;
         margin-bottom: 5px;
-        box-shadow: 0px 5px 5px #cfcfcf;
+        box-shadow: 0px 5px 15px #cfcfcf;
     }
     &__img{
         height:25px;

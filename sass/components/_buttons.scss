@@ -8,8 +8,8 @@
 .cta-btn{
     box-sizing: border-box;
     color: white;
-    font-size: 14px;
-    font-weight:550;
+    font-size: 16px;
+    font-weight:500;
     border: none;
     padding:15px 20px;
     border-radius: $cta-btn-radius;
@@ -26,14 +26,15 @@
     justify-content: flex-start;
     box-sizing: border-box;
     margin:20px auto;
-    width:90%;
+    width:85%;
     padding:20px 0;
-    font-weight:bold;
+    font-weight:700;
     background-color: $step-btn-bg-color;
     border-radius: $cta-btn-radius;
     box-shadow: 0px 5px 15px #cfcfcf;
+    ;
     > p{
-        font-size: 16px;
+        font-size: 12px;
         
         align-content:center;
     }
