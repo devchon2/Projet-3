@@ -26,32 +26,38 @@ section {
   padding: 50px 0 20px 20px;
 }
 
-.header {
-  padding: 5px 0 0px 0;
-}
 .header__div {
   display: flex;
   margin-bottom: 5px;
   box-shadow: 0px 5px 15px #cfcfcf;
+  padding: 5px 0 0 0;
+}
+.header__div-return {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }
 .header__img {
-  height: 25px;
+  height: 30px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
 
-.header {
-  padding: 5px 0 0px 0;
-}
 .header__div {
   display: flex;
   margin-bottom: 5px;
   box-shadow: 0px 5px 15px #cfcfcf;
+  padding: 5px 0 0 0;
+}
+.header__div-return {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }
 .header__img {
-  height: 25px;
+  height: 30px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
 
 .cta-btn {
@@ -110,7 +116,7 @@ section {
 }
 .step__btn > i {
   margin: 0 20px 0 10px;
-  color: #525252;
+  color: #353535;
 }
 .step__btn:hover {
   background-color: #f5edff;
@@ -181,7 +187,8 @@ section {
   padding: 15px 0;
   background-color: #eaeaea;
   font-weight: 700;
-  color: #525252;
+  font-size: 16px;
+  color: #353535;
 }
 .section-home__icn {
   margin: 0 15px 0 0;
@@ -222,7 +229,27 @@ section {
 }
 
 .section-footer {
-  background-color: #525252;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f7f7f7;
+  padding-bottom: 40px;
+  background-color: #353535;
+}
+.section-footer__title {
+  color: white;
+  padding: 15px;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "shrikhand", sans-serif;
+}
+.section-footer__nav {
+  padding: 0 15px;
+}
+.section-footer__nav li {
+  padding-bottom: 5px;
+}
+.section-footer__nav i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
