@@ -2,21 +2,24 @@
 
 
 
-.header{   
+.header{
+    padding:0;
+    
     &__div{
         @include row;
+        justify-items: center;
         margin-bottom: 5px;
         box-shadow: 0px 5px 15px #cfcfcf;
-        padding: 5px 0 0 0;
         &-return{
             @include row;
             align-items: center;
-            margin-left:25px
+            padding-left:20px;
         }
     }
     &__img{
-        height:30px;
+        width:145px;
         margin:0 auto;
-        padding:15px 0 10px 0;
+        padding:15px 0;
     }
+    
 }  
