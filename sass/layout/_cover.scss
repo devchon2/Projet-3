@@ -37,9 +37,7 @@
             @include text-center;
                
         }
-        &__btn{
-            
-        }
+        
     }
     
     &__div-step-full{
@@ -92,7 +90,11 @@
                 border:black solid 2px;
             }
         }
+        &-cta-btn{
+                margin-top:0px;  
+        }
         &-card{
+            overflow:auto;
             @include center;
             height:60px;
             border-radius:10px;
@@ -109,6 +111,7 @@
                 width:0;
                 display:none;
             }
+            
             
         }
 }}
