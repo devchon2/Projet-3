@@ -1,136 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6b75d90fa.js" crossorigin="anonymous"></script>
     <title>Accueil HoMyFood!</title>
 </head>
     <body>
-        <header id="header" class="col">
-            <div id="header__div">
-                <img id="header__img" class="row" src="images/logo/ohmyfood.png">
+        <header class="header">
+            <div class="header__div ">
+                <img class="header__img" src="images/logo/ohmyfood@2x.svg">
             </div>
-            <div id="header--location" class="row">
-                <i class="fa-sharp fa-solid fa-location-dot"></i> 
-                    Paris, Belleville
-            </div>
+            
         </header>
 
         <main>
-            <section id="home" class="col" >   
-                <div id="home-proc__div" class="col">
-                        <h1 id="home-proc__title">Reservez le menu qui <br> vous convient</h1>
-                        <p id="home-proc__subtitle">Decouvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                        <p id="home-proc__cta-btn">Explorer nos restaurants</p>
+            <section class="section-home"> 
+                <div class="section-home__div-location">
+                    <i class="fa-solid fa-location-dot  .icn"></i> 
+                        Paris, Belleville
                 </div>
-                <div id="home-function__div">
-                        <h2>Fonctionnement</h2>
-                        <div id="home-function__btn" class="flex">
-                            <button class="function--btn flex">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                    Choisissez un restaurant
-                            </button>
-                            <button class="function--btn">
-                                <i class="fa-solid fa-list"></i>
-                                Composez votre menu
-                            </button>
-                            <button class="function--btn">
-                                <i class="fa-solid fa-store"></i>
-                                Dégustez au restaurant
-                            </button>
-                    </div>
+              
+                <div class="section-home__div">
+                        <h1 class="section-home__title">Réservez le menu qui vous convient</h1>
+                        <p class="section-home__subtitle">Decouvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                        <button class="section-home__btn cta-btn"><a href="#">Explorer nos restaurants</a></button>
+                </div>
             </section>
 
-            <section id="restaurants">
-                <h2 class="section__title">Restaurants</h2>
-                <div id="restaurants-list">
-                    <article class=" card">
-                        <a href="#">
-                            <div class="card__img--blk">
-                                <img class="row card__img"  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un lit dans une chambre d'hotel" >
-                                <div class="card__new-product row">
-                                    Nouveau
+            <section class="section-steps">
+                <div class="section-steps__div">
+                        <h2 class="section__title">Fonctionnement</h2>
+                        <div class="section-steps__div-step">
+                            <a href="#"><div class="section section-steps__div-step-full  step__btn">
+                                <div class="step-number">1</div>
+                                    <i class="section-steps__icn fa-solid fa-mobile-screen-button"></i>
+                                    <p>Choisissez un restaurant</p>   
                                 </div>
-                            </div>
-                            <div class="row card__content">
-                                <div class="rich">
-                                    <h3 class=card__title>La palette du goût</h3>
-                                    <p class="card__city">Menilmontant</p>
+                            </a>
+                            <a href="#"><div class="section section-steps__div-step-full step__btn">
+                                <div class="step-number">2</div>
+                                    <i class="section-steps__icn fa-solid fa-list"></i>
+                                    <p>Composez votre menu</p>
                                 </div>
-                                <div class="row heart"><i class="fa-regular fa-heart "></i></i></div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class=" card">
-                        <a href="#">
-                            <div class="card__img--blk">
-                                <img class="row card__img"  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="un lit dans une chambre d'hotel" >
-                                <div class="card__new-product row">
-                                    Nouveau
+                            </a>
+                            <a href="#">
+                                <div class="section section-steps__div-step-full step__btn">
+                                    <div class="step-number">3</div>
+                                    <i class="section-steps__icn fa-solid fa-store"></i>
+                                    <p>Dégustez au restaurant</p> 
                                 </div>
-                            </div>
-                            <div class="row card__content">
-                                <div class="card__content--rich">
-                                    <h3 class=card__title>La note enchantée</h3>
-                                    <p class="card__city">Charonne</p>
-                                </div>
-                                <div class="row heart"><i class="fa-regular fa-heart "></i></div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class=" card">
-                        <a href="#">
-                            <div class="card__img--blk">
-                                <img class="row card__img"  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un lit dans une chambre d'hotel" >
-                            </div>
-                            <div class="row card__content">
-                                <div class="rich">
-                                    <h3 class=card__title>A la française</h3>
-                                    <p class="card__city">cité rouge</p>
-                                </div>
-                                <div class="row heart"><i class="fa-regular fa-heart  "></i></div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class=" card">
-                        <a href="#">
-                            <div class="card__img--blk">
-                                <img class="row card__img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un lit dans une chambre d'hotel" >
-                            </div>
-                            <div class="row card__content">
-                                <div class="rich">
-                                    <h3 class=card__title>Le délice des sens</h3>
-                                    <p class="card__city">Folie-Méricourt</p>
-                                </div>
-                                <div class="row heart"><i class="fa-regular fa-heart "></i></i></div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </div>
+            </section>
 
-                
+            <section class="section section-restaurant">
+                <h2 class="section__title">Restaurants</h2>
+                <div class="section-restaurant__div-list"> 
+                    <a href="#">
+                        <article class="card">
+                            <div class="card__figure-div">
+                                <figure class="card__figure">
+                                    <div class="card__figure-content">
+                                        <img class="card__figure-img"  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="card__content">
+                                        <figcaption class="card__figure-figcaption">
+                                        <h3 class="card__figure-figcaption-title">La palette du goût</h3>
+                                        <p class="card__figure-figcaption-p">Ménilmontant</p>
+                                        </figcaption>
+                                        <div class="card__figure-div-span"><span>Nouveau</span></div>
+                                        <i class="fa-regular fa-heart fa-xl"></i> 
+                                    </div>           
+                                </figure>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card__figure-div">
+                                <figure class="card__figure">
+                                    <div class="card__figure-content">
+                                        <img class="card__figure-img"  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="card__content">
+                                        <figcaption class="card__figure-figcaption">
+                                            <h3 class="card__figure-figcaption-title">La note enchantée</h3>
+                                            <p class="card__figure-figcaption-p">Cité-rouge</p>
+                                        </figcaption>
+                                        <div class="card__figure-div-span"><span>Nouveau</span></div>
+                                        <i class="fa-regular fa-heart fa-xl"></i> 
+                                    </div>           
+                                </figure>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="card">
+                            <figure class="card__figure">
+                                <img class="card__figure-img"  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="card__content">
+                                <figcaption class="card__figure-figcaption">
+                                    <h3 class="card__figure-figcaption-title">A la française</h3>
+                                    <p class="card__figure-figcaption-p">Cité-rouge</p>
+                                </figcaption>
+                                    <i class="fa-regular fa-heart fa-xl"></i>            
+                            </figure>
+                        </article>
+                    <a href="#">
+                        <article class="card">
+                            <figure class="card__figure">
+                                <img class="card__figure-img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="card__content">
+                                <figcaption class="card__figure-figcaption">
+                                    <h3 class="card__figure-figcaption-title">Le délice des sens</h3>
+                                    <p class="card__figure-figcaption-p">Folie-méricourt</p>
+                                </figcaption>
+                                    <i class="fa-regular fa-heart fa-xl"></i>            
+                            </figure>
+                        </article>
+                    </a>
+                    
+
                 </div>
             </section>
         </main>
         
-        <footer id="footer__bg_grey">
-            <img id="footer__img" src="images/logo/ohmyfood@2x.svg " alt="">
-            <div id="footer-cust-interaction">
-                <ul>
-                    <li>Proposer un restaurant</li>
-                    <li>Devenir partenaire</li>
+        <footer class="section section-footer">
+            <h3 class="section-footer__title">ohmyfood</h3>
+            <nav class="section-footer__nav">
+                <ul class="section-footer__list partner">
+                    <li><i class="fa-solid fa-utensils fa-xs"></i> Proposer un restaurant</li>
+                    <li><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
                 </ul>
-                <ul>
+                <ul class="section-footer__list legal">
                     <li>Mentions légales</li>
                     <li>Contact</li>
                 </ul>
-            </div>
+            </nav>
 
         </footer>
     </body>

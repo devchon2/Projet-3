@@ -163,8 +163,10 @@ section {
 .card__figure-img {
   width: 100%;
   height: 160px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .card__content {
   height: 50px;
@@ -237,8 +239,10 @@ section {
 .section-cover__div-img .img {
   overflow: hidden;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .section-card__div {
   padding-top: 20px;
@@ -274,11 +278,7 @@ section {
   width: 30px;
   border: black solid 2px;
 }
-.section-card__div-cta-btn {
-  margin-top: 0px;
-}
 .section-card__div-card {
-  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,6 +322,4 @@ section {
 }
 .section-footer__nav i {
   margin-right: 10px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
