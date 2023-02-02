@@ -1,4 +1,21 @@
+@import "../utils/variables";
+
+
+
+
+
 .section-footer{
+    font-size:0.8rem;
+    font-weight:500;
+    color:$bg-lightgrey;
+    padding-bottom: 40px;
     background-color: $darkgrey;
+    &__title{
+        color: white;
+        padding:15px;
+        font-weight:100;
+        font-size:1rem;
+        font-family: "shrikhand",sans-serif;
+    }
     
-}
+}  

@@ -6,9 +6,12 @@
 
 
 .cta-btn{
+    
+    @include center;
+    margin:25px auto;
     box-sizing: border-box;
     color: white;
-    font-size: 16px;
+    font-size: 0.9rem;
     font-weight:500;
     border: none;
     padding:15px 20px;
@@ -25,8 +28,8 @@
     @include text-center;
     justify-content: flex-start;
     box-sizing: border-box;
-    margin:20px auto;
-    width:85%;
+    margin:10px auto;
+    
     padding:20px 0;
     font-weight:700;
     background-color: $step-btn-bg-color;
@@ -34,19 +37,20 @@
     box-shadow: 0px 5px 15px #cfcfcf;
     ;
     > p{
-        font-size: 12px;
+        font-size: 0.8rem;
+        padding:5px 10px;
         
         align-content:center;
     }
     .step-number{
-        font-size:14px;
+        
+        font-size:12px;
         font-weight: 100;
         color:white;
             @include text-center;
-            align-items:center;
             height: 10px;
             width:10px;
-            padding:7px;
+            padding:5px;
             border-radius:50%;
             background-color: $violet;
             position:relative;

@@ -17,3 +17,7 @@
     text-align: center;
 }
 
+@mixin inset-shadow{
+    box-shadow: -1px 20px 5px -20px rgba(0,0,0,0.51) inset;
+
+}

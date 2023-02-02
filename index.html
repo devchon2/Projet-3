@@ -23,13 +23,15 @@
         <main>
             <section class="section-home"> 
                 <div class="section-home__div-location">
-                    <i class="fa-sharp fa-solid fa-location-dot section-home__icn"></i> 
-                        Paris, Belleville
-                </div>
-              
+                    <form method="get" class="section-home__location-form">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="search" class="section-home__input-location" name="location" placeholder="Paris, Belleville">
+                    </form>
+              </div>
+                    
                 <div class="section-home__div">
-                        <h1 class="section-home__title">Reservez le menu qui <br> vous convient</h1>
-                        <p class="section-home__subtitle">Decouvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                        <h1 class="section-home__title">Réservez le menu qui vous convient</h1>
+                        <p class="section-home__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
                         <button class="section-home__btn cta-btn"><a href="#">Explorer nos restaurants</a></button>
                 </div>
             </section>
@@ -38,29 +40,29 @@
                 <div class="section-steps__div">
                         <h2 class="section__title">Fonctionnement</h2>
                         <div class="section-steps__div-step">
-                            <a href="#"><div class="section section-steps__div-step-full  step__btn">
+                            <a href="#"><div class="step__btn">
                                 <div class="step-number">1</div>
-                                    <i class="section-steps__icn fa-solid fa-mobile-screen-button"></i>
+                                    <i class="fa-solid fa-mobile-screen-button icn"></i>
                                     <p>Choisissez un restaurant</p>   
                                 </div>
                             </a>
-                            <a href="#"><div class="section section-steps__div-step-full step__btn">
+                            <a href="#"><div class="step__btn">
                                 <div class="step-number">2</div>
-                                    <i class="section-steps__icn fa-solid fa-list"></i>
+                                    <i class="fa-solid fa-list icn"></i>
                                     <p>Composez votre menu</p>
                                 </div>
                             </a>
                             <a href="#">
-                                <div class="section section-steps__div-step-full step__btn">
+                                <div class="step__btn">
                                     <div class="step-number">3</div>
-                                    <i class="section-steps__icn fa-solid fa-store"></i>
+                                    <i class="fa-solid fa-store icn"></i>
                                     <p>Dégustez au restaurant</p> 
                                 </div>
                             </a>
                         </div>
             </section>
 
-            <section class="section section-restaurant">
+            <section class="section-restaurant">
                 <h2 class="section__title">Restaurants</h2>
                 <div class="section-restaurant__div-list"> 
                     <a href="#">
@@ -126,13 +128,13 @@
         </main>
         
         <footer class="section section-footer">
-            <img class="section-footer__logo" src="images/logo/ohmyfood@2x.svg " alt="">
-            <nav class="footer__nav">
-                <ul class="footer__nav partner">
-                    <li>Proposer un restaurant</li>
-                    <li>Devenir partenaire</li>
+            <h3 class="section-footer__title">ohmyfood</h3>
+            <nav class="section-footer__nav">
+                <ul class="section-footer__list partner">
+                    <li><i class="fa-solid fa-utensils fa-xs"></i> Proposer un restaurant</li>
+                    <li><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
                 </ul>
-                <ul class="footer__nav legal">
+                <ul class="section-footer__list legal">
                     <li>Mentions légales</li>
                     <li>Contact</li>
                 </ul>
