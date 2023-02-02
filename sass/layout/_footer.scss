@@ -5,7 +5,7 @@
 
 
 .section-footer{
-    font-size:14px;
+    font-size:0.8rem;
     font-weight:500;
     color:$bg-lightgrey;
     padding-bottom: 40px;
@@ -14,17 +14,8 @@
         color: white;
         padding:15px;
         font-weight:100;
-        font-size:18px;
+        font-size:1rem;
         font-family: "shrikhand",sans-serif;
     }
-    &__nav{
-        padding:0 15px;
-        li{
-            
-            padding-bottom: 5px;
-        }
-        i{
-            margin-right:10px;
-        }
-    }
-}
+    
+}  

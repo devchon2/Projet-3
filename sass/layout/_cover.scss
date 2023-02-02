@@ -6,47 +6,102 @@
 
 
 
-.section{
-    &-home{
+.section{                                               //Section Definition
+    &-home{                 
+                                             //section Home
         background-color: $bg-lightgrey;
         margin:0;
-        &__div{
-            padding-bottom:20px;
-        }
-        &__div-location{
+        &__location{
+            @include row;
+            border:none;
+            width:100%;                                                //Form div location
             @include center;
-            padding:15px 0;
+            @include text-center;
             background-color: #eaeaea ;
             font-weight:700;
             font-size: 16px;;
             color:$darkgrey;
+            font-family:"roboto";
+            &-form{
+                input{
+                    @include inset-shadow;
+                }
+                @include inset-shadow;
+                width:60%;
+                @include row;
+                @include text-center;
+                @include center;
+                background-color: #eaeaea;
+            }
         }
-        &__icn{
-            margin:0 15px 0 0;
+        &__div{                                                     //Main div of home section
+            padding-bottom:20px;
+            &-location{ 
+                color: #353535;
+                @include center;
+                background-color: #eaeaea;
+                @include inset-shadow;
+            }
+        }
+        &__input-location{
+             @include row;
+                border:none;
+                width:100%;                                                //Form div location
+                @include center;
+                padding:15px 0 15px 20px;;
+                background-color: #eaeaea ;
+                font-weight:550;
+                font-size: 16px;;
+                color:$darkgrey;
+                font-family:"roboto";
+                &:focus{
+                    outline:none;  
+                }
+                &::placeholder{
+                    color:$darkgrey;
+                }
         }
         &__title{
-            font-size:28px;
-            font-weight:900;
-            margin:40px 0 20px 0;
+            width:75%;
+            font-size:1.30rem;
+            font-weight:700;
+            margin:40px auto 20px auto;
             @include text-center;
         }
         &__subtitle {
-            font-size:16px;
             width:90%;
-            margin:30px auto;
+            color:#353535;
+            font-size:0.95rem;
+            margin:20px auto 30px;
             @include text-center;
                
         }
         
     }
+        
+        
     
-    &__div-step-full{
-        width:90%;
-        @include row;
-        @include center;        
+    &-steps{
+        &__div-step{
+            @include column;
+            @include row;
+            @include center; 
+            padding-left:20px;
+                   
+        }
+        .icn{
+            line-height:1;
+            color:#757575;
+        }
+        a{
+            width: 90%
+        }
     }
     &-restaurant{
         background-color: $bg-lightgrey;
+        padding-bottom: 40px;
+        margin-bottom:0;
+        
     }
     &-cover__div-img{
         width:100%;
@@ -61,7 +116,7 @@
         padding-top:20px;
         position:relative;
         top:-50px;
-        background-color: white;
+        background-color: $bg-lightgrey;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         &-full-menu{
@@ -114,7 +169,8 @@
             
             
         }
-}}
+}
 
 
 
+}

@@ -23,7 +23,8 @@ section {
 }
 
 .section__title {
-  padding: 50px 0 20px 20px;
+  font-size: 1.3rem;
+  padding: 40px 0 20px 20px;
 }
 
 .header {
@@ -32,7 +33,6 @@ section {
 .header__div {
   display: flex;
   justify-items: center;
-  margin-bottom: 5px;
   box-shadow: 0px 5px 15px #cfcfcf;
 }
 .header__div-return {
@@ -46,13 +46,25 @@ section {
   padding: 15px 0;
 }
 
+.section-footer__nav {
+  padding: 0 15px;
+}
+.section-footer__nav li {
+  padding-bottom: 10px;
+}
+.section-footer__nav i {
+  margin-right: 10px;
+}
+.section-footer__nav .legal {
+  font-weight: 100;
+}
+
 .header {
   padding: 0;
 }
 .header__div {
   display: flex;
   justify-items: center;
-  margin-bottom: 5px;
   box-shadow: 0px 5px 15px #cfcfcf;
 }
 .header__div-return {
@@ -73,10 +85,10 @@ section {
   margin: 25px auto;
   box-sizing: border-box;
   color: white;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 500;
   border: none;
-  padding: 12px 20px;
+  padding: 15px 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
@@ -95,8 +107,7 @@ section {
   text-align: center;
   justify-content: flex-start;
   box-sizing: border-box;
-  margin: 20px auto;
-  width: 85%;
+  margin: 10px auto;
   padding: 20px 0;
   font-weight: 700;
   background-color: #f7f7f7;
@@ -104,21 +115,21 @@ section {
   box-shadow: 0px 5px 15px #cfcfcf;
 }
 .step__btn > p {
-  font-size: 12px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
   align-content: center;
 }
 .step__btn .step-number {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 100;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  align-items: center;
   height: 10px;
   width: 10px;
-  padding: 7px;
+  padding: 5px;
   border-radius: 50%;
   background-color: #9356DC;
   position: relative;
@@ -137,28 +148,36 @@ section {
 
 .card {
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 15px;
   width: 90%; /*1*/
-  margin: 20px auto; /*2*/
+  margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
-  box-shadow: 0px 5px 20px #999; /*4*/
+  box-shadow: 0px 1px 15px -10px #000000;
 }
 .card__figure-figcaption {
   width: 90%;
 }
+.card__figure-figcaption-title {
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+.card__figure-figcaption p {
+  font-size: 0.9rem;
+}
 .card__figure-div-span span {
   overflow: visible;
-  color: green;
-  padding: 5px 10px;
+  color: #008766;
+  padding: 5px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  font-size: 14px;
-  background-color: lightgreen;
+  width: 40px;
+  font-size: 12px;
+  font-weight: 550;
+  background-color: #99e2d0;
   position: relative;
-  right: 70px;
-  bottom: 160px;
+  right: 35px;
+  bottom: 165px;
 }
 .card__figure-img {
   width: 100%;
@@ -167,8 +186,8 @@ section {
   object-position: center;
 }
 .card__content {
-  height: 50px;
-  padding: 0 5px 5px 20px;
+  height: 60px;
+  padding: 0 5px 5px 15px;
   display: flex;
   background: white;
   display: flex;
@@ -187,49 +206,110 @@ section {
   background-color: #f7f7f7;
   margin: 0;
 }
-.section-home__div {
-  padding-bottom: 20px;
-}
-.section-home__div-location {
+.section-home__location {
+  display: flex;
+  border: none;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #eaeaea;
   font-weight: 700;
   font-size: 16px;
   color: #353535;
+  font-family: "roboto";
 }
-.section-home__icn {
-  margin: 0 15px 0 0;
+.section-home__location-form {
+  box-shadow: -1px 20px 5px -20px rgba(0, 0, 0, 0.51) inset;
+  width: 60%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+.section-home__location-form input {
+  box-shadow: -1px 20px 5px -20px rgba(0, 0, 0, 0.51) inset;
+}
+.section-home__div {
+  padding-bottom: 20px;
+}
+.section-home__div-location {
+  color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: -1px 20px 5px -20px rgba(0, 0, 0, 0.51) inset;
+}
+.section-home__input-location {
+  display: flex;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 15px 20px;
+  background-color: #eaeaea;
+  font-weight: 550;
+  font-size: 16px;
+  color: #353535;
+  font-family: "roboto";
+}
+.section-home__input-location:focus {
+  outline: none;
+}
+.section-home__input-location::placeholder {
+  color: #353535;
 }
 .section-home__title {
-  font-size: 28px;
-  font-weight: 900;
-  margin: 40px 0 20px 0;
+  width: 75%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 40px auto 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .section-home__subtitle {
-  font-size: 16px;
   width: 90%;
-  margin: 30px auto;
+  color: #353535;
+  font-size: 0.95rem;
+  margin: 20px auto 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.section__div-step-full {
-  width: 90%;
+.section-steps__div-step {
+  display: flex;
+  flex-direction: column;
   display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
+}
+.section-steps .icn {
+  line-height: 1;
+  color: #757575;
+}
+.section-steps a {
+  width: 90%;
 }
 .section-restaurant {
   background-color: #f7f7f7;
+  padding-bottom: 40px;
+  margin-bottom: 0;
 }
 .section-cover__div-img {
   width: 100%;
@@ -244,7 +324,7 @@ section {
   padding-top: 20px;
   position: relative;
   top: -50px;
-  background-color: white;
+  background-color: #f7f7f7;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -301,7 +381,7 @@ section {
 }
 
 .section-footer {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #f7f7f7;
   padding-bottom: 40px;
@@ -311,17 +391,8 @@ section {
   color: white;
   padding: 15px;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "shrikhand", sans-serif;
-}
-.section-footer__nav {
-  padding: 0 15px;
-}
-.section-footer__nav li {
-  padding-bottom: 5px;
-}
-.section-footer__nav i {
-  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
