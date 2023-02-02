@@ -35,7 +35,16 @@ section {
   justify-items: center;
   box-shadow: 0px 5px 15px #cfcfcf;
 }
-.header__div-return {
+.header__img {
+  height: 25px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.header {
+  padding: 0;
+}
+.header__div {
   display: flex;
   align-items: center;
   padding-left: 20px;
