@@ -35,24 +35,26 @@ section {
   justify-items: center;
   box-shadow: 0px 5px 15px #cfcfcf;
 }
-.header__img {
-  height: 25px;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-.header {
-  padding: 0;
-}
-.header__div {
+.header__div-img {
+  width: 100%;
   display: flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 20px;
+}
+.header__div-img a {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__img {
   width: 145px;
   margin: 0 auto;
   padding: 15px 0;
+}
+.header .rest-display {
+  margin-left: 23.5px;
 }
 
 .cta-btn {
@@ -396,8 +398,8 @@ section {
 .section-card__div-full-menu .bar {
   position: relative;
   left: 15px;
-  width: 30px;
-  border: black solid 2px;
+  width: 40px;
+  border: #99E2D0 solid 2px;
 }
 .section-card__div-cta-btn {
   margin-top: 0px;
