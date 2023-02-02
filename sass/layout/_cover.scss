@@ -1,8 +1,8 @@
 @import "../utils/variables";
-@import "../utils/functions";
 @import "../utils/mixins";
 @import "../components/buttons";
 @import "../components/card";
+@import "../layout/form";
 
 
 
@@ -23,11 +23,11 @@
             color:$darkgrey;
             font-family:"roboto";
             &-form{
+                margin:0 auto;
                 input{
                     @include inset-shadow;
                 }
                 @include inset-shadow;
-                width:60%;
                 @include row;
                 @include text-center;
                 @include center;
