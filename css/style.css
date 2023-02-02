@@ -42,7 +42,7 @@ section {
 }
 
 .header {
-  padding: 5px 0 0px 0;
+  padding: 0;
 }
 .header__div {
   display: flex;
