@@ -7,7 +7,7 @@
 
 
 .section{                                               //Section Definition
-    &-home{                 
+    &-home{                                             //section HOME PAGE
                                              //section Home
         background-color: $bg-lightgrey;
         margin:0;
@@ -77,12 +77,9 @@
                
         }
         
-    }
-        
-        
-    
-    &-steps{
-        &__div-step{
+    }  
+    &-steps{                                            //section HOME PAGE FORMULATION
+        &__div-step{                        
             @include column;
             @include row;
             @include center; 
@@ -97,13 +94,13 @@
             width: 90%
         }
     }
-    &-restaurant{
+    &-restaurant{                                       //section HOME PAGE RESTAURANT
         background-color: $bg-lightgrey;
         padding-bottom: 40px;
         margin-bottom:0;
         
     }
-    &-cover__div-img{
+    &-cover__div-img{                                   //RESTAURANT PAGE COVER IMG
         width:100%;
         .img{
             overflow: hidden;
@@ -112,35 +109,41 @@
             object-position: center;
         }
     }   
-    &-card__div{
-        padding-top:20px;
+    &-card__div{                                        //RESTAURANT PAGE MENU CONTAINER
+        padding-top:30px;
         position:relative;
-        top:-50px;
+        top:-30px;
         background-color: $bg-lightgrey;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-        &-full-menu{
-            position:relative;
-        }
-        &-title{
+        &-part-menu{                                    //ESTABLISHMENT PART MENU                                    
+            
+            }    
+        
+        
+        &-title{ 
+                                                   //RESTAURANT TITLE
             width:90%;
             @include row;
             justify-content: space-between;
+            font-size:1.8rem;
+            &-bar{
+                padding:5%
+            }
         }
-        .title{
+        .restaurant-title{
             padding-left:5%;
             font-family: "shrikhand",sans-serif;
             font-weight: 500;
         }
-        &-full-menu{
+        &-part-menu{
             padding-top:20px;
             .title{
                 padding-left:5%;
                 font-family: "roboto";
             }
             .bar{
-                position:relative;
-                left:15px;
+                
                 width:40px;
                 border:$heart-color solid 2px;
             }

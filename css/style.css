@@ -370,36 +370,35 @@ section {
   object-position: center;
 }
 .section-card__div {
-  padding-top: 20px;
+  padding-top: 30px;
   position: relative;
-  top: -50px;
+  top: -30px;
   background-color: #f7f7f7;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}
-.section-card__div-full-menu {
-  position: relative;
 }
 .section-card__div-title {
   width: 90%;
   display: flex;
   justify-content: space-between;
+  font-size: 1.8rem;
 }
-.section-card__div .title {
+.section-card__div-title-bar {
+  padding: 5%;
+}
+.section-card__div .restaurant-title {
   padding-left: 5%;
   font-family: "shrikhand", sans-serif;
   font-weight: 500;
 }
-.section-card__div-full-menu {
+.section-card__div-part-menu {
   padding-top: 20px;
 }
-.section-card__div-full-menu .title {
+.section-card__div-part-menu .title {
   padding-left: 5%;
   font-family: "roboto";
 }
-.section-card__div-full-menu .bar {
-  position: relative;
-  left: 15px;
+.section-card__div-part-menu .bar {
   width: 40px;
   border: #99E2D0 solid 2px;
 }
