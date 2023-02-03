@@ -7,7 +7,7 @@
 
 
 .section{                                               //Section Definition
-    &-home{                 
+    &-home{                                             //section HOME PAGE
                                              //section Home
         background-color: $bg-lightgrey;
         margin:0;
@@ -36,6 +36,7 @@
         }
         &__div{                                                     //Main div of home section
             padding-bottom:20px;
+            
             &-location{ 
                 color: #353535;
                 @include center;
@@ -77,12 +78,9 @@
                
         }
         
-    }
-        
-        
-    
-    &-steps{
-        &__div-step{
+    }  
+    &-steps{                                            //section HOME PAGE FORMULATION
+        &__div-step{                        
             @include column;
             @include row;
             @include center; 
@@ -97,80 +95,112 @@
             width: 90%
         }
     }
-    &-restaurant{
+    &-restaurant{                                       //section HOME PAGE RESTAURANT
         background-color: $bg-lightgrey;
         padding-bottom: 40px;
         margin-bottom:0;
         
     }
-    &-cover__div-img{
+    &-cover__div-img{  
+                                      //RESTAURANT PAGE COVER IMG
+        object-fit: cover;
+        height:250px;
         width:100%;
         .img{
             overflow: hidden;
-            width:100%;
             object-fit:cover;
             object-position: center;
         }
     }   
-    &-card__div{
-        padding-top:20px;
+    &-card__div{                                        //RESTAURANT PAGE MENU CONTAINER
+        padding-top:30px;
         position:relative;
-        top:-50px;
+        top:-30px;
         background-color: $bg-lightgrey;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-        &-full-menu{
-            position:relative;
-        }
-        &-title{
-            width:90%;
+        
+        &-title{                                        //RESTAURANT TITLE  DIV                 
+            width:100%;
             @include row;
-            justify-content: space-between;
+            font-size:1.8rem;
+            i{
+                
+                align-self: center;
+                width:20%
+            }
+            &-bar{                                  // "ENTRÉES" DISPLAY TITLE DIV
+                padding:10px  20px 0px;
+                h4{
+                    font-weight:400;
+                    color:#757575;
+                    padding-bottom: 5px;;
+                }
+            }
+            .restaurant-title{                             //RESTAURANT TITLE
+                width:90%;
+                padding-left:5%;
+                font-family: "shrikhand",sans-serif;
+                font-weight: 500;
+            }
         }
-        .title{
-            padding-left:5%;
-            font-family: "shrikhand",sans-serif;
-            font-weight: 500;
-        }
-        &-full-menu{
+        
+        &-part-menu{                                   // RESTAURANT PARTS MENU
             padding-top:20px;
-            .title{
+            .title{                                     //RESTAURANT PART MENU TITLE
                 padding-left:5%;
                 font-family: "roboto";
             }
-            .bar{
-                position:relative;
-                left:15px;
+            .bar{                                       //BAR UNDER PART MENU TITLE
                 width:40px;
-                border:$heart-color solid 2px;
+                border-bottom:$checked-color solid 3px;
             }
         }
-        &-cta-btn{
-                margin-top:0px;  
-        }
-        &-card{
+        
+        &-card{                                         //CARDS FOR MENU
+            background-color: white;
             overflow:auto;
             @include center;
-            height:60px;
-            border-radius:10px;
+            border-radius:15px;
             justify-content:space-between;
             @include row;
-            margin:5px auto;
-            padding:5px; 
-            width:90%;
-            box-shadow: 0px 5px 15px #cfcfcf;
-            .rich{
+            margin:12.5px auto;
+            padding:12.5px 10px; 
+            width:85%;
+            box-shadow: 0px 5px 10px #e8e8e8;
+            .rich{                                      //CONTENTS OF CARD
+                width:85%;
                 @include column;
+                h5{                                     //NAME OF CARDS
+                    padding-bottom: 5px;
+                    font-size:1.1rem;
+                    font-weight:550;
+                }
+                p.details{                                      //DEFINITION OF CARDS
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis ;
+                    font-size:0.9rem;
+                    font-weight:450;
+                    color:#5a5c65
+                }
             }
-            i{
+            .checked-box{                               //CHECKBOX
                 width:0;
+                color:$checked-color;
                 display:none;
+            }
+            .price{
+                color:#5a5c65;
+                width:15%;
+                font-weight:550;
+                font-size: 0.95rem;
+                @include center;
+                align-self: flex-end;
             }
             
             
         }
-}
-
-
+    }
 
 }
