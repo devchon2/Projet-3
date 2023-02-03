@@ -6,15 +6,15 @@
 
 
 .cta-btn{
-    
+    color:#f6e3f8;
     @include center;
     margin:25px auto;
     box-sizing: border-box;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight:500;
     border: none;
-    padding:15px 20px;
+    padding:15px 40px;
     border-radius: $cta-btn-radius;
     background: $cta-btn-bg-color;
     a{

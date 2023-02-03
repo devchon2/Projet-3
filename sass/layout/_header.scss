@@ -4,28 +4,30 @@
     padding:0;
     &__div{                                             // DIV full-content 
         Height:100%;
+        
         @include row;
-        justify-items: center;
+        align-content: space-between;
         box-shadow: 0px 5px 15px #cfcfcf;
         &-img{                                          
             width:100%;
             @include row;
-            @include center;
+            @include text-center;
+            
             a{
+                width:100%;
                 width:20%;
-                @include center
+                align-self: center;
+                
             }
         }
     }
     &__img{                                                 //Logo Picture
-        width:145px;
+        width:160px;
         margin:0 auto;
         padding:15px 0;
     }
-    .return-display{
-        margin:0 115px 0 60px;
-
-
+    .return-display{                                        //Centering Logo In Restaurant page
+        margin:0 auto 0 32.5px;
     }
     
 }  
