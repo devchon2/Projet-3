@@ -155,9 +155,7 @@
                 border-bottom:$checked-color solid 3px;
             }
         }
-        &-cta-btn{                                      // CTA BUTTON DIV
-                margin-top:0px;  
-        }
+        
         &-card{                                         //CARDS FOR MENU
             background-color: white;
             overflow:auto;
@@ -177,7 +175,10 @@
                     font-size:1.1rem;
                     font-weight:550;
                 }
-                p{                                      //DEFINITION OF CARDS
+                p.details{                                      //DEFINITION OF CARDS
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis ;
                     font-size:0.9rem;
                     font-weight:450;
                     color:#5a5c65

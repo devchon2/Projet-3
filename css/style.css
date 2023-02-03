@@ -7,6 +7,11 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+main {
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
 ul {
   list-style: none;
 }
@@ -66,7 +71,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px auto;
+  margin: 50px auto;
   box-sizing: border-box;
   color: white;
   font-size: 1rem;
@@ -415,9 +420,6 @@ section {
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
 }
-.section-card__div-cta-btn {
-  margin-top: 0px;
-}
 .section-card__div-card {
   background-color: white;
   overflow: auto;
@@ -442,7 +444,10 @@ section {
   font-size: 1.1rem;
   font-weight: 550;
 }
-.section-card__div-card .rich p {
+.section-card__div-card .rich p.details {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 0.9rem;
   font-weight: 450;
   color: #5a5c65;
