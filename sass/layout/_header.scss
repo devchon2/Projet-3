@@ -14,10 +14,12 @@
             @include text-center;
             
             a{
-                width:100%;
+                
                 width:20%;
                 align-self: center;
-                
+                i{
+                    width:40px;
+                }
             }
         }
     }
@@ -28,6 +30,7 @@
     }
     .return-display{                                        //Centering Logo In Restaurant page
         margin:0 auto 0 32.5px;
+
     }
     
 }  

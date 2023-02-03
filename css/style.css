@@ -46,9 +46,11 @@ section {
   text-align: center;
 }
 .header__div-img a {
-  width: 100%;
   width: 20%;
   align-self: center;
+}
+.header__div-img a i {
+  width: 40px;
 }
 .header__img {
   width: 160px;
@@ -362,11 +364,12 @@ section {
   margin-bottom: 0;
 }
 .section-cover__div-img {
+  object-fit: cover;
+  height: 250px;
   width: 100%;
 }
 .section-cover__div-img .img {
   overflow: hidden;
-  width: 100%;
   object-fit: cover;
   object-position: center;
 }
