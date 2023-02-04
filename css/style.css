@@ -9,7 +9,6 @@ body {
 
 main {
   height: 100%;
-  background-color: #f7f7f7;
 }
 
 ul {
@@ -24,12 +23,13 @@ a {
 
 section {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .section__title {
-  font-size: 1.3rem;
-  padding: 20px 0 20px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 50px 0 20px 20px;
 }
 
 .header {
@@ -74,10 +74,10 @@ section {
   margin: 50px auto;
   box-sizing: border-box;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   border: none;
-  padding: 15px 40px;
+  padding: 15px 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
@@ -99,12 +99,13 @@ section {
   margin: 10px auto;
   padding: 20px 0;
   font-weight: 700;
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   border-radius: 25px;
   box-shadow: 0px 5px 15px #cfcfcf;
 }
 .step__btn > p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 550;
   padding: 5px 10px;
   align-content: center;
 }
@@ -116,8 +117,9 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 10px;
-  width: 10px;
+  line-height: 1;
+  height: 15px;
+  width: 15px;
   padding: 5px;
   border-radius: 50%;
   background-color: #9356DC;
@@ -147,11 +149,11 @@ section {
   width: 90%;
 }
 .card__figure-figcaption-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-bottom: 5px;
 }
 .card__figure-figcaption p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .card__figure-div-span span {
   overflow: visible;
@@ -192,7 +194,7 @@ section {
 }
 
 .section-home {
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   margin: 0;
 }
 .section-home__location {
@@ -260,7 +262,7 @@ section {
 }
 
 .section-home {
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   margin: 0;
 }
 .section-home__location {
@@ -354,7 +356,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .section-steps .icn {
   line-height: 1;
@@ -364,7 +366,7 @@ section {
   width: 90%;
 }
 .section-restaurant {
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   padding-bottom: 40px;
   margin-bottom: 0;
 }
@@ -382,7 +384,7 @@ section {
   padding-top: 30px;
   position: relative;
   top: -30px;
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -471,15 +473,15 @@ section {
 .section-footer {
   font-size: 1rem;
   font-weight: 500;
-  color: #f7f7f7;
-  padding-bottom: 40px;
+  color: #f5f5f5;
+  padding: 5px 0 40px 15px;
   background-color: #353535;
 }
 .section-footer__title {
   color: white;
   padding: 15px;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "shrikhand", sans-serif;
 }
 
