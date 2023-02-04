@@ -75,7 +75,7 @@ section {
   box-sizing: border-box;
   color: white;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 550;
   border: none;
   padding: 15px 20px;
   border-radius: 25px;
@@ -83,6 +83,12 @@ section {
 }
 .cta-btn a {
   color: white;
+}
+
+.order {
+  padding: 17.5px 50px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .step__btn {
@@ -424,7 +430,6 @@ section {
 }
 .section-card__div-card {
   background-color: white;
-  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,7 +451,7 @@ section {
   font-size: 1.1rem;
   font-weight: 550;
 }
-.section-card__div-card .rich p.details {
+.section-card__div-card .rich .details {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

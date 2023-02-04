@@ -12,7 +12,7 @@
     box-sizing: border-box;
     color: white;
     font-size: 0.9rem;
-    font-weight:500;
+    font-weight:550;
     border: none;
     padding:15px 20px;
     border-radius: $cta-btn-radius;
@@ -20,8 +20,13 @@
     a{
             color:white;
         }
+    
 }
-
+.order{
+    padding:17.5px 50px;
+    font-size:1rem;
+    font-weight:500;
+}
 .step__btn{                                         //STEPS ORDER
     @include row;
     @include center;
