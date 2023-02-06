@@ -1,13 +1,17 @@
-.section{                                               //Section Definition
-    &-home{                                                 //section Home
-        background-color: $bg-lightgrey;
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../components/buttons";
+@import "../components/home-card";
+
+
+.home-cover{                                                 //section cover
+        background-color: green;
         margin:0;
-        &__location{
-            @include inset-shadow;
-                    
+        &__location{                                        //Form div location
+            @include inset-shadow;       
             @include row;
             border:none;
-            width:100%;                                                //Form div location
+            width:100%;                                                
             @include center;
             @include text-center;
             background-color: #eaeaea ;
@@ -17,7 +21,7 @@
             font-family:"roboto";
             &-form{
                 input{
-                    
+                    height:20px;
                     width:140px;
                 }
                 @include inset-shadow;
@@ -27,31 +31,31 @@
                 background-color: #eaeaea;
             }
         }
-        &__div{                                                     //Main div of home section
+        &__div{                                                     //Main div of cover section
         padding-bottom:20px;
         &-location{ 
             color: #353535;
             @include center;
             background-color: #eaeaea;
             @include inset-shadow;
+            height:50px;
         }
         }
         &__input-location{
          @include row;
             border:none;
-            box-sizing: content-box;                                               //Form div location
+            box-sizing: content-box;                                              
             @include center;
             background-color: #eaeaea ;
             font-weight:550;
             font-size: 16px;;
             color:$darkgrey;
             font-family:"roboto";
-            &:focus{
+            &:focus{                                                //when focus
                 outline:none;  
             }
-            &::placeholder{
+            &::placeholder{                                         //content of placeholder
                 color:$darkgrey;
             }
         }
-    }
 }

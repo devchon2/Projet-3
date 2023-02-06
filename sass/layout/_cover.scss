@@ -1,4 +1,4 @@
-@import "../utils/variables";
+/*@import "../utils/variables";
 @import "../utils/mixins";
 @import "../components/buttons";
 @import "../components/card";
@@ -7,43 +7,7 @@
 
 
 .section{                                               //Section Definition
-    &-home{                                             //section HOME PAGE
-                                             //section Home
-        background-color: $bg-lightgrey;
-        margin:0;
-        &__location{
-            @include row;
-            border:none;
-            width:100%;                                               
-            @include center;
-            @include text-center;
-            background-color: #eaeaea ;
-            font-weight:700;
-            font-size: 16px;;
-            color:$darkgrey;
-            font-family:"roboto";
-            &-form{                                                     //Form div location
-                margin:0 auto;
-                input{
-                    @include inset-shadow;
-                }
-                @include inset-shadow;
-                @include row;
-                @include text-center;
-                @include center;
-                background-color: #eaeaea;
-            }
-        }
-        &__div{                                                     //Main div of home section
-            padding-bottom:20px;
-            
-            &-location{ 
-                color: #353535;
-                @include center;
-                background-color: #eaeaea;
-                @include inset-shadow;
-            }
-        }
+    
         &__input-location{                                          //SEARCH DIV FOR LOCATION
              @include row;
                 border:none;
@@ -79,28 +43,8 @@
         }
         
     }  
-    &-steps{                                            //section HOME PAGE FORMULATION STEPS
-        &__div-step{                        
-            @include column;
-            @include row;
-            @include center; 
-            padding-left:10px;
-                   
-        }
-        .icn{
-            line-height:1;
-            color:#757575;
-        }
-        a{
-            width: 90%
-        }
-    }
-    &-restaurant{                                       //section HOME PAGE RESTAURANT
-        background-color: $bg-lightgrey;
-        padding-bottom: 40px;
-        margin-bottom:0;
-        
-    }
+ 
+    
     &-cover__div-img{  
                                       //RESTAURANT PAGE COVER IMG
         object-fit: cover;
@@ -199,4 +143,3 @@
             }           
         }
     }
-}
