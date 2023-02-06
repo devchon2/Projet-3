@@ -8,13 +8,14 @@
 
 .rest-menu{
     &__container{                                        //RESTAURANT PAGE MENU CONTAINER
+        overflow:hidden;
+        height:100%;
         padding-top:30px;
         position:relative;
         top:-30px;
         background-color: $bg-lightgrey;
         border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        padding-bottom:50px;     
+        border-top-right-radius: 25px;     
     }
     &__div-title{
         width:100%;

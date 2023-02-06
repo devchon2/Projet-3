@@ -3,18 +3,19 @@
 @import "../utils/mixins";
 .rest-card{                                         //CARDS FOR MENU
     background-color: white;
-    @include center;
     border-radius:15px;
-    justify-content:space-between;
     @include row;
     margin:12.5px auto;
-    padding:12.5px 10px; 
-    width:90%;
+    width:95%;
     box-shadow: 0px 5px 10px #e8e8e8;
-    .rich{                                      //CONTENTS OF CARD
-        width:85%;
+    .rich{        
+        padding:15px;                              //CONTENTS OF CARD
+        width:80%;
         @include column;
         h5{                                     //NAME OF CARDS
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis ;
             padding-bottom: 5px;
             font-size:1.1rem;
             font-weight:550;
@@ -27,18 +28,45 @@
             font-weight:400;
             color:#5a5c65
         }
-    }
-    .checked-box{                               //CHECKBOX
-        width:0;
-        color:$checked-color;
-        display:none;
+        
     }
     .price{
         color:#5a5c65;
-        width:15%;
+        width:20%;
         font-weight:550;
         font-size: 0.95rem;
         @include center;
+        justify-self: start;
         align-self: flex-end;
-    }           
+        padding-bottom:15px;
+        }  
+    .checked-box{                               //CHECKBOX
+        color:white;
+        background-color:$checked-color;
+        display:none;
+        i{
+            width:40px;
+            height:40px;
+            vertical-align: middle;
+            @include text-center;
+            padding:0
+        }
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    &:hover{
+        justify-content: start;
+        .rich{
+            width:60%;
+        }
+        .checked-box{
+            display:flex;
+            width:25%;
+            @include row;
+            @include text-center
+        }
+        .price{
+            width:15%;
+        }
 }
+    }
