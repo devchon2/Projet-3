@@ -7,7 +7,8 @@
 
 
 
-.home-steps{                                            //section HOME PAGE FORMULATION STEPS
+.home-steps{                                           //section HOME PAGE FORMULATION STEPS
+  
     &__div-step{                        
         @include column;
         @include row;

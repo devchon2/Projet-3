@@ -1,23 +1,23 @@
 @import "../../utils/variables";
 @import "../../utils/mixins";
-@import "../../layout/header";
 @import "../../components/rest-card";
 @import "../../components/rest-parts-menu";
-@import "../../layout/RESTAURANT/rest-cover";
 @import "../../layout/footer";
 
-.rest-menu{
-    &__container{                                        //RESTAURANT PAGE MENU CONTAINER
+.rest-menu{background-color: $bg-lightgrey;
+    &__container{   
+        height:1158px;                                     //RESTAURANT PAGE MENU CONTAINER
         overflow:hidden;
-        height:100%;
-        padding-top:30px;
+        padding:30px 5px;
         position:relative;
-        top:-30px;
+        top:0px;
+        bottom:30px;
         background-color: $bg-lightgrey;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;     
     }
     &__div-title{
+        padding-left: 10px;
         width:100%;
         @include row;
         font-size:1.8rem;
@@ -37,7 +37,7 @@
         &--title{                             //RESTAURANT TITLE
         font-size:1.8rem;
             width:90%;
-        padding-left:5%;
+        
         font-family: "shrikhand",sans-serif;
         font-weight: 500;
         }

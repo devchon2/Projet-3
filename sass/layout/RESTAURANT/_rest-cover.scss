@@ -3,13 +3,16 @@
 @import "../../utils/mixins";
 
 .rest-cover{                                        //RESTAURANT PAGE MENU CONTAINER
+    
+    height:220px;
     object-fit: cover;
-        height:250px;
+     
         width:100%;
         .img{
-            
-            overflow: hidden;
+            height:250px;
             object-fit:cover;
+            object-position: 50% ;
+            overflow:auto;
             
         }
     }

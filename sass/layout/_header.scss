@@ -1,32 +1,32 @@
 
 .header{
+    z-index: 0;
+    width:100%;
     height:60px;
     padding:0;
-    &__div{                                             // DIV full-content 
-        Height:100%;
-        
+    &__div{                                             // DIV FULL HEADER 
+        height:100%;
         @include row;
         align-content: space-between;
         box-shadow: 0px 5px 15px #cfcfcf;
-        &-img{                                          
+        &-img{                                          //DIV IMG HEADER
             width:100%;
             @include row;
             @include text-center;
-            
             a{
-                
                 width:20%;
                 align-self: center;
-                i{
+                i{                                      //BACKWARD ICON
                     width:40px;
                 }
             }
         }
     }
-    &__img{                                                 //Logo Picture
+    &__img{                                                 //Logo Picture div
+        align-self: flex-end;
         width:160px;
         margin:0 auto;
-        padding:15px 0;
+        padding:15px 0 10px;
     }
     .return-display{                                        //Centering Logo In Restaurant page
         margin:0 auto 0 32.5px;

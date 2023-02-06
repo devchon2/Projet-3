@@ -6,28 +6,18 @@
 
 
 .cta-btn{                                           //Call-to-action Gradient
-    color:#f6e3f8;
-    @include center;
-    margin:50px auto;
-    box-sizing: border-box;
-    color: white;
-    font-size: 0.9rem;
-    font-weight:550;
-    border: none;
-    padding:15px 20px;
-    border-radius: $cta-btn-radius;
-    background: $cta-btn-bg-color;
-    a{
-            color:white;
-        }
-    
+    @include call-to-action
 }
-.order{
+.cta-btn-order{
+    
+    @include call-to-action;
+    width:50%;
+    margin:20px auto;
     padding:17.5px 50px;
     font-size:1rem;
     font-weight:500;
 }
-.step__btn{                                         //STEPS ORDER
+.step__btn{                                         //STEPS FORMULATION ORDER
     @include row;
     @include center;
     @include text-center;

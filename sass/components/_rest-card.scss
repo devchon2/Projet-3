@@ -5,12 +5,13 @@
     background-color: white;
     border-radius:15px;
     @include row;
+    justify-content:space-evenly;
     margin:12.5px auto;
-    width:95%;
+    width:100%;
     box-shadow: 0px 5px 10px #e8e8e8;
     .rich{        
-        padding:15px;                              //CONTENTS OF CARD
-        width:80%;
+        padding:15px 0 ;                              //CONTENTS OF CARD
+        width:70%;
         @include column;
         h5{                                     //NAME OF CARDS
             overflow: hidden;
@@ -19,8 +20,9 @@
             padding-bottom: 5px;
             font-size:1.1rem;
             font-weight:550;
-        }
-        .details{                                      //DEFINITION OF CARDS
+            }
+        .details{   
+                                              //DEFINITION OF CARDS
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis ;
@@ -32,41 +34,43 @@
     }
     .price{
         color:#5a5c65;
-        width:20%;
+        height:100%;
+        min-width:10%;
         font-weight:550;
         font-size: 0.95rem;
-        @include center;
-        justify-self: start;
+        padding:7px;
+        text-align: end;
         align-self: flex-end;
         padding-bottom:15px;
         }  
     .checked-box{                               //CHECKBOX
-        color:white;
-        background-color:$checked-color;
+        
         display:none;
-        i{
-            width:40px;
-            height:40px;
-            vertical-align: middle;
-            @include text-center;
-            padding:0
-        }
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+        
+        
     }
     &:hover{
-        justify-content: start;
+        
         .rich{
-            width:60%;
-        }
-        .checked-box{
-            display:flex;
-            width:25%;
-            @include row;
-            @include text-center
+            box-sizing: border-box;
+            padding-left:15px;
+            width:65%;
         }
         .price{
-            width:15%;
+            width:10%;
         }
+        .checked-box{
+            width: 20%;
+            color:white;
+            display:inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $checked-color;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          
+            
+        }
+        
 }
     }
