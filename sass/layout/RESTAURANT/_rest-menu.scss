@@ -1,0 +1,47 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../layout/header";
+@import "../../components/rest-card";
+@import "../../components/rest-parts-menu";
+@import "../../layout/RESTAURANT/rest-cover";
+@import "../../layout/footer";
+
+.rest-menu{
+    &__container{                                        //RESTAURANT PAGE MENU CONTAINER
+        padding-top:30px;
+        position:relative;
+        top:-30px;
+        background-color: $bg-lightgrey;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding-bottom:50px;     
+    }
+    &__div-title{
+        width:100%;
+        @include row;
+        font-size:1.8rem;
+        &-bar{                                  // "ENTRÉES" DISPLAY TITLE DIV
+        padding:10px  20px 0px;
+        &:first-child{                             //TITLE 
+            font-weight:400;
+            color:#757575;
+            padding-bottom: 5px;;
+        }
+        }
+        i{                                  //HEART ICON
+        
+        align-self: center;
+        width:20%
+        }
+        &--title{                             //RESTAURANT TITLE
+        font-size:1.8rem;
+            width:90%;
+        padding-left:5%;
+        font-family: "shrikhand",sans-serif;
+        font-weight: 500;
+        }
+    }
+}
+
+
+

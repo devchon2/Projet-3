@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
@@ -27,21 +27,21 @@
         </header>
 
         <main>
-            <div class="section-cover__div-img">
-                <img class="section-cover__div-img .img"src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+            <div class="rest-cover">
+                <img class="rest-cover .img"src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
             </div>
 
-            <div class="section-card__div">                         <!-- FULL CARD MENU-->
-                <div class="section-card__div-title">               
-                    <h3 class="section-card__div-title restaurant-title">La palette du goût</h3>
+            <div class="rest-menu__container">                         <!-- FULL CARD MENU-->
+                <div class="rest-menu__div-title">               
+                    <h3 class="rest-menu__div-title--title">La palette du goût</h3>
                     <i class="fa-regular fa-heart"></i> 
                 </div>
-                <div class="section-card__div-part-menu">           <!-- ENTRIES CARD MENU-->
-                    <div class="section-card__div-title-bar">
-                        <h4 class="section-card_div-part-menu-title">ENTRÉES</h4>
+                <div class="part-menu">           <!-- ENTRIES CARD MENU-->
+                    <div class="part-menu__title-bar">
+                        <h4 class="title">ENTRÉES</h4>
                         <div class="bar"></div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
                             <h5>Fricassée d'escargot</h5>
                             <p class="details">Au piment d'Espelette</p>
@@ -51,7 +51,7 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
                             <h5>Foie gras de canard mi-cuit</h5>
                             <p class="details">Et ses copeaux de truffe noire</p>
@@ -61,7 +61,7 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
                             <h5>Œuf au plat</h5>
                             <p class="details">Assaisoné à la truffe sur lit de sel</p>
@@ -72,12 +72,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-card__div-part-menu">           <!-- LUNCH CARD MENU-->
-                    <div class="section-card__div-title-bar">
-                        <h4 class="section-card_div-part-menu-title">PLATS</h4>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="section-card__div-card ">
+                <div class="part-menu">           
+                    <div class="part-menu">           
+                        <div class="part-menu__title-bar">
+                            <h4>PLATS</h4>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="rest-card ">
                         <div class="rich">
                             <h5>Filet de bœuf aux herbes</h5>
                             <p class="details">Accompagné de sa ribambelle de légumes</p>
@@ -86,8 +87,8 @@
                         <div class="checked-box">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
-                    </div>
-                    <div class="section-card__div-card ">
+                        </div>
+                        <div class="rest-card ">
                         <div class="rich">
                             <h5>Parmentier de queue de bœuf</h5>
                             <p class="details">À la truffe noire sur sa purée de panais </p>
@@ -96,8 +97,8 @@
                         <div class="checked-box">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
-                    </div>
-                    <div class="section-card__div-card ">
+                        </div>
+                        <div class="rest-card ">
                         <div class="rich">
                             <h5>Filet de turbo</h5>
                             <p >Aux agrumes</p>
@@ -106,14 +107,15 @@
                         <div class="checked-box">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div class="section-card__div-part-menu">           <!-- DESSERT CARD MENU-->
-                    <div class="section-card__div-title-bar">
-                        <h4 class="section-card_div-part-menu-title">DESSERTS</h4>
+                <div class=".part-menu">           <!-- ENTRIES CARD MENU-->
+                    <div class="part-menu">           <!-- ENTRIES CARD MENU-->
+                        <div class="part-menu__title-bar"><h4>DESSERTS</h4>
                         <div class="bar"></div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
                             <h5>Paris-Brest</h5>
                             <p class="details">Revisité</p>
@@ -123,7 +125,7 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
                             <h5>Macaron au chocolat d'exception</h5>
                             <p class="details">Et glace à la vanille de Madagascar</p>
@@ -133,7 +135,7 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
                             <h5>Mousse au chocolat</h5>
                             <p class="details">Au piment d'Espelette et à la truffe noire</p>
@@ -146,7 +148,7 @@
                 </div>
             
             </div>
-                        <button class="section-card__div-cta-btn cta-btn order"><a href="#">Commander</a></button>
+                        <button class="rest-__div-cta-btn cta-btn order"><a href="#">Commander</a></button>
             
                     
                     
