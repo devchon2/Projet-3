@@ -42,9 +42,11 @@
 @mixin heart-icons{
     .heart{
         width:20%;
+        padding-right:40px;
         font-family: "Font Awesome Kit";
         @include center;
         font-size: 30px;
+        
         .full-heart{
             display:none;
         }
