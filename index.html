@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description">
+    <meta name="description" content="">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,15 @@
     <title>Accueil HoMyFood!</title>
 </head>
     <body>
-        <header class="header">
+        <div class="loader"></div>
+            <header class="header">
             <div class="header__div ">
-                <img class="header__img" src="images/logo/ohmyfood@2x.svg">
+                <img class="header__img" src="images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise ohmyfood!">
             </div>
             
-        </header>
+            </header>
 
-        <main>
+            <main>
             <section class="section home-cover"> 
                 <div class="home-cover__div-location">
                     <form method="get" class="home-cover__location-form">
@@ -35,7 +36,7 @@
                         <p class="home-cover__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
                         
                 </div>
-                <a href="#"><button class="home-cover__btn cta-btn">Explorer nos restaurants</button></a>
+                <a href="#"><div class="home-cover__btn cta-btn">Explorer nos restaurants</div></a>
             </section>
 
             <section class="section home-steps">
@@ -71,60 +72,66 @@
                     
                         <article class="home-card">
                             <a href="la-palette-du-gout.html">
-                                <div class="home-card__figure-div">
-                                <figure class="home-card__figure">
-                                    <div class="home-card__figure-content">
-                                        <img class="home-card__figure-img"  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="home-card__content">
-                                        <figcaption class="home-card__figure-figcaption">
-                                        <h3 class="home-card__figure-figcaption-title">La palette du goût</h3>
-                                        <p class="home-card__figure-figcaption-p">Ménilmontant</p>
-                                        </figcaption>
-                                        <div class="home-card__figure-div-span">
-                                            <span>Nouveau</span>
+                                    <figure class="home-card__figure">
+                                        <div class="home-card__figure-div">
+                                            <img class="home-card__figure-img"  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un lit dans une chambre d'hotel" >  
+                                            <div class="span">
+                                                <span>Nouveau</span>                                        
+                                            </div>
                                         </div>
-                                        <div class="heart">
-                                        <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
-                                        </div> 
-                                    </div>           
-                                </figure>
-                                </div>
+                                        <figcaption class="home-card__figcaption">
+                                            <div class="rich">
+                                                <h3 class="home-card__figcaption-title">La palette du goût</h3>
+                                                <p class="home-card__figcaption-subtitle">Ménilmontant</p>
+                                            </div>
+                                            
+                                            <div class="heart">
+                                                <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
+                                            </div>
+                                            
+                                        </figcaption>          
+                                    </figure> 
                             </a>
                         </article>
                         
                         <article class="home-card">
                             <a href="./la-note-enchantée.html">
-                                <div class="home-card__figure-div">
                                     <figure class="home-card__figure">
-                                        <div class="home-card__figure-content">
-                                            <img class="home-card__figure-img"  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="home-card__content">
-                                            <figcaption class="home-card__figure-figcaption">
-                                                <h3 class="home-card__figure-figcaption-title">La note enchantée</h3>
-                                                <p class="home-card__figure-figcaption-p">Charonne</p>
-                                            </figcaption>
-                                            <div class="home-card__figure-div-span">
-                                                <span>Nouveau</span>
+                                        <div class="home-card__figure-div">
+                                            <img class="home-card__figure-img"  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      
+                                            <div class="span">
+                                                <span>Nouveau</span>                                        
                                             </div>
-                                            <div class="heart">
-                                                <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
-                                            </div> 
-                                        
-                                        </div>           
+                                        </div>
+                                            <figcaption class="home-card__figcaption">
+                                                <div class="rich">
+                                                    <h3 class="home-card__figcaption-title">La note enchantée</h3> 
+                                                    <p class="home-card__figure-figcaption-subtitle">Charonne</p>
+                                                </div>
+                                                <div class="heart">
+                                                    <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
+                                                </div> 
+                                            </figcaption>   
+
                                     </figure>
-                                </div>
+                                
                             </a>
                         </article>             
                     
                         <article class="home-card">
                             <a href="./a-la-française.html">
                                 <figure class="home-card__figure">
-                                    <img class="home-card__figure-img"  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="home-card__content">
-                                    <figcaption class="home-card__figure-figcaption">
-                                        <h3 class="home-card__figure-figcaption-title">A la française</h3>
-                                        <p class="home-card__figure-figcaption-p">Cité-rouge</p>
+                                    <img class="home-card__figure-img"  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                    
+                                    <figcaption class="home-card__figcaption">
+                                        <div class="rich">
+                                            <h3 class="home-card__figure-figcaption .title">A la française</h3>
+                                            <p class="home-card__figure-figcaption-p">Cité-rouge</p>
+                                        </div>
+                                        <div class="heart">
+                                                <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
+                                        </div>  
                                     </figcaption>
-                                    <div class="heart">
-                                        <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
-                                    </div>            
+                                              
                                 </figure>
                             </a>
                         </article>
@@ -132,14 +139,17 @@
                         <article class="home-card">  
                             <a href="./le-delice-des-sens.html">                   
                                 <figure class="home-card__figure">
-                                    <img class="home-card__figure-img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      <div class="home-card__content">
-                                    <figcaption class="home-card__figure-figcaption">
-                                        <h3 class="home-card__figure-figcaption-title">Le délice des sens</h3>
-                                        <p class="home-card__figure-figcaption-p">Folie-méricourt</p>
-                                    </figcaption>
-                                    <div class="heart">
-                                        <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
-                                    </div>            
+                                    <img class="home-card__figure-img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un lit dans une chambre d'hotel" >                      
+                                    
+                                    <figcaption class="home-card__figcaption">
+                                        <div class="rich">
+                                            <h3 class="home-card__figure-figcaption-title">Le délice des sens</h3>
+                                            <p class="home-card__figure-figcaption-p">Folie-méricourt</p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
+                                        </div>
+                                    </figcaption>            
                                 </figure>
                             </a>
                         </article>
@@ -147,9 +157,9 @@
 
                 </div>
             </section>
-        </main>
-        
-        <footer class="section footer">
+            </main>
+
+            <footer class="section footer">
             <h3 class="footer__title">ohmyfood</h3>
             <nav class="footer__nav">
                 <ul class="footer__list partner">
@@ -162,7 +172,8 @@
                 </ul>
             </nav>
 
-        </footer>
+            </footer>
+        
     </body>
 </html>
 

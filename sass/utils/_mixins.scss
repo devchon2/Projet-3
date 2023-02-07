@@ -23,6 +23,7 @@
 }
 
 @mixin call-to-action{
+    width:230px;
     line-height: 0.7rem;
     @include center;
     margin:30px auto;
@@ -39,14 +40,16 @@
         }
     
 }
-@mixin home-heart-icons{
+@mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
     .heart{
+        index:2;
+        @include row;
         width:20%;
-        padding-right:20px;
         font-family: "Font Awesome Kit";
-        @include center;
+        justify-content:end;
         font-size: 25px;
-        .full-heart{
+        padding-right:20px;
+        .full-heart{                                    //FULL HEART DISPLAYED :NONE BY DEFAULT
             display:none;
         }
         &:hover{
@@ -54,7 +57,6 @@
                     display:none;
                 }
                 .full-heart{
-                    color:$cta-btn-bg-color;
                     display:inline-block;
                     background-image: -webkit-linear-gradient(170deg,$pink, $violet);
                     background-image: linear-gradient(170deg,$pink, $violet);
@@ -64,13 +66,17 @@
                         
                     
                 }
-                } 
-        
-}   
-}
+            }         
+        }
+    
+    .rest-heart{
+        padding-right:50px;
+    }
+} 
+  
 @mixin rest-heart-icons{
     @include home-heart-icons;
-    padding-right:0;
+    
     width:10%;
     @include center;
 }
