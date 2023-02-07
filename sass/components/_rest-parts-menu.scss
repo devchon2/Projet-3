@@ -1,10 +1,12 @@
 .part-menu{                                   // RESTAURANT PARTS MENU
-        padding:20px 10px;
+        padding:10px 10px;
         &__title-bar{                                     //RESTAURANT PART MENU TITLE
             .title{    
                 font-family: "roboto"; 
                 color:$darkgrey;
-                font-weight:thin;
+                font-weight:400;
+                padding-bottom: 5px;;
+                
              
             }
             .bar{                                       //BAR UNDER PART MENU TITLE

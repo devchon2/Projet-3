@@ -102,10 +102,10 @@ a {
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   width: 50%;
-  margin: 20px auto;
-  padding: 17.5px 50px;
+  margin: 15px auto;
+  padding: 15px 50px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .cta-btn-order a {
   color: white;
@@ -253,10 +253,10 @@ a {
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   width: 50%;
-  margin: 20px auto;
-  padding: 17.5px 50px;
+  margin: 15px auto;
+  padding: 15px 50px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .cta-btn-order a {
   color: white;
@@ -494,10 +494,10 @@ a {
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   width: 50%;
-  margin: 20px auto;
-  padding: 17.5px 50px;
+  margin: 15px auto;
+  padding: 15px 50px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .cta-btn-order a {
   color: white;
@@ -662,12 +662,12 @@ a {
 }
 
 .rest-cover {
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   width: 100%;
 }
 .rest-cover .img {
-  height: 250px;
+  height: 230px;
   object-fit: cover;
   object-position: 50%;
   overflow: auto;
@@ -683,31 +683,31 @@ a {
   box-shadow: 0px 5px 10px #e8e8e8;
 }
 .rest-card .rich {
-  padding: 15px 0;
-  width: 70%;
+  padding: 10px 5px;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  font-weight: 400;
 }
 .rest-card .rich h5 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-bottom: 5px;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 550;
 }
 .rest-card .rich .details {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 1rem;
   color: #5a5c65;
 }
 .rest-card .price {
   color: #5a5c65;
   height: 100%;
-  min-width: 10%;
+  width: auto;
   font-weight: 550;
   font-size: 0.95rem;
   padding: 7px;
@@ -721,13 +721,13 @@ a {
 .rest-card:hover .rich {
   box-sizing: border-box;
   padding-left: 15px;
-  width: 65%;
+  min-width: 65%;
 }
 .rest-card:hover .price {
   width: 10%;
 }
 .rest-card:hover .checked-box {
-  width: 20%;
+  width: 17.5%;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -738,12 +738,13 @@ a {
 }
 
 .part-menu {
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 .part-menu__title-bar .title {
   font-family: "roboto";
   color: #353535;
-  font-weight: thin;
+  font-weight: 400;
+  padding-bottom: 5px;
 }
 .part-menu__title-bar .bar {
   width: 40px;
@@ -781,21 +782,22 @@ a {
   background-color: #f5f5f5;
 }
 .rest-menu__container {
-  height: 1158px;
   overflow: hidden;
   padding: 30px 5px;
   position: relative;
   top: 0px;
   bottom: 30px;
   background-color: #f5f5f5;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 .rest-menu__div-title {
   padding-left: 10px;
   width: 100%;
+  justify-content: space-evenly;
   display: flex;
   font-size: 1.8rem;
+  overflow: hidden;
 }
 .rest-menu__div-title-bar {
   padding: 10px 20px 0px;
@@ -805,13 +807,25 @@ a {
   color: #757575;
   padding-bottom: 5px;
 }
-.rest-menu__div-title i {
-  align-self: center;
+.rest-menu__div-title .heart {
   width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rest-menu__div-title .heart .full-heart {
+  display: none;
+}
+.rest-menu__div-title .heart:active .fa-regular {
+  display: none;
+}
+.rest-menu__div-title .heart:active .full-heart {
+  -webkit-text-fill-color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
 }
 .rest-menu__div-title--title {
   font-size: 1.8rem;
-  width: 90%;
+  min-width: 80%;
   font-family: "shrikhand", sans-serif;
   font-weight: 500;
 }

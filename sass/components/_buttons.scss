@@ -12,10 +12,10 @@
     
     @include call-to-action;
     width:50%;
-    margin:20px auto;
-    padding:17.5px 50px;
+    margin:15px auto;
+    padding:15px 50px;
     font-size:1rem;
-    font-weight:500;
+    font-weight:400;
 }
 .step__btn{                                         //STEPS FORMULATION ORDER
     @include row;
