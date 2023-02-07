@@ -7,8 +7,7 @@ body {
     font-family: "roboto", sans-serif;
 }
 main{
-    height:100%;
-    background-color: $bg-lightgrey;
+    overflow: hidden;
 }
 ul {
     list-style: none;
@@ -19,12 +18,12 @@ a {
     text-decoration: none;
     color:black;
 }
-section{
-    width:100%;
-    margin-bottom: 40px;
+.section{
+    padding-bottom:25px;
 }
 .section__title{
-    font-size:1.3rem;
-    padding:20px 0 20px 20px;
+    font-size:1.5rem;
+    font-weight:600;
+    padding:50px 0 20px 20px;
 }
   

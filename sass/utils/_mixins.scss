@@ -21,3 +21,21 @@
     box-shadow: -1px 20px 5px -20px rgba(0,0,0,0.51) inset;
 
 }
+
+@mixin call-to-action{
+    color:#f6e3f8;
+    @include center;
+    margin:50px auto;
+    box-sizing: border-box;
+    color: white;
+    font-size: 0.9rem;
+    font-weight:550;
+    border: none;
+    padding:15px 20px;
+    border-radius: $cta-btn-radius;
+    background: $cta-btn-bg-color;
+    a{
+            color:white;
+        }
+    
+}

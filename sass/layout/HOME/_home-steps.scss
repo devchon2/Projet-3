@@ -1,0 +1,26 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../components/buttons";
+;
+;
+
+
+
+
+.home-steps{                                           //section HOME PAGE FORMULATION STEPS
+  
+    &__div-step{                        
+        @include column;
+        @include row;
+        @include center; 
+        padding-left:10px;
+               
+    }
+    .icn{
+        line-height:1;
+        color:#757575;
+    }
+    a{
+        width: 90%
+    }
+}

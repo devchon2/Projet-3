@@ -1,0 +1,60 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../components/buttons";
+@import "../components/home-card";
+
+
+.home-cover{                                                 //section cover
+        background-color: green;
+        margin:0;
+        &__location{                                        //Form div location
+            @include inset-shadow;       
+            @include row;
+            width:100%;                                                
+            @include text-center;
+            background-color: #eaeaea ;
+            font-weight:700;
+            font-size: 16px;
+            color:$darkgrey;
+            font-family:"roboto";
+            &-form{                                             //FORM OF IMPUT LOCATION SEARCH
+            .icn{                                              //ICON OF IMPUT LOCATION
+                
+                padding-right:20px;
+            }
+                input{
+                    height:20px;
+                    width:140px;
+                }
+                
+                @include row;
+                @include text-center;
+                @include center;
+                background-color: #eaeaea;
+            }
+        }
+        &__div-location{ 
+            color: #353535;
+            @include center;
+            background-color: #eaeaea;
+            @include inset-shadow;
+            height:50px;
+        }
+        &__input-location{
+         @include row;
+            border:none;
+            box-sizing: content-box;                                              
+            @include center;
+            background-color: #eaeaea ;
+            font-weight:550;
+            font-size: 16px;;
+            color:$darkgrey;
+            font-family:"roboto";
+            &:focus{                                                //when focus
+                outline:none;  
+            }
+            &::placeholder{                                         //content of placeholder
+                color:$darkgrey;
+            }
+        }
+}

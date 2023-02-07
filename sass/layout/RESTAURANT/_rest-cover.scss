@@ -1,0 +1,18 @@
+@import "../../utils/variables";
+@import "../../utils/functions";
+@import "../../utils/mixins";
+
+.rest-cover{                                        //RESTAURANT PAGE MENU CONTAINER
+    
+    height:200px;
+    object-fit: cover;
+     
+        width:100%;
+        .img{
+            height:230px;
+            object-fit:cover;
+            object-position: 50% ;
+            overflow:auto;
+            
+        }
+    }

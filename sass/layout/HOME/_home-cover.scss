@@ -1,0 +1,27 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../components/buttons";
+@import "../../components/home-card";
+@import "../../components/location-form";
+
+
+
+
+.home-cover{                                             //section HOME COVER
+    background-color: $bg-lightgrey;
+    margin:0;
+    &__title{                                                   //PRESENTATION TITLE PAGE
+    width:75%;
+    font-size:1.30rem;
+    font-weight:700;
+    margin:40px auto 20px auto;
+    @include text-center;
+    }
+    &__subtitle {                                               //UNDER PHRASE PRESENTATION
+    width:90%;
+    color:#353535;
+    font-size:0.95rem;
+    margin:20px auto 30px;
+    @include text-center;
+    }
+}  

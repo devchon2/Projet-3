@@ -1,21 +1,23 @@
 @import "../utils/variables";
+@import "../components/nav";
 
 
 
 
 
-.section-footer{
+.footer{
+    
+    height:160px;
     font-size:1rem;
     font-weight:500;
     color:$bg-lightgrey;
-    padding-bottom: 40px;
+    padding:5px 0 40px 20px;
     background-color: $darkgrey;
     &__title{
         color: white;
-        padding:15px;
+        padding:15px 0;
         font-weight:100;
         font-size:1.2rem;
         font-family: "shrikhand",sans-serif;
     }
-    
 }  
