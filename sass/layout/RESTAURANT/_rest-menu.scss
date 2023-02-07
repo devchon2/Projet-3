@@ -2,7 +2,7 @@
 @import "../../utils/mixins";
 @import "../../components/rest-card";
 @import "../../components/rest-parts-menu";
-@import "../../layout/footer";
+
 
 .rest-menu{
     background-color: $bg-lightgrey;
@@ -18,10 +18,12 @@
         border-top-right-radius: 40px;     
     }
     &__div-title{
+        @include rest-heart-icons;
         padding-left: 10px;
         width:100%;
         justify-content: space-evenly;
         @include row;
+        
         font-size:1.8rem;
         overflow:hidden;
         &-bar{                                  // "ENTRÉES" DISPLAY TITLE DIV
@@ -35,12 +37,6 @@
                                    //HEART ICON
         
         
-            @include heart-icons;
-            .heart{
-            width:20%;
-            font-family: "Font Awesome Kit";
-            @include center;
-    }   
     &--title{                             //RESTAURANT TITLE
     font-size:1.8rem;
     min-width:80%;
@@ -49,3 +45,4 @@
     }
 }
 }
+

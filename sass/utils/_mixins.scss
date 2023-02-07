@@ -18,20 +18,20 @@
 }
 
 @mixin inset-shadow{
-    box-shadow: -1px 20px 5px -20px rgba(0,0,0,0.51) inset;
+    box-shadow: 0px 20px 5px -19px rgba(146, 145, 145, 0.51) inset;
 
 }
 
 @mixin call-to-action{
-    color:#f6e3f8;
+    line-height: 0.7rem;
     @include center;
-    margin:50px auto;
+    margin:30px auto;
     box-sizing: border-box;
     color: white;
-    font-size: 0.9rem;
-    font-weight:550;
+    font-size: 1rem;
+    font-weight:500;
     border: none;
-    padding:15px 20px;
+    padding: 20px;
     border-radius: $cta-btn-radius;
     background: $cta-btn-bg-color;
     a{
@@ -39,22 +39,19 @@
         }
     
 }
-@mixin heart-icons{
+@mixin home-heart-icons{
     .heart{
         width:20%;
-        padding-right:40px;
+        padding-right:20px;
         font-family: "Font Awesome Kit";
         @include center;
-        font-size: 30px;
-        
+        font-size: 25px;
         .full-heart{
             display:none;
         }
-        
         &:hover{
                 .fa-regular{
                     display:none;
-                    
                 }
                 .full-heart{
                     color:$cta-btn-bg-color;
@@ -72,7 +69,8 @@
 }   
 }
 @mixin rest-heart-icons{
-    @include heart-icons;
-    width:20%;
+    @include home-heart-icons;
+    padding-right:0;
+    width:10%;
     @include center;
 }
