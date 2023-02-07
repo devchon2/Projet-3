@@ -34,25 +34,12 @@
         }
                                    //HEART ICON
         
-        .heart{
+        
+            @include heart-icons;
+            .heart{
             width:20%;
-            ;
+            font-family: "Font Awesome Kit";
             @include center;
-            .full-heart{
-                display:none;
-                
-            }
-            &:active{
-                    .fa-regular{
-                        display:none;
-                    }
-                    .full-heart{
-                        -webkit-text-fill-color:$cta-btn-bg-color;
-                        display:inline-block;
-                        
-                    }
-                    } 
-            
     }   
     &--title{                             //RESTAURANT TITLE
     font-size:1.8rem;

@@ -212,11 +212,29 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.home-card__content div {
-  width: 0px;
+.home-card__content .heart {
+  width: 20%;
+  padding-right: 40px;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
-.home-card__content i {
-  margin: 0 10px;
+.home-card__content .heart .full-heart {
+  display: none;
+}
+.home-card__content .heart:hover .fa-regular {
+  display: none;
+}
+.home-card__content .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
+  background-image: -webkit-linear-gradient(170deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .cta-btn {
@@ -363,11 +381,29 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.home-card__content div {
-  width: 0px;
+.home-card__content .heart {
+  width: 20%;
+  padding-right: 40px;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
-.home-card__content i {
-  margin: 0 10px;
+.home-card__content .heart .full-heart {
+  display: none;
+}
+.home-card__content .heart:hover .fa-regular {
+  display: none;
+}
+.home-card__content .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
+  background-image: -webkit-linear-gradient(170deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .home-cover {
@@ -621,11 +657,29 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.home-card__content div {
-  width: 0px;
+.home-card__content .heart {
+  width: 20%;
+  padding-right: 40px;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
-.home-card__content i {
-  margin: 0 10px;
+.home-card__content .heart .full-heart {
+  display: none;
+}
+.home-card__content .heart:hover .fa-regular {
+  display: none;
+}
+.home-card__content .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
+  background-image: -webkit-linear-gradient(170deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .home-restaurant {
@@ -635,39 +689,34 @@ a {
 }
 
 .footer__nav li {
-  padding-bottom: 2px;
+  padding-bottom: 7px;
 }
 .footer__nav li i {
   margin-right: 10px;
-}
-.footer__nav .legal {
-  padding-top: 5px;
-  font-weight: 400;
 }
 
 .footer {
   height: 160px;
   font-size: 1rem;
-  font-weight: 500;
   color: #f5f5f5;
-  padding: 5px 0 40px 20px;
+  padding: 5px 0 20px 20px;
   background-color: #353535;
 }
 .footer__title {
   color: white;
   padding: 15px 0;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "shrikhand", sans-serif;
 }
 
 .rest-cover {
-  height: 200px;
+  height: 220px;
   object-fit: cover;
   width: 100%;
 }
 .rest-cover .img {
-  height: 230px;
+  height: 280px;
   object-fit: cover;
   object-position: 50%;
   overflow: auto;
@@ -683,7 +732,7 @@ a {
   box-shadow: 0px 5px 10px #e8e8e8;
 }
 .rest-card .rich {
-  padding: 10px 5px;
+  padding: 10px 0 10px 10px;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -694,23 +743,23 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-bottom: 5px;
-  font-size: 1.25rem;
-  font-weight: 550;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 .rest-card .rich .details {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 1rem;
-  color: #5a5c65;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #353535;
 }
 .rest-card .price {
-  color: #5a5c65;
+  color: #353535;
   height: 100%;
-  width: auto;
-  font-weight: 550;
+  font-weight: 650;
   font-size: 0.95rem;
-  padding: 7px;
+  padding: 7px 20px;
   text-align: end;
   align-self: flex-end;
   padding-bottom: 15px;
@@ -720,14 +769,10 @@ a {
 }
 .rest-card:hover .rich {
   box-sizing: border-box;
-  padding-left: 15px;
-  min-width: 65%;
-}
-.rest-card:hover .price {
-  width: 10%;
+  max-width: 65%;
 }
 .rest-card:hover .checked-box {
-  width: 17.5%;
+  width: 20%;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -752,29 +797,24 @@ a {
 }
 
 .footer__nav li {
-  padding-bottom: 2px;
+  padding-bottom: 7px;
 }
 .footer__nav li i {
   margin-right: 10px;
-}
-.footer__nav .legal {
-  padding-top: 5px;
-  font-weight: 400;
 }
 
 .footer {
   height: 160px;
   font-size: 1rem;
-  font-weight: 500;
   color: #f5f5f5;
-  padding: 5px 0 40px 20px;
+  padding: 5px 0 20px 20px;
   background-color: #353535;
 }
 .footer__title {
   color: white;
   padding: 15px 0;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "shrikhand", sans-serif;
 }
 
@@ -809,19 +849,34 @@ a {
 }
 .rest-menu__div-title .heart {
   width: 20%;
+  padding-right: 40px;
+  font-family: "Font Awesome Kit";
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
 }
 .rest-menu__div-title .heart .full-heart {
   display: none;
 }
-.rest-menu__div-title .heart:active .fa-regular {
+.rest-menu__div-title .heart:hover .fa-regular {
   display: none;
 }
-.rest-menu__div-title .heart:active .full-heart {
-  -webkit-text-fill-color: linear-gradient(170deg, #FF79DA, #9356DC);
+.rest-menu__div-title .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
   display: inline-block;
+  background-image: -webkit-linear-gradient(170deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.rest-menu__div-title .heart {
+  width: 20%;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rest-menu__div-title--title {
   font-size: 1.8rem;
@@ -831,29 +886,24 @@ a {
 }
 
 .footer__nav li {
-  padding-bottom: 2px;
+  padding-bottom: 7px;
 }
 .footer__nav li i {
   margin-right: 10px;
-}
-.footer__nav .legal {
-  padding-top: 5px;
-  font-weight: 400;
 }
 
 .footer {
   height: 160px;
   font-size: 1rem;
-  font-weight: 500;
   color: #f5f5f5;
-  padding: 5px 0 40px 20px;
+  padding: 5px 0 20px 20px;
   background-color: #353535;
 }
 .footer__title {
   color: white;
   padding: 15px 0;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "shrikhand", sans-serif;
 }
 

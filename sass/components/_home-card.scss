@@ -47,15 +47,7 @@
         background:white;
         @include center;
         justify-content: space-between;
-        div{
-            width:0px;
-        }
-        
-        i{
-            margin:0 10px;
-            
-            
-        }
+        @include heart-icons
     }
     
 }
