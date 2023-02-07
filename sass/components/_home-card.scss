@@ -47,32 +47,9 @@
         background:white;
         @include center;
         justify-content: space-between;
-        div{
-            width:0px;
-        }
         
-        .heart{
-            width:20%;
-            font-family: "Font Awesome Kit";
-            @include center;
-            .full-heart{
-                display:none;
-                
-            }
-            &:hover{
-                    .fa-regular{
-                        display:none;
-                        
-                    }
-                    .full-heart{
-                        color:$cta-btn-bg-color;
-                        display:inline-block;
-                        
-                        
-                    }
-                    } 
-            
-    }   
+        
+        @include heart-icons
     }
     
 }
