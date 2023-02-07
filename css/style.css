@@ -215,8 +215,22 @@ a {
 .home-card__content div {
   width: 0px;
 }
-.home-card__content i {
-  margin: 0 10px;
+.home-card__content .heart {
+  width: 20%;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-card__content .heart .full-heart {
+  display: none;
+}
+.home-card__content .heart:hover .fa-regular {
+  display: none;
+}
+.home-card__content .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
 }
 
 .cta-btn {
@@ -366,8 +380,22 @@ a {
 .home-card__content div {
   width: 0px;
 }
-.home-card__content i {
-  margin: 0 10px;
+.home-card__content .heart {
+  width: 20%;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-card__content .heart .full-heart {
+  display: none;
+}
+.home-card__content .heart:hover .fa-regular {
+  display: none;
+}
+.home-card__content .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
 }
 
 .home-cover {
@@ -624,8 +652,22 @@ a {
 .home-card__content div {
   width: 0px;
 }
-.home-card__content i {
-  margin: 0 10px;
+.home-card__content .heart {
+  width: 20%;
+  font-family: "Font Awesome Kit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-card__content .heart .full-heart {
+  display: none;
+}
+.home-card__content .heart:hover .fa-regular {
+  display: none;
+}
+.home-card__content .heart:hover .full-heart {
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: inline-block;
 }
 
 .home-restaurant {
@@ -809,6 +851,7 @@ a {
 }
 .rest-menu__div-title .heart {
   width: 20%;
+  font-family: "Font Awesome Kit";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -816,10 +859,10 @@ a {
 .rest-menu__div-title .heart .full-heart {
   display: none;
 }
-.rest-menu__div-title .heart:active .fa-regular {
+.rest-menu__div-title .heart:hover .fa-regular {
   display: none;
 }
-.rest-menu__div-title .heart:active .full-heart {
+.rest-menu__div-title .heart:hover .full-heart {
   -webkit-text-fill-color: linear-gradient(170deg, #FF79DA, #9356DC);
   display: inline-block;
 }

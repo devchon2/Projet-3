@@ -36,13 +36,13 @@
         
         .heart{
             width:20%;
-            ;
+            font-family: "Font Awesome Kit";
             @include center;
             .full-heart{
                 display:none;
                 
             }
-            &:active{
+            &:hover{
                     .fa-regular{
                         display:none;
                     }
