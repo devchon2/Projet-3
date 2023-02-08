@@ -31,6 +31,19 @@ a {
   padding: 40px 0 20px 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .section {
+    padding-bottom: 0;
+  }
+  .section__title {
+    font-size: 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .header {
   width: 100%;
   height: 60px;
@@ -45,6 +58,7 @@ a {
 .header__div-img {
   padding-bottom: 5px;
   width: 100%;
+  height: 100%;
   display: flex;
   display: flex;
   justify-content: center;
@@ -67,6 +81,27 @@ a {
   padding: 15px 0 10px;
 }
 
+@media screen and (min-width: 992px) {
+  .header {
+    height: 100px;
+  }
+  .header__div {
+    height: 100%;
+    width: 100%;
+  }
+  .header__img {
+    width: 360px;
+  }
+  .header a {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    align-self: center;
+  }
+  .header a i {
+    width: 40px;
+  }
+}
 .cta-btn {
   width: 230px;
   line-height: 0.7rem;
@@ -166,6 +201,47 @@ a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .cta-btn {
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+  }
+  .cta-btn-order {
+    height: 100px;
+    font-size: 1.7rem;
+    width: 230px;
+    line-height: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    border-radius: 0;
+    width: 100%;
+    margin: 15px auto;
+    padding: 15px 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    top: 50px;
+  }
+  .cta-btn-order a {
+    color: white;
+  }
+  .step__btn .step-number {
+    position: relative;
+    top: 40px;
+    left: 50%;
+  }
+}
 .home-card {
   display: flex;
   overflow: hidden;
@@ -225,9 +301,7 @@ a {
   justify-content: space-between;
 }
 .home-card__figcaption .heart {
-  index: 2;
   display: flex;
-  width: 20%;
   font-family: "Font Awesome Kit";
   justify-content: end;
   font-size: 25px;
@@ -236,7 +310,7 @@ a {
 .home-card__figcaption .heart .full-heart {
   display: none;
 }
-.home-card__figcaption .heart:hover .fa-regular {
+.home-card__figcaption .heart:hover .empty-heart {
   display: none;
 }
 .home-card__figcaption .heart:hover .full-heart {
@@ -248,7 +322,8 @@ a {
   background-clip: text;
 }
 .home-card__figcaption .rest-heart {
-  padding-right: 50px;
+  justify-content: flex-start;
+  padding-right: 40px;
 }
 .home-card-title {
   font-size: 1.1rem;
@@ -258,6 +333,13 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .home-card {
+    max-width: 450px;
+    width: 35%;
+    margin: 25px 75px;
+  }
+}
 .cta-btn {
   width: 230px;
   line-height: 0.7rem;
@@ -357,6 +439,47 @@ a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .cta-btn {
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+  }
+  .cta-btn-order {
+    height: 100px;
+    font-size: 1.7rem;
+    width: 230px;
+    line-height: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    border-radius: 0;
+    width: 100%;
+    margin: 15px auto;
+    padding: 15px 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    top: 50px;
+  }
+  .cta-btn-order a {
+    color: white;
+  }
+  .step__btn .step-number {
+    position: relative;
+    top: 40px;
+    left: 50%;
+  }
+}
 .home-card {
   display: flex;
   overflow: hidden;
@@ -416,9 +539,7 @@ a {
   justify-content: space-between;
 }
 .home-card__figcaption .heart {
-  index: 2;
   display: flex;
-  width: 20%;
   font-family: "Font Awesome Kit";
   justify-content: end;
   font-size: 25px;
@@ -427,7 +548,7 @@ a {
 .home-card__figcaption .heart .full-heart {
   display: none;
 }
-.home-card__figcaption .heart:hover .fa-regular {
+.home-card__figcaption .heart:hover .empty-heart {
   display: none;
 }
 .home-card__figcaption .heart:hover .full-heart {
@@ -439,7 +560,8 @@ a {
   background-clip: text;
 }
 .home-card__figcaption .rest-heart {
-  padding-right: 50px;
+  justify-content: flex-start;
+  padding-right: 40px;
 }
 .home-card-title {
   font-size: 1.1rem;
@@ -449,13 +571,15 @@ a {
   font-size: 1rem;
 }
 
-.home-cover {
-  background-color: green;
-  margin: 0;
+@media screen and (min-width: 992px) {
+  .home-card {
+    max-width: 450px;
+    width: 35%;
+    margin: 25px 75px;
+  }
 }
 .home-cover__location {
   box-shadow: 0px 20px 5px -19px rgba(146, 145, 145, 0.51) inset;
-  display: flex;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -514,6 +638,27 @@ a {
   color: #353535;
 }
 
+@media screen and (min-width: 992px) {
+  .home-cover__location-form {
+    background-color: transparent;
+  }
+  .home-cover__div-location {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid grey;
+    width: 350px;
+    box-shadow: none;
+    height: 50px;
+  }
+  .home-cover__input-location {
+    background-color: white;
+    border: none;
+    font-weight: 550;
+    font-size: 16px;
+    color: #353535;
+  }
+}
 .home-cover {
   background-color: #f5f5f5;
   margin: 0;
@@ -539,6 +684,38 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .home-cover {
+    background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .home-cover__div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.66;
+    padding: 20px 0;
+    height: 200px;
+    width: 40%;
+    margin: 100px auto;
+    justify-content: center;
+  }
+  .home-cover__subtitle {
+    color: #353535;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+  }
+  .home-cover__title {
+    margin: 0 auto;
+    color: black;
+    font-size: 1.7rem;
+  }
+}
 .cta-btn {
   width: 230px;
   line-height: 0.7rem;
@@ -638,10 +815,50 @@ a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .cta-btn {
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+  }
+  .cta-btn-order {
+    height: 100px;
+    font-size: 1.7rem;
+    width: 230px;
+    line-height: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    border-radius: 0;
+    width: 100%;
+    margin: 15px auto;
+    padding: 15px 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    top: 50px;
+  }
+  .cta-btn-order a {
+    color: white;
+  }
+  .step__btn .step-number {
+    position: relative;
+    top: 40px;
+    left: 50%;
+  }
+}
 .home-steps__div-step {
   display: flex;
   flex-direction: column;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -656,6 +873,17 @@ a {
   max-width: 420px;
 }
 
+@media screen and (min-width: 992px) {
+  .home-steps__div-step {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px auto;
+  }
+  .home-steps__div-step a {
+    min-width: 330px;
+    max-width: 25%;
+  }
+}
 .home-card {
   display: flex;
   overflow: hidden;
@@ -715,9 +943,7 @@ a {
   justify-content: space-between;
 }
 .home-card__figcaption .heart {
-  index: 2;
   display: flex;
-  width: 20%;
   font-family: "Font Awesome Kit";
   justify-content: end;
   font-size: 25px;
@@ -726,7 +952,7 @@ a {
 .home-card__figcaption .heart .full-heart {
   display: none;
 }
-.home-card__figcaption .heart:hover .fa-regular {
+.home-card__figcaption .heart:hover .empty-heart {
   display: none;
 }
 .home-card__figcaption .heart:hover .full-heart {
@@ -738,7 +964,8 @@ a {
   background-clip: text;
 }
 .home-card__figcaption .rest-heart {
-  padding-right: 50px;
+  justify-content: flex-start;
+  padding-right: 40px;
 }
 .home-card-title {
   font-size: 1.1rem;
@@ -748,19 +975,45 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .home-card {
+    max-width: 450px;
+    width: 35%;
+    margin: 25px 75px;
+  }
+}
 .home-restaurant {
   background-color: #f5f5f5;
   padding-bottom: 40px;
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .home-restaurant__div-list {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .footer__nav li {
   padding-bottom: 7px;
 }
 .footer__nav li i {
   margin-right: 10px;
 }
+.footer__nav li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
 
+@media screen and (min-width: 992px) {
+  .footer__nav {
+    justify-content: space-evenly;
+    display: flex;
+  }
+}
 .footer {
   height: 160px;
   font-size: 1rem;
@@ -776,23 +1029,44 @@ a {
   font-family: "shrikhand", sans-serif;
 }
 
+@media screen and (min-width: 992px) {
+  .footer {
+    margin: 0 auto;
+    height: 200px;
+  }
+  .footer__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .rest-cover {
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   width: 100%;
 }
 .rest-cover .img {
-  height: 280px;
+  height: 250px;
   object-fit: cover;
   object-position: 50%;
   overflow: auto;
 }
 
+@media screen and (min-width: 992px) {
+  .rest-cover {
+    height: 480px;
+  }
+  .rest-cover .img {
+    height: 480px;
+  }
+}
 .rest-card {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 12.5px 0;
   width: 100%;
   box-shadow: 0px 5px 10px #e8e8e8;
@@ -800,7 +1074,8 @@ a {
 }
 .rest-card .rich {
   padding: 10px 0 10px 10px;
-  width: 80%;
+  width: 65%;
+  justify-items: start;
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -824,10 +1099,9 @@ a {
 .rest-card .price {
   color: #353535;
   height: 100%;
-  width: 40px;
   font-weight: 650;
   font-size: 0.95rem;
-  padding: 7px 20px;
+  padding-right: 15px;
   text-align: end;
   align-self: flex-end;
   padding-bottom: 15px;
@@ -836,11 +1110,10 @@ a {
   display: none;
 }
 .rest-card:hover .rich {
-  box-sizing: border-box;
-  max-width: 65%;
+  width: 65%;
 }
 .rest-card:hover .checked-box {
-  width: 60px;
+  width: 50px;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -864,6 +1137,16 @@ a {
   border-bottom: #99E2D0 solid 3px;
 }
 
+@media all and (min-width: 992px) {
+  .part-menu {
+    width: 25%;
+  }
+  .part-menu__title .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .rest-menu {
   background-color: #f5f5f5;
 }
@@ -891,9 +1174,7 @@ a {
   overflow: hidden;
 }
 .rest-menu__div-title .heart {
-  index: 2;
   display: flex;
-  width: 20%;
   font-family: "Font Awesome Kit";
   justify-content: end;
   font-size: 25px;
@@ -902,7 +1183,7 @@ a {
 .rest-menu__div-title .heart .full-heart {
   display: none;
 }
-.rest-menu__div-title .heart:hover .fa-regular {
+.rest-menu__div-title .heart:hover .empty-heart {
   display: none;
 }
 .rest-menu__div-title .heart:hover .full-heart {
@@ -914,7 +1195,8 @@ a {
   background-clip: text;
 }
 .rest-menu__div-title .rest-heart {
-  padding-right: 50px;
+  justify-content: flex-start;
+  padding-right: 40px;
 }
 .rest-menu__div-title-bar {
   padding: 10px 20px 0px 20;
@@ -929,6 +1211,18 @@ a {
   min-width: 80%;
   font-family: "shrikhand", sans-serif;
   font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .rest-menu__container {
+    border-radius: 0;
+  }
+  .rest-menu__div-title--title {
+    text-align: center;
+  }
+  .rest-menu__div-part-menu {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

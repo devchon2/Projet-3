@@ -4,15 +4,23 @@
 
 .rest-cover{                                        //RESTAURANT PAGE MENU CONTAINER
     
-    height:220px;
+    height:200px;
     object-fit: cover;
      
         width:100%;
         .img{
-            height:280px;
+            height:250px;
             object-fit:cover;
             object-position: 50% ;
             overflow:auto;
             
+        }
+    }
+    @media screen and (min-width:992px){
+        .rest-cover{
+            height:480px;
+            .img{
+                height:480px;
+            }
         }
     }

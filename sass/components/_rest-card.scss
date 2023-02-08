@@ -5,14 +5,15 @@
     background-color: white;
     border-radius:15px;
     @include row;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin:12.5px 0;
     width:100%;
     box-shadow: 0px 5px 10px #e8e8e8;
     padding:2.5px px;
     .rich{        
         padding:10px 0 10px 10px ;                              //CONTENTS OF CARD
-        width:80%;
+        width:65%;
+        justify-items:start;
         @include column;
         font-weight:400;
         h5{                                     //NAME OF CARDS
@@ -37,10 +38,10 @@
     .price{
         color:$darkgrey;
         height:100%;
-        width:40px;
+        
         font-weight:650;
         font-size: 0.95rem;
-        padding:7px 20px;
+        padding-right:15px;
         text-align: end;
         align-self: flex-end;
         padding-bottom:15px;
@@ -50,11 +51,11 @@
     }
     &:hover{
         .rich{
-            box-sizing: border-box;
-            max-width:65%;
+            
+            width:65%;
         }   
         .checked-box{
-            width: 60px;
+            width: 50px;
             color:white;
             display:inline-flex;
             align-items: center;
