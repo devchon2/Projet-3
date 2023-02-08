@@ -37,7 +37,8 @@
         margin:0 auto; 
         &__div{                                                                                                     //SECTION COVER WHITE SQUARE
             @include column;
-            background-color: white; opacity: 0.66;
+            background-color: white; 
+            opacity: 0.75;
             padding:20px 0;
             height:200px;
             width:40%;

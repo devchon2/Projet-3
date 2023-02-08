@@ -5,6 +5,8 @@
 
 body {
   font-family: "roboto", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 main {
@@ -88,6 +90,7 @@ a {
   .header__div {
     height: 100%;
     width: 100%;
+    box-shadow: none;
   }
   .header__img {
     width: 360px;
@@ -697,7 +700,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: white;
-    opacity: 0.66;
+    opacity: 0.75;
     padding: 20px 0;
     height: 200px;
     width: 40%;
