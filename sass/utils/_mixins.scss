@@ -42,7 +42,7 @@
 }
 @mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
     .heart{
-        index:2;
+        z-index:2;
         @include row;
         width:20%;
         font-family: "Font Awesome Kit";
@@ -53,7 +53,7 @@
             display:none;
         }
         &:hover{
-                .fa-regular{
+                .empty-heart{
                     display:none;
                 }
                 .full-heart{
@@ -63,8 +63,6 @@
                     color:transparent;
                     -webkit-background-clip: text;
                     background-clip: text;
-                        
-                    
                 }
             }         
         }

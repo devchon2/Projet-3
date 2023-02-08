@@ -11,7 +11,6 @@
   
     &__div-step{                        
         @include column;
-        @include row;
         @include center; 
         padding-left:10px;
                
@@ -25,3 +24,18 @@
         max-width:420px;
     }
 }
+
+@media screen and (min-width:992px){
+    .home-steps{                                           //section HOME PAGE FORMULATION STEPS
+        &__div-step{  
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin:50px auto;
+            a{
+                
+                min-width:330px;
+                max-width:25%;
+            }
+        }
+
+}}

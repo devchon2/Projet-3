@@ -5,11 +5,8 @@
 
 
 .home-cover{                                                 //section cover
-        background-color: green;
-        margin:0;
         &__location{                                        //Form div location
             @include inset-shadow;       
-            @include row;
             width:100%;                                                
             @include text-center;
             background-color: #eaeaea ;
@@ -18,19 +15,18 @@
             color:$darkgrey;
             font-family:"roboto";
             &-form{                                             //FORM OF IMPUT LOCATION SEARCH
-            .icn{                                              //ICON OF IMPUT LOCATION
-                
-                padding-right:20px;
-            }
+                @include row;
+                @include text-center;
+                @include center;
+                background-color: #eaeaea;
+                .icn{                                              //ICON OF IMPUT LOCATION
+                    padding-right:20px;
+                }
                 input{
                     height:20px;
                     width:140px;
                 }
                 
-                @include row;
-                @include text-center;
-                @include center;
-                background-color: #eaeaea;
             }
         }
         &__div-location{ 
@@ -57,4 +53,31 @@
                 color:$darkgrey;
             }
         }
+}
+
+@media screen and (min-width: 992px){
+    .home-cover{
+        &__location-form{
+            background-color: transparent;     
+        }
+        &__div{
+            order:1;
+            &-location{ 
+                order:2;
+                background-color:white;
+                border-radius: 25px;;
+                border:1px solid grey;
+                width:350px;
+                @include center;
+                box-shadow:none;
+                height:50px;
+            }}
+        &__input-location{
+            background-color: white;
+               border:none;
+               font-weight:550;
+               font-size: 16px;;
+               color:$darkgrey; 
+        }
+    }
 }

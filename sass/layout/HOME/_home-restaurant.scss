@@ -6,3 +6,12 @@
     margin-bottom:0;
     
 }
+
+@media screen and (min-width:992px){
+.home-restaurant{
+        &__div-list{
+            @include row;
+            @include center;
+            flex-wrap: wrap;
+        }
+}}

@@ -31,6 +31,16 @@ a {
   padding: 40px 0 20px 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .section__title {
+    font-size: 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .header {
   width: 100%;
   height: 60px;
@@ -67,6 +77,26 @@ a {
   padding: 15px 0 10px;
 }
 
+@media screen and (min-width: 992px) {
+  .header {
+    height: 100px;
+  }
+  .header__div {
+    width: 100%;
+  }
+  .header__img {
+    width: 360px;
+  }
+  .header a {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    align-self: center;
+  }
+  .header a i {
+    width: 40px;
+  }
+}
 .cta-btn {
   width: 230px;
   line-height: 0.7rem;
@@ -166,6 +196,13 @@ a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .step-number {
+    position: relative;
+    top: 40px;
+    left: 50%;
+  }
+}
 .home-card {
   display: flex;
   overflow: hidden;
@@ -225,7 +262,7 @@ a {
   justify-content: space-between;
 }
 .home-card__figcaption .heart {
-  index: 2;
+  z-index: 2;
   display: flex;
   width: 20%;
   font-family: "Font Awesome Kit";
@@ -236,7 +273,7 @@ a {
 .home-card__figcaption .heart .full-heart {
   display: none;
 }
-.home-card__figcaption .heart:hover .fa-regular {
+.home-card__figcaption .heart:hover .empty-heart {
   display: none;
 }
 .home-card__figcaption .heart:hover .full-heart {
@@ -258,6 +295,13 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .home-card {
+    max-width: 450px;
+    width: 35%;
+    margin: 25px 75px;
+  }
+}
 .cta-btn {
   width: 230px;
   line-height: 0.7rem;
@@ -357,6 +401,13 @@ a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .step-number {
+    position: relative;
+    top: 40px;
+    left: 50%;
+  }
+}
 .home-card {
   display: flex;
   overflow: hidden;
@@ -416,7 +467,7 @@ a {
   justify-content: space-between;
 }
 .home-card__figcaption .heart {
-  index: 2;
+  z-index: 2;
   display: flex;
   width: 20%;
   font-family: "Font Awesome Kit";
@@ -427,7 +478,7 @@ a {
 .home-card__figcaption .heart .full-heart {
   display: none;
 }
-.home-card__figcaption .heart:hover .fa-regular {
+.home-card__figcaption .heart:hover .empty-heart {
   display: none;
 }
 .home-card__figcaption .heart:hover .full-heart {
@@ -449,13 +500,15 @@ a {
   font-size: 1rem;
 }
 
-.home-cover {
-  background-color: green;
-  margin: 0;
+@media screen and (min-width: 992px) {
+  .home-card {
+    max-width: 450px;
+    width: 35%;
+    margin: 25px 75px;
+  }
 }
 .home-cover__location {
   box-shadow: 0px 20px 5px -19px rgba(146, 145, 145, 0.51) inset;
-  display: flex;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -514,6 +567,33 @@ a {
   color: #353535;
 }
 
+@media screen and (min-width: 992px) {
+  .home-cover__location-form {
+    background-color: transparent;
+  }
+  .home-cover__div {
+    order: 1;
+  }
+  .home-cover__div-location {
+    order: 2;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid grey;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    height: 50px;
+  }
+  .home-cover__input-location {
+    background-color: white;
+    border: none;
+    font-weight: 550;
+    font-size: 16px;
+    color: #353535;
+  }
+}
 .home-cover {
   background-color: #f5f5f5;
   margin: 0;
@@ -638,10 +718,16 @@ a {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .step-number {
+    position: relative;
+    top: 40px;
+    left: 50%;
+  }
+}
 .home-steps__div-step {
   display: flex;
   flex-direction: column;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -656,6 +742,17 @@ a {
   max-width: 420px;
 }
 
+@media screen and (min-width: 992px) {
+  .home-steps__div-step {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px auto;
+  }
+  .home-steps__div-step a {
+    min-width: 330px;
+    max-width: 25%;
+  }
+}
 .home-card {
   display: flex;
   overflow: hidden;
@@ -715,7 +812,7 @@ a {
   justify-content: space-between;
 }
 .home-card__figcaption .heart {
-  index: 2;
+  z-index: 2;
   display: flex;
   width: 20%;
   font-family: "Font Awesome Kit";
@@ -726,7 +823,7 @@ a {
 .home-card__figcaption .heart .full-heart {
   display: none;
 }
-.home-card__figcaption .heart:hover .fa-regular {
+.home-card__figcaption .heart:hover .empty-heart {
   display: none;
 }
 .home-card__figcaption .heart:hover .full-heart {
@@ -748,19 +845,45 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .home-card {
+    max-width: 450px;
+    width: 35%;
+    margin: 25px 75px;
+  }
+}
 .home-restaurant {
   background-color: #f5f5f5;
   padding-bottom: 40px;
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .home-restaurant__div-list {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .footer__nav li {
   padding-bottom: 7px;
 }
 .footer__nav li i {
   margin-right: 10px;
 }
+.footer__nav li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
 
+@media screen and (min-width: 992px) {
+  .footer__nav {
+    justify-content: space-evenly;
+    display: flex;
+  }
+}
 .footer {
   height: 160px;
   font-size: 1rem;
@@ -776,6 +899,20 @@ a {
   font-family: "shrikhand", sans-serif;
 }
 
+@media screen and (min-width: 992px) {
+  .footer {
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 200px;
+  }
+  .footer__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .rest-cover {
   height: 220px;
   object-fit: cover;
@@ -891,7 +1028,7 @@ a {
   overflow: hidden;
 }
 .rest-menu__div-title .heart {
-  index: 2;
+  z-index: 2;
   display: flex;
   width: 20%;
   font-family: "Font Awesome Kit";
@@ -902,7 +1039,7 @@ a {
 .rest-menu__div-title .heart .full-heart {
   display: none;
 }
-.rest-menu__div-title .heart:hover .fa-regular {
+.rest-menu__div-title .heart:hover .empty-heart {
   display: none;
 }
 .rest-menu__div-title .heart:hover .full-heart {
