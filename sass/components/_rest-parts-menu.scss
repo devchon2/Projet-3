@@ -7,8 +7,6 @@
                 color:$darkgrey;
                 font-weight:400;
                 padding-bottom: 5px;;
-                
-             
             }
             .bar{                                       //BAR UNDER PART MENU TITLE
             width:40px;
@@ -17,4 +15,14 @@
         }
         
         }
+}
+@media all and (min-width:992px){
+    .part-menu{
+        width:25%;
+        &__title{
+           .title{ 
+                @include center;
+        }
+    }
+}
 }

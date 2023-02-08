@@ -56,22 +56,25 @@
 }
 
 @media screen and (min-width: 992px){
-    .home-cover{
+    .home-cover{ 
+        
         &__location-form{
             background-color: transparent;     
         }
         &__div{
-            order:1;
-            &-location{ 
-                order:2;
+            &-location{                                     //DIV CONTENT FOR INPUT LOCATION
+                margin:0 auto;
                 background-color:white;
-                border-radius: 25px;;
+                border-radius: 25px;
                 border:1px solid grey;
                 width:350px;
-                @include center;
                 box-shadow:none;
                 height:50px;
-            }}
+            }
+        }
+       
+        
+        
         &__input-location{
             background-color: white;
                border:none;

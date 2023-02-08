@@ -24,4 +24,37 @@
     margin:20px auto 10px;
     @include text-center;
     }
-}  
+}
+
+
+    @media screen and (min-width: 992px){
+        .home-cover{   
+        background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);                              //SECTION COVER HOME PAGE
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        padding-top:50px;     
+        margin:0 auto; 
+        &__div{                                                                                                     //SECTION COVER WHITE SQUARE
+            @include column;
+            background-color: white; opacity: 0.66;
+            padding:20px 0;
+            height:200px;
+            width:40%;
+            margin:100px auto;
+            justify-content: center;
+        }
+        &__subtitle{                                                                                            //PARAGRAPH IN WHITE SQUARE 
+            color:$darkgrey;
+            font-weight:bold;
+            font-size:1.5rem;
+            color:black;
+        }
+        &__title{                                                                                               //PRESENTATION TITLE IN WHITE SQUARE
+            margin:0 auto;
+            color:black;
+            font-size: 1.7rem;
+            
+        }    
+    }
+    }
