@@ -37,8 +37,10 @@
     background: $gradient-color;
     a{
             color:white;
-        }
-    
+    }
+    &:hover{
+        background:linear-gradient(170deg,adjust-hue($pink, -20deg),adjust-hue($violet, -20deg));
+    };
 }
 @mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
     .heart{

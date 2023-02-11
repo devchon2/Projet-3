@@ -6,7 +6,8 @@
 
 
 .cta-btn{                                           //Call-to-action Gradient
-    @include call-to-action
+    @include call-to-action;
+    
 }
 .cta-btn-order{
     
