@@ -39,7 +39,7 @@
             color:white;
     }
     &:hover{
-        background:linear-gradient(170deg,adjust-hue($pink, -20deg),adjust-hue($violet, -20deg));
+        background:linear-gradient(170deg,lighten($pink, 5%),lighten($violet, 5%));
     };
 }
 @mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
