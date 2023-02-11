@@ -124,6 +124,9 @@ a {
 .cta-btn a {
   color: white;
 }
+.cta-btn:hover {
+  background: linear-gradient(170deg, #f779ff, #6656dc);
+}
 
 .cta-btn-order {
   width: 230px;
@@ -148,6 +151,9 @@ a {
 }
 .cta-btn-order a {
   color: white;
+}
+.cta-btn-order:hover {
+  background: linear-gradient(170deg, #f779ff, #6656dc);
 }
 
 .step__btn {
@@ -238,6 +244,9 @@ a {
   }
   .cta-btn-order a {
     color: white;
+  }
+  .cta-btn-order:hover {
+    background: linear-gradient(170deg, #f779ff, #6656dc);
   }
   .step__btn .step-number {
     position: relative;
@@ -362,6 +371,9 @@ a {
 .cta-btn a {
   color: white;
 }
+.cta-btn:hover {
+  background: linear-gradient(170deg, #f779ff, #6656dc);
+}
 
 .cta-btn-order {
   width: 230px;
@@ -386,6 +398,9 @@ a {
 }
 .cta-btn-order a {
   color: white;
+}
+.cta-btn-order:hover {
+  background: linear-gradient(170deg, #f779ff, #6656dc);
 }
 
 .step__btn {
@@ -476,6 +491,9 @@ a {
   }
   .cta-btn-order a {
     color: white;
+  }
+  .cta-btn-order:hover {
+    background: linear-gradient(170deg, #f779ff, #6656dc);
   }
   .step__btn .step-number {
     position: relative;
@@ -738,6 +756,9 @@ a {
 .cta-btn a {
   color: white;
 }
+.cta-btn:hover {
+  background: linear-gradient(170deg, #f779ff, #6656dc);
+}
 
 .cta-btn-order {
   width: 230px;
@@ -762,6 +783,9 @@ a {
 }
 .cta-btn-order a {
   color: white;
+}
+.cta-btn-order:hover {
+  background: linear-gradient(170deg, #f779ff, #6656dc);
 }
 
 .step__btn {
@@ -852,6 +876,9 @@ a {
   }
   .cta-btn-order a {
     color: white;
+  }
+  .cta-btn-order:hover {
+    background: linear-gradient(170deg, #f779ff, #6656dc);
   }
   .step__btn .step-number {
     position: relative;

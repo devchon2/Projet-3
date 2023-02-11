@@ -8,6 +8,7 @@ $darkgrey:#353535;
 // cta button
 $cta-btn-radius:25px;
 $gradient-color:linear-gradient(170deg,$pink, $violet);
+$hue-gradient-color:linear-gradient(170deg,adjust-hue($pink, -50deg),adjust-hue($violet, -50deg));
 
 //step-buttons
 $step-btn-bg-color:$bg-lightgrey;
