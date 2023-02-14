@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Un délice pour les papilles grace à votre partenaire Booki">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
@@ -19,160 +19,157 @@
             <div class="header__div ">
                 
                 <div class="header__div-img">
-                    <a href="./index.html"><i class="fa-solid fa-arrow-left  .icn"></i></a>
-                    <img class="header__img return-display" src="images/logo/ohmyfood@2x.svg">
+                    <a href="./index.html"><i class="fa-solid fa-arrow-left fa-2xl .icn"></i></a>
+                    <img class="header__img return-display" src="images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise Booki">
                 </div>
             </div>
             
         </header>
 
-        <main>
-            <div class="section-cover__div-img">
-                <img class="section-cover__div-img .img"src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+        <main >
+           
+            <div class="rest-cover">                                    <!--COVER IMG BLOCK-->
+                <img class="rest-cover img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Une belle assiette dans un restaurant">
             </div>
 
-            <div class="section-card__div">                         <!-- FULL CARD MENU-->
-                <div class="section-card__div-title">               
-                    <h3 class="section-card__div-title restaurant-title">La note enchantée</h3>
-                    <i class="fa-regular fa-heart"></i> 
+            
+            <div class="rest-menu__container">                         <!-- FULL MENU CONTAINER-->
+                <div class="rest-menu__div-title rest-menu-title">                      <!--FULL TITLE + ICON-->
+                    <h3 class="rest-menu__div-title--title">Le délice des sens</h3>
+                    
+                    <div class="heart rest-heart">
+                        <i class="fa-solid fa-heart full-heart "></i> <i class="fa-regular fa-heart empty-heart"></i> 
+                    </div>
                 </div>
-                <div class="section-card__div-part-menu">           <!-- ENTRIES CARD MENU-->
-                    <div class="section-card__div-title-bar">
-                        <h4 class="section-card_div-part-menu-title">ENTRÉES</h4>
+                <div class="rest-menu__div-part-menu">
+                <div class="part-menu">           <!-- ENTRIES CARD MENU-->
+                    <div class="part-menu__title-bar">
+                        <h4 class="title">ENTRÉES</h4>
                         <div class="bar"></div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
-                            <h5>Ravioles de foie gras</h5>
-                            <p class="details">Accompagnée de leur crème à la truffe</p>
+                            <h5>Tartare de thon</h5>
+                            <p class="details">Assaisoné au yuzu</p>
                         </div>
                         <div class="price">25€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
-                            <h5>Caviar osciètre</h5>
-                            <p class="details">Sur blini à la farine de blé noir </p>
+                            <h5>Bouchées de homard croustillant</h5>
+                            <p class="details">Et sa farandole de petits légumes</p>
                         </div>
                         <div class="price">35€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
-                            <h5>Homard et espuma de mais</h5>
-                            <p class="details">Marinés aux zestes d'orange </p>
+                            <h5>Velouté de cèpes</h5>
+                            <p class="details">Aux truffes</p>
                         </div>
                         <div class="price">20€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                    <div class="section-card__div-card ">
-                        <div class="rich">
-                            <h5>Foie gras de canard cuit entier</h5>
-                            <p class="details">Confiture de figue et pain toasté</p>
-                        </div>
-                        <div class="price">35€</div>
-                        <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
                     </div>
                 </div>
-                <div class="section-card__div-part-menu">           <!-- LUNCH CARD MENU-->
-                    <div class="section-card__div-title-bar">
-                        <h4 class="section-card_div-part-menu-title">PLATS</h4>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="section-card__div-card ">
+                <div class="part-menu">               <!--PLAT CARD MENU-->
+                        <div class="part-menu__title-bar">
+                            <h4  class="title">PLATS</h4>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="rest-card ">
                         <div class="rich">
-                            <h5>Noix de coquilles Saint-Jacques</h5>
-                            <p class="details">Sur lit de purée de céléri-rave</p>
+                            <h5>Poulet rôti aux herbes de Provences</h5>
+                            <p class="details">Et sa crème de truffe</p>
                         </div>
                         <div class="price">40€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </div>
-                    <div class="section-card__div-card ">
+                        </div>
+                        <div class="rest-card ">
                         <div class="rich">
-                            <h5>Langoustine poêlée</h5>
-                            <p class="details">Et purée de patate douce </p>
+                            <h5>Langouste rôtie</h5>
+                            <p class="details">Et ses légumes de saison</p>
                         </div>
                         <div class="price">35€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </div>
-                    <div class="section-card__div-card ">
+                        </div>
+                        <div class="rest-card ">
                         <div class="rich">
-                            <h5>Mijoté de queue de boeuf </h5>
-                            <p >Et riz sauvage aux zestes de citron</p>
+                            <h5>Côte de bœuf Angus</h5>
+                            <p class="details">Et sa purée de panais</p>
                         </div>
                         <div class="price">44€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </div>
+                        </div>
                 </div>
-                <div class="section-card__div-part-menu">           <!-- DESSERT CARD MENU-->
-                    <div class="section-card__div-title-bar">
-                        <h4 class="section-card_div-part-menu-title">DESSERTS</h4>
+                <div class="part-menu">           <!-- DESSERTS CARD MENU-->
+                    <div class="part-menu__title-bar">
+                        <h4  class="title">DESSERTS</h4>
                         <div class="bar"></div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
-                            <h5>Macaron noisette et chocolat</h5>
-                            <p class="details">Glace au caramel brun et sel de Guérande</p>
+                            <h5>Farandole de desserts</h5>
+                            <p class="details">Du chef</p>
                         </div>
                         <div class="price">18€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
-                            <h5>Baba au rhum revisité</h5>
-                            <p class="details">Avec son coulis de citron</p>
+                            <h5>Crème brulée</h5>
+                            <p class="details">Revisitée</p>
                         </div>
                         <div class="price">22€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
                     </div>
-                    <div class="section-card__div-card ">
+                    <div class="rest-card ">
                         <div class="rich">
-                            <h5>Tarte au citron meringuée</h5>
-                            <p class="details">Destructurée </p>
+                            <h5>Tiramitsu</h5>
+                            <p class="details">À la noisette</p>
                         </div>
                         <div class="price">23€</div>
                         <div class="checked-box">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
                     </div>
-                </div>
-            <button class="section-card__div-cta-btn cta-btn order"><a href="#">Commander</a></button></div>
-                           
+                    
             
-                    
-                    
-
-        <footer class="section section-footer">
-            <h3 class="section-footer__title">ohmyfood</h3>
-            <nav class="section-footer__nav">
-                <ul class="section-footer__list partner">
+                </div>
+            </div>
+                <a href="#" class="cta-btn-order">Commander</a>
+            </div>
+        </main>
+            
+        <footer class="section footer">
+            <h3 class="footer__title">ohmyfood</h3>
+            <nav class="footer__nav">
+                <ul class="footer__list partner">
                     <li><i class="fa-solid fa-utensils fa-xs"></i> Proposer un restaurant</li>
                     <li><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
                 </ul>
-                <ul class="section-footer__list legal">
+                <ul class="footer__list legal">
                     <li>Mentions légales</li>
-                    <li>Contact</li>
+                    <li><a href="mailto:rchon@rchon.fr">Contact</a></li>
                 </ul>
             </nav>
 
-        </footer>
+            </footer>
     </body>
 </html>

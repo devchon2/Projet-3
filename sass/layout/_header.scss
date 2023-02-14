@@ -1,36 +1,60 @@
 
 .header{
+    width:100%;
     height:60px;
     padding:0;
-    &__div{                                             // DIV full-content 
-        Height:100%;
-        
+    &__div{                                             // DIV FULL HEADER 
+        height:100%;
         @include row;
         align-content: space-between;
         box-shadow: 0px 5px 15px #cfcfcf;
-        &-img{                                          
+        &-img{                                          //DIV IMG HEADER
+            padding-bottom: 5px;
             width:100%;
+            height:100%;
             @include row;
             @include text-center;
-            
             a{
-                
-                width:20%;
+                position:absolute;
+                top:20px;
+                left:20px;
                 align-self: center;
-                i{
+                i{                                      //BACKWARD ICON
+                    
                     width:40px;
                 }
             }
         }
     }
-    &__img{                                                 //Logo Picture
+    &__img{                                                 //Logo Picture div
+        align-self: flex-end;
         width:160px;
         margin:0 auto;
-        padding:15px 0;
-    }
-    .return-display{                                        //Centering Logo In Restaurant page
-        margin:0 auto 0 32.5px;
-
-    }
-    
+        padding:15px 0 10px;
+    }   
 }  
+
+@media screen and (min-width:992px){
+    .header{
+        height:100px;
+        &__div{
+            height:100%;
+            width:100%; 
+            box-shadow: none;
+       }
+        &__img{
+            width:360px;
+        }
+        a{
+            position:absolute;
+            top:40px;
+            left:40px;
+            align-self: center;
+        i{                                      //BACKWARD ICON
+            
+            width:40px;
+        }
+    }
+    }
+
+}

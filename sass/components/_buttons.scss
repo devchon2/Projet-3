@@ -6,39 +6,32 @@
 
 
 .cta-btn{                                           //Call-to-action Gradient
-    color:#f6e3f8;
-    @include center;
-    margin:50px auto;
-    box-sizing: border-box;
-    color: white;
-    font-size: 0.9rem;
-    font-weight:550;
-    border: none;
-    padding:15px 20px;
-    border-radius: $cta-btn-radius;
-    background: $cta-btn-bg-color;
-    a{
-            color:white;
-        }
+    @include call-to-action;
     
 }
-.order{
-    padding:17.5px 50px;
+.cta-btn-order{
+    
+    @include call-to-action;
+    width:50%;
+    margin:15px auto;
+    padding:15px 50px;
     font-size:1rem;
-    font-weight:500;
+    font-weight:400;
 }
-.step__btn{                                         //STEPS ORDER
+.step__btn{                                         //STEPS FORMULATION ORDER
     @include row;
     @include center;
     @include text-center;
     justify-content: flex-start;
     box-sizing: border-box;
+    width:90%;
+    max-width:450px;
     margin:10px auto;
     padding:20px 0;
     font-weight:700;
     background-color: $step-btn-bg-color;
     border-radius: $cta-btn-radius;
-    box-shadow: 0px 5px 15px #cfcfcf;
+    box-shadow: 0px 5px 15px $shadow;
     > p{                                       //PARGRAPH DIV FOR STEPS
         font-size: 1rem;
         font-weight: 550;
@@ -66,9 +59,39 @@
     }
     &:hover{
         background-color: #f5edff;
+        
         >i{
-            color:$violet
+            color:$violet;
+            
         }
     }
 }
 
+@media screen and (min-width:992px) {
+    .cta-btn{
+        width:100%;
+        height:100px;
+        border-radius:0;
+    }
+    .cta-btn-order{
+        height:100px;
+        font-size:1.7rem;
+        @include call-to-action;
+        border-radius:0;
+        width:100%;
+        margin:15px auto;
+        padding:15px 50px;
+        font-size:1rem;
+        font-weight:400;
+        position:relative;
+        top:50px;
+    }
+    .step__btn{
+       .step-number{
+        
+        position:relative;
+        top:40px;
+        left:50%;
+       }
+    }
+}
