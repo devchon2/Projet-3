@@ -5,10 +5,11 @@
 
 body {
     font-family: "roboto", sans-serif;
-}
+max-width:1400px;
+    margin:0 auto;}
 main{
-    height:100%;
     
+    overflow: hidden;
 }
 ul {
     list-style: none;
@@ -19,14 +20,23 @@ a {
     text-decoration: none;
     color:black;
 }
-section{
-    
-    width:100%;
-    margin-bottom: 60px;
+.section{
+    padding-bottom:25px;
 }
 .section__title{
     font-size:1.5rem;
     font-weight:600;
-    padding:50px 0 20px 20px;
+    padding:40px 0 20px 20px;
 }
-  
+
+@media screen and (min-width:992px){
+    .section{
+        padding-bottom:0
+    }
+    .section__title{
+        font-size:32px;
+        margin:0 auto;
+        max-width:1200px;
+        @include center;
+    }
+    }

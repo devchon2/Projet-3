@@ -1,0 +1,68 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../components/rest-card";
+@import "../../components/rest-parts-menu";
+
+
+.rest-menu{
+    background-color: $bg-lightgrey;
+    &__container{   
+                                            //RESTAURANT PAGE MENU CONTAINER
+        overflow:hidden;
+        padding:30px 0px;
+        position:relative;
+        top:0px;
+        bottom:30px;
+        background-color: $bg-lightgrey;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;     
+    }
+    &__div{
+           
+        &-title{
+            @include rest-heart-icons;
+            padding-left: 20px;
+            margin-bottom:20px;
+            width:100%;
+            justify-content: space-evenly;
+            @include row;
+            font-size:1.8rem;
+            overflow:hidden;
+            &-bar{                                  // TITLE PARTS DISPLAY 
+                padding:10px  20px 0px 20;
+                &:first-child{                             //TITLE 
+                    font-weight:400;
+                    color:#757575;
+                    padding-bottom: 5px;;
+                }
+            }
+            &--title{                             //RESTAURANT TITLE
+            font-size:1.8rem;
+            min-width:80%;
+            font-family: "shrikhand",sans-serif;
+            font-weight: 500;
+            
+            }
+}
+}
+}
+
+@media screen and (min-width:992px)
+    {
+        .rest-menu{
+            &__container{
+                border-radius:0;
+            }
+            &__div{
+                &-title{
+                    &--title{
+                        text-align:  center;
+                    }    
+                }
+                &-part-menu{
+                    @include row
+                }
+            }
+    }
+    }
+

@@ -18,6 +18,70 @@
 }
 
 @mixin inset-shadow{
-    box-shadow: -1px 20px 5px -20px rgba(0,0,0,0.51) inset;
+    box-shadow: 0px 20px 5px -19px rgba(146, 145, 145, 0.51) inset;
 
+}
+
+@mixin call-to-action{
+    width:230px;
+    line-height: 0.7rem;
+    @include center;
+    margin:30px auto;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1rem;
+    font-weight:500;
+    border: none;
+    padding: 20px;
+    border-radius: $cta-btn-radius;
+    background: $gradient-color;
+    box-shadow: 0 5px 15px $shadow;
+    a{
+            color:white;
+    }
+    &:hover{
+        background:linear-gradient(170deg,lighten($pink, 5%),lighten($violet, 5%));
+        box-shadow: 0 5px 15px darken($color: $shadow, $amount: 20deg);
+    };
+}
+@mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
+    .heart{
+        @include row;
+        font-family: "Font Awesome Kit";
+        justify-content:end;
+        font-size: 25px;
+        padding-right:20px;
+        .full-heart{                                    //FULL HEART DISPLAYED :NONE BY DEFAULT
+            display:none;
+        }
+        &:hover{
+                .empty-heart{
+                    display:none;
+                }
+                .full-heart{
+                    display:inline-block;
+                    background-image: -webkit-linear-gradient(170deg,$pink, $violet);
+                    background-image: $gradient-color;
+                    color:transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }         
+        }
+    
+    .rest-heart{
+        justify-content: flex-start;
+        padding-right: 40px;
+        
+        
+        
+    }
+} 
+  
+@mixin rest-heart-icons{
+    @include home-heart-icons;
+    
+    
+    width:10%;
+    @include center;
 }

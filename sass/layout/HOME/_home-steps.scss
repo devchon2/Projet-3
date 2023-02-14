@@ -1,0 +1,41 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../components/buttons";
+;
+;
+
+
+
+
+.home-steps{                                           //section HOME PAGE FORMULATION STEPS
+  
+    &__div-step{                        
+        @include column;
+        @include center; 
+        padding-left:10px;
+               
+    }
+    .icn{
+        line-height:1;
+        color:#757575;
+    }
+    a{
+        width:100%;
+        max-width:420px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .home-steps{                                           //section HOME PAGE FORMULATION STEPS
+        &__div-step{  
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin:50px auto;
+            a{
+                
+                min-width:330px;
+                max-width:25%;
+            }
+        }
+
+}}

@@ -1,0 +1,28 @@
+.part-menu{                                   // RESTAURANT PARTS MENU
+        padding:10px 20px;
+        
+        &__title-bar{                                     //RESTAURANT PART MENU TITLE
+            .title{    
+                font-family: "roboto"; 
+                color:$darkgrey;
+                font-weight:400;
+                padding-bottom: 5px;;
+            }
+            .bar{                                       //BAR UNDER PART MENU TITLE
+            width:40px;
+            border-bottom:$checked-color solid 3px;
+            
+        }
+        
+        }
+}
+@media all and (min-width:992px){
+    .part-menu{
+        width:25%;
+        &__title{
+           .title{ 
+                @include center;
+        }
+    }
+}
+}
