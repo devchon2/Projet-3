@@ -9,7 +9,7 @@
     &__container{   
                                             //RESTAURANT PAGE MENU CONTAINER
         overflow:hidden;
-        padding:30px 0px;
+        padding:30px 20px;
         position:relative;
         top:0px;
         bottom:30px;
@@ -21,10 +21,10 @@
            
         &-title{
             @include rest-heart-icons;
-            padding-left: 20px;
+            
             margin-bottom:20px;
             width:100%;
-            justify-content: space-evenly;
+            justify-content:start ;
             @include row;
             font-size:1.8rem;
             overflow:hidden;
@@ -41,6 +41,8 @@
             min-width:80%;
             font-family: "shrikhand",sans-serif;
             font-weight: 500;
+            min-width:0;
+            padding-right:20px
             
             }
 }
@@ -58,7 +60,7 @@
                     padding-left:0px;
                     &--title{
                         
-                        min-width:0;
+                        
                         text-align:  center;
                     }  
                     
