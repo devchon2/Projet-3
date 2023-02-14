@@ -35,11 +35,13 @@
     padding: 20px;
     border-radius: $cta-btn-radius;
     background: $gradient-color;
+    box-shadow: 0 5px 15px $shadow;
     a{
             color:white;
     }
     &:hover{
         background:linear-gradient(170deg,lighten($pink, 5%),lighten($violet, 5%));
+        box-shadow: 0 5px 15px darken($color: $shadow, $amount: 20deg);
     };
 }
 @mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT

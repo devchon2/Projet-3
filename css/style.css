@@ -120,12 +120,14 @@ a {
   padding: 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 5px 15px rgb(160, 160, 160);
 }
 .cta-btn a {
   color: white;
 }
 .cta-btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 15px #6d6d6d;
 }
 
 .cta-btn-order {
@@ -143,6 +145,7 @@ a {
   padding: 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 5px 15px rgb(160, 160, 160);
   width: 50%;
   margin: 15px auto;
   padding: 15px 50px;
@@ -154,6 +157,7 @@ a {
 }
 .cta-btn-order:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 15px #6d6d6d;
 }
 
 .step__btn {
@@ -174,7 +178,7 @@ a {
   font-weight: 700;
   background-color: #f5f5f5;
   border-radius: 25px;
-  box-shadow: 0px 5px 15px #cfcfcf;
+  box-shadow: 0px 5px 15px rgb(160, 160, 160);
 }
 .step__btn > p {
   font-size: 1rem;
@@ -233,6 +237,7 @@ a {
     padding: 20px;
     border-radius: 25px;
     background: linear-gradient(170deg, #FF79DA, #9356DC);
+    box-shadow: 0 5px 15px rgb(160, 160, 160);
     border-radius: 0;
     width: 100%;
     margin: 15px auto;
@@ -247,6 +252,7 @@ a {
   }
   .cta-btn-order:hover {
     background: linear-gradient(170deg, #ff93e1, #a16be0);
+    box-shadow: 0 5px 15px #6d6d6d;
   }
   .step__btn .step-number {
     position: relative;
@@ -367,12 +373,14 @@ a {
   padding: 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 5px 15px rgb(160, 160, 160);
 }
 .cta-btn a {
   color: white;
 }
 .cta-btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 15px #6d6d6d;
 }
 
 .cta-btn-order {
@@ -390,6 +398,7 @@ a {
   padding: 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 5px 15px rgb(160, 160, 160);
   width: 50%;
   margin: 15px auto;
   padding: 15px 50px;
@@ -401,6 +410,7 @@ a {
 }
 .cta-btn-order:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 15px #6d6d6d;
 }
 
 .step__btn {
@@ -421,7 +431,7 @@ a {
   font-weight: 700;
   background-color: #f5f5f5;
   border-radius: 25px;
-  box-shadow: 0px 5px 15px #cfcfcf;
+  box-shadow: 0px 5px 15px rgb(160, 160, 160);
 }
 .step__btn > p {
   font-size: 1rem;
@@ -480,6 +490,7 @@ a {
     padding: 20px;
     border-radius: 25px;
     background: linear-gradient(170deg, #FF79DA, #9356DC);
+    box-shadow: 0 5px 15px rgb(160, 160, 160);
     border-radius: 0;
     width: 100%;
     margin: 15px auto;
@@ -494,6 +505,7 @@ a {
   }
   .cta-btn-order:hover {
     background: linear-gradient(170deg, #ff93e1, #a16be0);
+    box-shadow: 0 5px 15px #6d6d6d;
   }
   .step__btn .step-number {
     position: relative;
@@ -752,12 +764,14 @@ a {
   padding: 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 5px 15px rgb(160, 160, 160);
 }
 .cta-btn a {
   color: white;
 }
 .cta-btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 15px #6d6d6d;
 }
 
 .cta-btn-order {
@@ -775,6 +789,7 @@ a {
   padding: 20px;
   border-radius: 25px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 5px 15px rgb(160, 160, 160);
   width: 50%;
   margin: 15px auto;
   padding: 15px 50px;
@@ -786,6 +801,7 @@ a {
 }
 .cta-btn-order:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 15px #6d6d6d;
 }
 
 .step__btn {
@@ -806,7 +822,7 @@ a {
   font-weight: 700;
   background-color: #f5f5f5;
   border-radius: 25px;
-  box-shadow: 0px 5px 15px #cfcfcf;
+  box-shadow: 0px 5px 15px rgb(160, 160, 160);
 }
 .step__btn > p {
   font-size: 1rem;
@@ -865,6 +881,7 @@ a {
     padding: 20px;
     border-radius: 25px;
     background: linear-gradient(170deg, #FF79DA, #9356DC);
+    box-shadow: 0 5px 15px rgb(160, 160, 160);
     border-radius: 0;
     width: 100%;
     margin: 15px auto;
@@ -879,6 +896,7 @@ a {
   }
   .cta-btn-order:hover {
     background: linear-gradient(170deg, #ff93e1, #a16be0);
+    box-shadow: 0 5px 15px #6d6d6d;
   }
   .step__btn .step-number {
     position: relative;
