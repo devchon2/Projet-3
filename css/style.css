@@ -66,17 +66,17 @@ a {
 }
 
 .span-loader {
-  color: white;
+  color: #353535;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  animation: spin-bg 0.75s linear infinite, font-pulse 1.5s linear infinite;
-  -webkit-animation: spin-bg 0.75s linear infinite, font-pulse 1.5s linear infinite;
+  animation: spin-bg 0.25s linear infinite, font-pulse 1.5s linear infinite;
+  -webkit-animation: spin-bg 0.25s linear infinite, font-pulse 1.5s linear infinite;
 }
 
 @keyframes loader-display {
@@ -91,15 +91,15 @@ a {
 }
 @keyframes font-pulse {
   0% {
-    font-size: 1rem;
+    font-size: 0rem;
     font-weight: 400;
   }
   50% {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: bold;
   }
   100% {
-    font-size: 1rem;
+    font-size: 0rem;
     font-weight: 400;
   }
 }
