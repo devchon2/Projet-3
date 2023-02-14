@@ -5,8 +5,6 @@
 
 body {
   font-family: "roboto", sans-serif;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 main {
@@ -1028,6 +1026,7 @@ a {
   .home-restaurant__div-list {
     margin: 0 5%;
     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -1204,10 +1203,6 @@ a {
   border-top-right-radius: 40px;
 }
 .rest-menu__div-title {
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-left: 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -1239,7 +1234,10 @@ a {
 }
 .rest-menu__div-title .rest-heart {
   justify-content: flex-start;
-  padding-left: 40px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rest-menu__div-title-bar {
   padding: 10px 20px 0px 20;
@@ -1261,21 +1259,23 @@ a {
     border-radius: 0;
   }
   .rest-menu__div-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 0px;
   }
   .rest-menu__div-title--title {
-    text-align: center;
-    box-sizing: content-box;
     min-width: 0;
+    text-align: center;
   }
   .rest-menu__div-part-menu {
     display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: start;
+    margin-top: 50px;
+    align-items: flex-start;
+  }
+  .rest-menu-title {
+    padding-left: 0;
+    justify-content: center;
   }
 }
 

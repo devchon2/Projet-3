@@ -10,11 +10,11 @@
 @media screen and (min-width:992px){
 .home-restaurant{
         &__div-list{
-<<<<<<< HEAD
+
             margin:0 5%;
-=======
+
             @include row;
->>>>>>> c1389a3b45759854dceafb64959418a965acde20
+
             @include center;
             flex-wrap: wrap;
         }
