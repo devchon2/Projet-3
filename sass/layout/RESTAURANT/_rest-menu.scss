@@ -53,6 +53,7 @@
     {
         .rest-menu{
             &__container{
+                padding:0;
                 border-radius:0;
             }
             &__div{
@@ -73,8 +74,7 @@
                 }
             }
     }.rest-menu-title{
-                        
-                        padding-left:0;
-                        justify-content:center;
+        padding-top:40px;
+        justify-content:center;
                     }  
     }

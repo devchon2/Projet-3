@@ -1,6 +1,5 @@
 .loader{                                                //SUPERPOSED LAYER
     z-index:99;
-    
     background:#ffffff;
     background:opacity 0.8;
     //CREATE LOADER
@@ -17,7 +16,7 @@
 .span{                                                  //DIV OF LOADER
     width:100%;
     height:100%;
-    border:10px solid $darkgrey;
+    border:3px solid $darkgrey;
     opacity: 1;
 } 
 .span-loader{
@@ -30,8 +29,8 @@
         @include text-center;
     background:linear-gradient(170deg,$pink, $violet);
     
-    animation:spin-bg  0.5s linear  infinite,font-pulse 2.5s linear infinite;
-    -webkit-animation:spin-bg  0.5s linear  infinite,font-pulse 2.5s linear infinite;
+    animation:spin-bg  0.75s linear  infinite,font-pulse 1.5s linear infinite;
+    -webkit-animation:spin-bg  0.75s linear  infinite,font-pulse 1.5s linear infinite;
 }
 
 @keyframes loader-display{
@@ -41,6 +40,7 @@
     100%{
         opacity:0;
         display:none;
+        z-index:-1;
     }
 }
 @keyframes font-pulse{
