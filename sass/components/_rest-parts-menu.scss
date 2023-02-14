@@ -22,6 +22,7 @@
         &__title{
            .title{ 
                 @include center;
+<<<<<<< HEAD
             }
             &-bar{
                     @include column;
@@ -30,4 +31,9 @@
             }
     }
 
+=======
+        }
+    }
+}
+>>>>>>> c1389a3b45759854dceafb64959418a965acde20
 }

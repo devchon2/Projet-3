@@ -69,6 +69,7 @@
             }         
         }
     
+<<<<<<< HEAD
     
 } 
   
@@ -77,10 +78,23 @@
     .rest-heart{
         justify-content: flex-start;
         padding-left: 40px;
+=======
+    .rest-heart{
+        justify-content: flex-start;
+        padding-right: 40px;
+>>>>>>> c1389a3b45759854dceafb64959418a965acde20
         
         
         
     }
+<<<<<<< HEAD
+=======
+} 
+  
+@mixin rest-heart-icons{
+    @include home-heart-icons;
+    
+>>>>>>> c1389a3b45759854dceafb64959418a965acde20
     
     width:10%;
     @include center;
