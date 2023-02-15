@@ -19,10 +19,9 @@
         font-family: "shrikhand",sans-serif;
     }
 }  
-@media screen and (min-width:992px){
+@media screen and (min-width:768px){       //FOOTER PLACEMENT FOR TABLET AND DESKTOP
     .footer{
         margin: 0 auto;
-        
         height:200px;
         &__title{
             margin-bottom: 20px;

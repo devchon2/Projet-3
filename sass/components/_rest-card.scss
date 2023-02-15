@@ -2,21 +2,29 @@
 @import "../utils/functions";
 @import "../utils/mixins";
 .rest-card{                                         //CARDS FOR MENU
-    background-color: white;
+    background-color: white;//overflow:hidden;
     border-radius:15px;
     @include row;
     justify-content:space-between;
-    margin:12.5px 0;
+    animation: sliding-card 1s linear 0.3s for;
+    margin:12.5px auto;
     width:100%;
+    max-width:500px;
+    overflow:hidden;
     box-shadow: 0px 5px 10px #e8e8e8;
     padding:2.5px px;
-    .rich{        
-        padding:10px 0 10px 10px ;                              //CONTENTS OF CARD
-        width:78%;
-        justify-items:start;
+    .rich{                                          //CONTENTS OF CARD
+        padding:10px 0 10px 10px ;  
+        transition:width 0.5s 0.3s;                            
+        min-width:50%;
+        width:80%;
+        justify-self:start;
         @include column;
         box-sizing: border-box;
         font-weight:400;
+        overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis ;
         h5{                                     //NAME OF CARDS
             overflow: hidden;
             white-space: nowrap;
@@ -28,6 +36,7 @@
             }
         .details{   
                                               //DEFINITION OF CARDS
+            
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis ;
@@ -36,39 +45,40 @@
             color:$darkgrey;
             
         }
-        
     }
-    .price{
-        color:$darkgrey;
+    .price-check{                                         //PRICE OF MENU
+        @include row;
+        transition:transform 0.5s 0.3s;
+        .price{
         height:100%;
+        display:block;
+        background-color: white;;
+        padding-right:15px;
+        padding-top:35px;
+        text-align: end;
+        color:$darkgrey;
         font-weight:650;
         font-size: 0.95rem;
-        padding-right:15px;
-        text-align: end;
-        align-self: flex-end;
-        padding-bottom:15px;
         }  
     .checked-box{                               //CHECKBOX
-        display:none;
-    }
-    &:hover{
-        .rich{
-            max-width:75%
-        } 
-        .price{
-            justify-self: end;
-        }
-        .checked-box{
-            box-sizing: border-box;
-            width: 50px;
-            color:white;
-            display:inline-flex;
-            align-items: center;
+        margin-right:-4.4rem;
+        overflow:hidden;
+        width:70px;
+        transition:transform 0.5s 0.3s;
+        height:100%;
+        @include center;
             justify-content: center;
             background-color: $checked-color;
             border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-                
+            border-bottom-right-radius: 15px;box-sizing: content-box;color:white;  
+    }}
+    &:hover{
+        .rich{
+           width:60%; 
         }
+        .price-check{
+            transform:translate(-4.4rem)
+        }
+         
     }
 }

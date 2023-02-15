@@ -1,17 +1,16 @@
-.home-card {
+.home-card {                                        //HOME RESTAURANT CARDS
     @include row;
     overflow: hidden;
     border-radius: $card-radius;
-    width: 90%;
+    width:90%;
+    max-width: 350px;
     margin: 0px auto 15px auto;; /*2*/
     background-color: white; /*3*/
     box-shadow:0px 1px 15px -10px #000000;
-    
     a{
         width:100%
     }
     &__figure{
-        
         width:100%;
         display:inline-block;
         &-div{
@@ -46,7 +45,6 @@
             object-position: center;
         }
     }
-    
     &__figcaption{
         height:60px;
             padding:0 5px 5px 15px;
@@ -60,16 +58,14 @@
             font-size:1.1rem;
             padding-bottom: 5px;;
         }
-        p{
-            
+        p{                                                                  //HOME CARD DETAILS
             font-size:1rem;
         }
 }
     
 @media screen and (min-width:992px){
         .home-card{
-            width: 350px;
-            
+            width: 350px; 
             margin:25px auto;
         }
 }
