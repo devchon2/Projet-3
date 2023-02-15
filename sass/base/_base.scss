@@ -9,7 +9,8 @@ body {
 }
 main{  
     overflow: hidden;
-}
+    }
+
 ul {
     list-style: none;
 }
@@ -38,4 +39,4 @@ a {
         max-width:1200px;
         @include center;
     }
-    }
+}
