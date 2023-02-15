@@ -1,12 +1,14 @@
 @import "../utils/variables";
 @import "../utils/functions";
 @import "../utils/mixins";
-.rest-card{                                         //CARDS FOR MENU
+.rest-card{    
+    cursor:pointer;
+                                       //CARDS FOR MENU
     background-color: white;//overflow:hidden;
     border-radius:15px;
     @include row;
     justify-content:space-between;
-    animation: sliding-card 1s linear 0.3s for;
+ //   animation: sliding-card 1s linear 0.3s for;
     margin:12.5px auto;
     width:100%;
     max-width:500px;
@@ -46,14 +48,14 @@
             
         }
     }
-    .price-check{                                         //PRICE OF MENU
+    .price-check{                                         //CONTAINER PRICE/CHECK
         @include row;
         transition:transform 0.5s 0.3s;
-        .price{
+        .price{                                         //PRICE OF MENU
         height:100%;
         display:block;
         background-color: white;;
-        padding-right:15px;
+        padding-right:20px;
         padding-top:35px;
         text-align: end;
         color:$darkgrey;
@@ -63,14 +65,14 @@
     .checked-box{                               //CHECKBOX
         margin-right:-4.4rem;
         overflow:hidden;
-        width:70px;
+        width:60px;
         transition:transform 0.5s 0.3s;
         height:100%;
         @include center;
-            justify-content: center;
-            background-color: $checked-color;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;box-sizing: content-box;color:white;  
+        justify-content: center;
+        background-color: $checked-color;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;box-sizing: content-box;color:white; 
     }}
     &:hover{
         .rich{
@@ -79,6 +81,17 @@
         .price-check{
             transform:translate(-4.4rem)
         }
-         
+        i{
+            rotate: 360deg ;
+            animation:check-rotation 0.5s 0.3s forwards;
+            @keyframes check-rotation{
+                from{
+                    rotate:0deg;
+                }
+                to{
+                    rotate:720deg
+                }
+            }
+        }
     }
 }

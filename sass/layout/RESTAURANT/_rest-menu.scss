@@ -8,6 +8,8 @@
     background-color: $bg-lightgrey;
     &__container{                                   //RESTAURANT PAGE MENU CONTAINER                        
         overflow:hidden;
+        margin:0 auto;
+        max-width:520px;
         padding:30px 20px;
         position:relative;
         top:0px;
@@ -51,6 +53,7 @@
         &__container{                                         // RESTAURANT PAGE MENU CARD CONTAINER
             padding:0;
             padding-bottom:40px;
+            max-width:80%
         }
         &__div{
             &-title{
@@ -80,6 +83,7 @@
             &__container{
                 padding:0;
                 border-radius:0;
+                max-width:none;
             }
             &__div{
                 &-title{

@@ -105,10 +105,12 @@ a {
   75% {
     font-size: 2.5rem;
     font-weight: 900;
+    opacity: 1;
   }
   100% {
     font-size: 80rem;
-    font-weight: 100;
+    font-weight: 900;
+    opacity: 0;
   }
 }
 @keyframes spin-bg {
@@ -1255,11 +1257,11 @@ a {
   }
 }
 .rest-card {
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  animation: sliding-card 1s linear 0.3s for;
   margin: 12.5px auto;
   width: 100%;
   max-width: 500px;
@@ -1305,7 +1307,7 @@ a {
   height: 100%;
   display: block;
   background-color: white;
-  padding-right: 15px;
+  padding-right: 20px;
   padding-top: 35px;
   text-align: end;
   color: #353535;
@@ -1315,7 +1317,7 @@ a {
 .rest-card .price-check .checked-box {
   margin-right: -4.4rem;
   overflow: hidden;
-  width: 70px;
+  width: 60px;
   transition: transform 0.5s 0.3s;
   height: 100%;
   display: flex;
@@ -1333,6 +1335,18 @@ a {
 }
 .rest-card:hover .price-check {
   transform: translate(-4.4rem);
+}
+.rest-card:hover i {
+  rotate: 360deg;
+  animation: check-rotation 0.5s 0.3s forwards;
+}
+@keyframes check-rotation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 720deg;
+  }
 }
 
 .part-menu {
@@ -1394,6 +1408,8 @@ a {
 }
 .rest-menu__container {
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 520px;
   padding: 30px 20px;
   position: relative;
   top: 0px;
@@ -1464,6 +1480,7 @@ a {
   .rest-menu__container {
     padding: 0;
     padding-bottom: 40px;
+    max-width: 80%;
   }
   .rest-menu__div-title {
     padding-left: 0px;
@@ -1486,6 +1503,7 @@ a {
   .rest-menu__container {
     padding: 0;
     border-radius: 0;
+    max-width: none;
   }
   .rest-menu__div-title {
     padding-left: 0px;
