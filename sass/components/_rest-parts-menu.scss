@@ -1,5 +1,5 @@
 .part-menu{                                   // RESTAURANT PARTS MENU
-        padding:10px 20px;
+        padding:10px 0px;
         
         &__title-bar{                                     //RESTAURANT PART MENU TITLE
             .title{    
@@ -19,10 +19,16 @@
 @media all and (min-width:992px){
     .part-menu{
         width:25%;
+        margin:0 20px;
         &__title{
            .title{ 
                 @include center;
-        }
+            }
+            &-bar{
+                    @include column;
+                    @include center;
+                }
+            }
     }
-}
+
 }

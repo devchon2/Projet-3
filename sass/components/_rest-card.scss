@@ -12,9 +12,10 @@
     padding:2.5px px;
     .rich{        
         padding:10px 0 10px 10px ;                              //CONTENTS OF CARD
-        width:65%;
+        width:78%;
         justify-items:start;
         @include column;
+        box-sizing: border-box;
         font-weight:400;
         h5{                                     //NAME OF CARDS
             overflow: hidden;
@@ -23,6 +24,7 @@
             padding-bottom: 5px;
             font-size:1.1rem;
             font-weight:500;
+            
             }
         .details{   
                                               //DEFINITION OF CARDS
@@ -31,14 +33,14 @@
             text-overflow: ellipsis ;
             font-size:0.95rem;
             font-weight:300;
-            color:$darkgrey
+            color:$darkgrey;
+            
         }
         
     }
     .price{
         color:$darkgrey;
         height:100%;
-        
         font-weight:650;
         font-size: 0.95rem;
         padding-right:15px;
@@ -51,10 +53,13 @@
     }
     &:hover{
         .rich{
-            
-            width:65%;
-        }   
+            max-width:75%
+        } 
+        .price{
+            justify-self: end;
+        }
         .checked-box{
+            box-sizing: border-box;
             width: 50px;
             color:white;
             display:inline-flex;
@@ -62,7 +67,8 @@
             justify-content: center;
             background-color: $checked-color;
             border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;    
+            border-bottom-right-radius: 15px;
+                
         }
     }
 }

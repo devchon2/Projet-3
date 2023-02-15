@@ -44,44 +44,54 @@
         box-shadow: 0 5px 15px darken($color: $shadow, $amount: 20deg);
     };
 }
+
+
 @mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
     .heart{
+        align-items:center;
+        .fa-heart{
+            
+            position:absolute;
+            transition:  opacity 1s;
+            
+        }
         @include row;
         font-family: "Font Awesome Kit";
         justify-content:end;
         font-size: 25px;
         padding-right:20px;
+        
         .full-heart{                                    //FULL HEART DISPLAYED :NONE BY DEFAULT
-            display:none;
-        }
-        &:hover{
-                .empty-heart{
-                    display:none;
-                }
-                .full-heart{
-                    display:inline-block;
-                    background-image: -webkit-linear-gradient(170deg,$pink, $violet);
+            opacity:0;
+            background-image: -webkit-linear-gradient(170deg,$pink, $violet);
                     background-image: $gradient-color;
                     color:transparent;
                     -webkit-background-clip: text;
                     background-clip: text;
+        }
+        .empty-heart{
+            opacity:1;
+        }
+        &:hover{
+                
+            .empty-heart{
+                    opacity:0;
+                }
+                .full-heart{
+                    opacity:1;
+                    
                 }
             }         
         }
     
-    .rest-heart{
-        justify-content: flex-start;
-        padding-right: 40px;
-        
-        
-        
-    }
+
 } 
   
 @mixin rest-heart-icons{
     @include home-heart-icons;
-    
-    
-    width:10%;
-    @include center;
-}
+    .rest-heart{
+        
+        padding-left:20px;
+        margin:0;
+        
+    }}
