@@ -11,6 +11,11 @@
     }
 } 
 
+@media screen and (min-width:768px) and (max-width:991px){
+    .footer__nav{
+        justify-content: space-evenly;
+        @include row;
+    }}
 @media screen and (min-width:992px){
     .footer__nav{
         justify-content: space-evenly;

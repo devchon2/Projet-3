@@ -86,7 +86,6 @@ a {
   }
   100% {
     opacity: 0;
-    display: none;
     z-index: -1;
   }
 }
@@ -96,15 +95,15 @@ a {
     font-weight: 100;
   }
   25% {
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 900;
   }
   50% {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
   }
   75% {
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 900;
   }
   100% {
@@ -372,6 +371,7 @@ a {
   overflow: hidden;
   border-radius: 15px;
   width: 90%;
+  max-width: 350px;
   margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 1px 15px -10px #000000;
@@ -635,6 +635,7 @@ a {
   overflow: hidden;
   border-radius: 15px;
   width: 90%;
+  max-width: 350px;
   margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 1px 15px -10px #000000;
@@ -1064,6 +1065,7 @@ a {
   overflow: hidden;
   border-radius: 15px;
   width: 90%;
+  max-width: 350px;
   margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 1px 15px -10px #000000;
@@ -1192,6 +1194,12 @@ a {
   color: #f5f5f5;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer__nav {
+    justify-content: space-evenly;
+    display: flex;
+  }
+}
 @media screen and (min-width: 992px) {
   .footer__nav {
     justify-content: space-evenly;
@@ -1213,7 +1221,7 @@ a {
   font-family: "shrikhand", sans-serif;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer {
     margin: 0 auto;
     height: 200px;
@@ -1251,19 +1259,27 @@ a {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  margin: 12.5px 0;
+  animation: sliding-card 1s linear 0.3s for;
+  margin: 12.5px auto;
   width: 100%;
+  max-width: 500px;
+  overflow: hidden;
   box-shadow: 0px 5px 10px #e8e8e8;
   padding: 2.5px px;
 }
 .rest-card .rich {
   padding: 10px 0 10px 10px;
-  width: 78%;
-  justify-items: start;
+  transition: width 0.5s 0.3s;
+  min-width: 50%;
+  width: 80%;
+  justify-self: start;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .rest-card .rich h5 {
   overflow: hidden;
@@ -1281,39 +1297,47 @@ a {
   font-weight: 300;
   color: #353535;
 }
-.rest-card .price {
-  color: #353535;
+.rest-card .price-check {
+  display: flex;
+  transition: transform 0.5s 0.3s;
+}
+.rest-card .price-check .price {
   height: 100%;
+  display: block;
+  background-color: white;
+  padding-right: 15px;
+  padding-top: 35px;
+  text-align: end;
+  color: #353535;
   font-weight: 650;
   font-size: 0.95rem;
-  padding-right: 15px;
-  text-align: end;
-  align-self: flex-end;
-  padding-bottom: 15px;
 }
-.rest-card .checked-box {
-  display: none;
-}
-.rest-card:hover .rich {
-  max-width: 75%;
-}
-.rest-card:hover .price {
-  justify-self: end;
-}
-.rest-card:hover .checked-box {
-  box-sizing: border-box;
-  width: 50px;
-  color: white;
-  display: inline-flex;
+.rest-card .price-check .checked-box {
+  margin-right: -4.4rem;
+  overflow: hidden;
+  width: 70px;
+  transition: transform 0.5s 0.3s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  box-sizing: content-box;
+  color: white;
+}
+.rest-card:hover .rich {
+  width: 60%;
+}
+.rest-card:hover .price-check {
+  transform: translate(-4.4rem);
 }
 
 .part-menu {
   padding: 10px 0px;
+  margin: 0px auto;
 }
 .part-menu__title-bar .title {
   font-family: "roboto";
@@ -1326,10 +1350,31 @@ a {
   border-bottom: #99E2D0 solid 3px;
 }
 
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .part-menu {
+    width: 100%;
+    margin: 0;
+  }
+  .part-menu__title .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .part-menu__title-bar {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .part-menu__title-bar .title {
+    font-size: rem;
+  }
+}
 @media all and (min-width: 992px) {
   .part-menu {
-    width: 25%;
-    margin: 0 20px;
+    width: 30%;
+    min-width: 310px;
   }
   .part-menu__title .title {
     display: flex;
@@ -1358,10 +1403,10 @@ a {
   border-top-right-radius: 40px;
 }
 .rest-menu__div-title {
+  display: flex;
   margin-bottom: 20px;
   width: 100%;
   justify-content: start;
-  display: flex;
   font-size: 1.8rem;
   overflow: hidden;
 }
@@ -1415,6 +1460,28 @@ a {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 762px) and (max-width: 991px) {
+  .rest-menu__container {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .rest-menu__div-title {
+    padding-left: 0px;
+  }
+  .rest-menu__div-title--title {
+    text-align: center;
+  }
+  .rest-menu__div-part-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .rest-menu-title {
+    padding-top: 40px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .rest-menu__container {
     padding: 0;
@@ -1428,11 +1495,9 @@ a {
   }
   .rest-menu__div-part-menu {
     display: flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 50px;
     align-items: flex-start;
+    justify-content: space-evenly;
   }
   .rest-menu-title {
     padding-top: 40px;
