@@ -84,11 +84,12 @@
         font-size:1rem;
         font-weight:400;
         position:relative;
-        top:50px;
+        top:25px;
     }
     .step__btn{
         @include text-center;
        .step-number{
+
         position:relative;
         top:40px;
         left:130px;

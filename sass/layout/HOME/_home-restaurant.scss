@@ -10,8 +10,9 @@
 @media screen and (min-width:992px){
 .home-restaurant{
         &__div-list{
-
-            margin:0 5%;
+            @include center;
+            max-width:1040px;
+            margin:0 auto;
 
             @include row;
 

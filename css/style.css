@@ -68,15 +68,15 @@ a {
 .span-loader {
   color: #353535;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  animation: spin-bg 0.25s linear infinite, font-pulse 1.5s linear infinite;
-  -webkit-animation: spin-bg 0.25s linear infinite, font-pulse 1.5s linear infinite;
+  animation: spin-bg 0.25s linear infinite, font-pulse 2.25s linear infinite;
+  -webkit-animation: spin-bg 0.25s linear infinite, font-pulse 2.25s linear infinite;
 }
 
 @keyframes loader-display {
@@ -92,15 +92,23 @@ a {
 @keyframes font-pulse {
   0% {
     font-size: 0rem;
-    font-weight: 400;
+    font-weight: 100;
+  }
+  25% {
+    font-size: 3rem;
+    font-weight: 900;
   }
   50% {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  75% {
+    font-size: 3rem;
+    font-weight: 900;
   }
   100% {
     font-size: 0rem;
-    font-weight: 400;
+    font-weight: 100;
   }
 }
 @keyframes spin-bg {
@@ -110,10 +118,10 @@ a {
   10% {
     background: linear-gradient(36deg, #FF79DA, #9356DC);
   }
-  10% {
+  20% {
     background: linear-gradient(72deg, #FF79DA, #9356DC);
   }
-  10% {
+  30% {
     background: linear-gradient(108deg, #FF79DA, #9356DC);
   }
   40% {
@@ -130,6 +138,9 @@ a {
   }
   80% {
     background: linear-gradient(288deg, #FF79DA, #9356DC);
+  }
+  90% {
+    background: linear-gradient(324deg, #FF79DA, #9356DC);
   }
   100% {
     background: linear-gradient(324deg, #FF79DA, #9356DC);
@@ -334,7 +345,7 @@ a {
     font-size: 1rem;
     font-weight: 400;
     position: relative;
-    top: 50px;
+    top: 25px;
   }
   .cta-btn-order a {
     color: white;
@@ -424,7 +435,7 @@ a {
 }
 .home-card__figcaption .heart .fa-heart {
   position: absolute;
-  transition: opacity 1.5s;
+  transition: opacity 1s;
 }
 .home-card__figcaption .heart .full-heart {
   opacity: 0;
@@ -453,9 +464,8 @@ a {
 
 @media screen and (min-width: 992px) {
   .home-card {
-    max-width: 450px;
-    width: 35%;
-    margin: 25px 75px;
+    width: 350px;
+    margin: 25px auto;
   }
 }
 .cta-btn {
@@ -598,7 +608,7 @@ a {
     font-size: 1rem;
     font-weight: 400;
     position: relative;
-    top: 50px;
+    top: 25px;
   }
   .cta-btn-order a {
     color: white;
@@ -688,7 +698,7 @@ a {
 }
 .home-card__figcaption .heart .fa-heart {
   position: absolute;
-  transition: opacity 1.5s;
+  transition: opacity 1s;
 }
 .home-card__figcaption .heart .full-heart {
   opacity: 0;
@@ -717,9 +727,8 @@ a {
 
 @media screen and (min-width: 992px) {
   .home-card {
-    max-width: 450px;
-    width: 35%;
-    margin: 25px 75px;
+    width: 350px;
+    margin: 25px auto;
   }
 }
 .home-cover__location {
@@ -1000,7 +1009,7 @@ a {
     font-size: 1rem;
     font-weight: 400;
     position: relative;
-    top: 50px;
+    top: 25px;
   }
   .cta-btn-order a {
     color: white;
@@ -1118,7 +1127,7 @@ a {
 }
 .home-card__figcaption .heart .fa-heart {
   position: absolute;
-  transition: opacity 1.5s;
+  transition: opacity 1s;
 }
 .home-card__figcaption .heart .full-heart {
   opacity: 0;
@@ -1147,9 +1156,8 @@ a {
 
 @media screen and (min-width: 992px) {
   .home-card {
-    max-width: 450px;
-    width: 35%;
-    margin: 25px 75px;
+    width: 350px;
+    margin: 25px auto;
   }
 }
 .home-restaurant {
@@ -1160,7 +1168,11 @@ a {
 
 @media screen and (min-width: 992px) {
   .home-restaurant__div-list {
-    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1040px;
+    margin: 0 auto;
     display: flex;
     display: flex;
     justify-content: center;
@@ -1362,7 +1374,7 @@ a {
 }
 .rest-menu__div-title .heart .fa-heart {
   position: absolute;
-  transition: opacity 1.5s;
+  transition: opacity 1s;
 }
 .rest-menu__div-title .heart .full-heart {
   opacity: 0;
