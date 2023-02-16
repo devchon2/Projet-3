@@ -29,6 +29,15 @@ a {
     padding:40px 0 20px 20px;
 }
 
+@media screen and (min-width:768px){
+    
+    .section__title{
+        font-size:32px;
+        margin:0 auto;
+        max-width:1200px;
+        @include center;
+    }
+}
 @media screen and (min-width:992px){
     .section{
         padding-bottom:0

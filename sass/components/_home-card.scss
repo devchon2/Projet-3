@@ -4,7 +4,7 @@
     @include row;
     overflow: hidden;
     border-radius: $card-radius;
-    width:90%;
+    width:300px;
     max-width: 350px;
     margin: 0px auto 15px auto;; /*2*/
     background-color: white; /*3*/
@@ -36,7 +36,7 @@
                 font-weight:550;
                 background-color:#99e2d0 ;
                 position: relative;
-                left:5vw;
+                right:5px;
                 bottom:180px;       
             }
         }
@@ -65,9 +65,23 @@
         }
 }
     
+@media screen and (min-width:762px) and (max-width:992px){
+        .home-card{
+            max-width: none;
+            width: 600px; 
+            margin:25px auto;
+            .span{
+                right:-150px;
+            }
+        }
+}
 @media screen and (min-width:992px){
         .home-card{
-            width: 350px; 
+            max-width:none;
+            width: 480px; 
             margin:25px auto;
+            .span{
+                right:-90px;
+            }
         }
 }

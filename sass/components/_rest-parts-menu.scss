@@ -6,7 +6,7 @@
                 font-family: "roboto"; 
                 color:$darkgrey;
                 font-weight:400;
-                padding-bottom: 5px;;
+                padding-bottom: 5px;
             }
             .bar{                                       //BAR UNDER PART MENU TITLE
             width:40px;
@@ -20,19 +20,14 @@
 @media all and (min-width:768px) and (max-width:991px){
     .part-menu{
         width:100%;
-        
         margin:0;
         &__title{
            .title{ 
                 @include center;
-                
             }
             &-bar{
                 @include column;
                 @include center;
-                .title{
-                    font-size: rem;
-                }
             }
         }
     }
