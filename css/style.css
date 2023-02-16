@@ -372,7 +372,7 @@ a {
   display: flex;
   overflow: hidden;
   border-radius: 15px;
-  width: 90%;
+  width: 300px;
   max-width: 350px;
   margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
@@ -409,7 +409,7 @@ a {
   font-weight: 550;
   background-color: #99e2d0;
   position: relative;
-  left: 5vw;
+  right: 5px;
   bottom: 180px;
 }
 .home-card__figure-img {
@@ -465,10 +465,24 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  .home-card {
+    max-width: none;
+    width: 600px;
+    margin: 25px auto;
+  }
+  .home-card .span {
+    right: -150px;
+  }
+}
 @media screen and (min-width: 992px) {
   .home-card {
-    width: 350px;
+    max-width: none;
+    width: 480px;
     margin: 25px auto;
+  }
+  .home-card .span {
+    right: -100px;
   }
 }
 .cta-btn {
@@ -636,7 +650,7 @@ a {
   display: flex;
   overflow: hidden;
   border-radius: 15px;
-  width: 90%;
+  width: 300px;
   max-width: 350px;
   margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
@@ -673,7 +687,7 @@ a {
   font-weight: 550;
   background-color: #99e2d0;
   position: relative;
-  left: 5vw;
+  right: 5px;
   bottom: 180px;
 }
 .home-card__figure-img {
@@ -729,10 +743,24 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  .home-card {
+    max-width: none;
+    width: 600px;
+    margin: 25px auto;
+  }
+  .home-card .span {
+    right: -150px;
+  }
+}
 @media screen and (min-width: 992px) {
   .home-card {
-    width: 350px;
+    max-width: none;
+    width: 480px;
     margin: 25px auto;
+  }
+  .home-card .span {
+    right: -100px;
   }
 }
 .home-cover__location {
@@ -1066,7 +1094,7 @@ a {
   display: flex;
   overflow: hidden;
   border-radius: 15px;
-  width: 90%;
+  width: 300px;
   max-width: 350px;
   margin: 0px auto 15px auto; /*2*/
   background-color: white; /*3*/
@@ -1103,7 +1131,7 @@ a {
   font-weight: 550;
   background-color: #99e2d0;
   position: relative;
-  left: 5vw;
+  right: 5px;
   bottom: 180px;
 }
 .home-card__figure-img {
@@ -1159,10 +1187,24 @@ a {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  .home-card {
+    max-width: none;
+    width: 600px;
+    margin: 25px auto;
+  }
+  .home-card .span {
+    right: -150px;
+  }
+}
 @media screen and (min-width: 992px) {
   .home-card {
-    width: 350px;
+    max-width: none;
+    width: 480px;
     margin: 25px auto;
+  }
+  .home-card .span {
+    right: -100px;
   }
 }
 .home-restaurant {
@@ -1267,7 +1309,6 @@ a {
   max-width: 500px;
   overflow: hidden;
   box-shadow: 0px 5px 10px #e8e8e8;
-  padding: 2.5px px;
 }
 .rest-card .rich {
   padding: 10px 0 10px 10px;
@@ -1313,12 +1354,12 @@ a {
   color: #353535;
   font-weight: 650;
   font-size: 0.95rem;
+  overflow: visible;
 }
 .rest-card .price-check .checked-box {
   margin-right: -4.4rem;
-  overflow: hidden;
+  overflow: visible;
   width: 60px;
-  transition: transform 0.5s 0.3s;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1337,15 +1378,14 @@ a {
   transform: translate(-4.4rem);
 }
 .rest-card:hover i {
-  rotate: 360deg;
-  animation: check-rotation 0.5s 0.3s forwards;
+  animation: check-rotation 0.7s 0.3s forwards;
 }
 @keyframes check-rotation {
   from {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   to {
-    rotate: 720deg;
+    transform: rotate(360deg);
   }
 }
 
