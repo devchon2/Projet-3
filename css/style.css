@@ -31,6 +31,16 @@ a {
   padding: 40px 0 20px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .section {
     padding-bottom: 0;
@@ -482,7 +492,7 @@ a {
     margin: 25px auto;
   }
   .home-card .span {
-    right: -100px;
+    right: -90px;
   }
 }
 .cta-btn {
@@ -760,7 +770,7 @@ a {
     margin: 25px auto;
   }
   .home-card .span {
-    right: -100px;
+    right: -90px;
   }
 }
 .home-cover__location {
@@ -1204,7 +1214,7 @@ a {
     margin: 25px auto;
   }
   .home-card .span {
-    right: -100px;
+    right: -90px;
   }
 }
 .home-restaurant {
@@ -1421,9 +1431,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .part-menu__title-bar .title {
-    font-size: rem;
-  }
 }
 @media all and (min-width: 992px) {
   .part-menu {
@@ -1500,7 +1507,7 @@ a {
   margin: 0;
 }
 .rest-menu__div-title-bar {
-  padding: 10px 20px 0px 20;
+  padding: 10px 20px 0px;
 }
 .rest-menu__div-title-bar:first-child {
   font-weight: 400;
