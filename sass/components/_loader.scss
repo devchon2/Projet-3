@@ -1,32 +1,48 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$loader-size: 220px;
-$loader-border-size: 3px;
-$loader-font-size: 1rem;
-$loader-font-weight: 100;
+// Couleurs
+$primary-color: #E85285;
+$secondary-color: #FFF3F7;
+$tertiary-color: #9b9797;
 
+// Tailles
+$loader-size: 220px;
+$loader-size-mobile:100px;
+$border-width: 12px;
+$font-size-min: 1rem;
+$font-size-max: 2.5rem;
+$bounce-speed: 0.25s;
+$pulse-speed: 3.5s;
+$spin-speed: 1.5s;
+$loader-display-time:3.5s;
+// Loader
 .loader-container {
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.75);
+  z-index:1;
+  background-color: rgba(155,151,151,0.75);
   width: 100%;
   height: 100%;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: loader-hide 0.3s 3s ease-in-out forwards;
-  }
 
+  animation: loader-display 0.1s $loader-display-time linear forwards;
+}
 
 .loader {
-  z-index: 10;
   opacity: 1;
-  border: $loader-border-size solid $primary-color;
-  border-radius: 50%;
+  position:relative;
+  top:0;
+  left:0;
+  right:50%;bottom: 50%;
+  animation: loader-bounce $bounce-speed infinite;
+  @include column;
+  z-index: 9999;
   width: $loader-size;
   height: $loader-size;
-  background: linear-gradient(170deg, $secondary-color, $primary-color);
-  animation: spin-bg 3s linear 0.5s forwards, font-pulse 3s linear 1s forwards;
+  border: $border-width solid $secondary-color;
+  border-radius: 50%;
+  @include text-center;
+  background: $gradient-color;
+  animation: spin-bg $spin-speed linear forwards, font-pulse $pulse-speed linear forwards;
 
   &::after {
     content: "";
@@ -34,134 +50,133 @@ $loader-font-weight: 100;
     margin: 0 auto;
     width: 0;
     height: 0;
+    position: relative;
+    top: -$loader-size/2;
     border-style: solid;
-    border-width: 30px 20px 0;
-    border-color: $secondary-color transparent transparent;
-    animation: loader-bounce 3s ease-in-out forwards;
-    transform: translateY(-20px);
+    border-width: $border-width*2 $border-width $border-width/2;
+    border-color: $primary-color transparent transparent;
+    
   }
-  
+  }
 
-  
 
-@keyframes font-pulse {
+@keyframes loader-display {                          // displaying loader
+  
+    0% {
+      z-index:9999;
+      opacity: 1;
+    }
+    1% {
+      opacity: 0.5;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    99% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+@keyframes font-pulse {                              //LOADER FONT ANIMATION
   0% {
-    font-size: $loader-font-size;
-    font-weight: $loader-font-weight;
+    font-size: $font-size-min;
+    font-weight: 100;
   }
   25% {
-    font-size: $loader-font-size * 2.5;
+    font-size: $font-size-max;
     font-weight: 900;
   }
   50% {
-    font-size: $loader-font-size * 2;
+    font-size: $font-size-min;
     font-weight: 400;
   }
   75% {
-    font-size: $loader-font-size * 2.5;
+    font-size: $font-size-max;
     font-weight: 900;
-    opacity: 1;
+    
   }
+ 
   100% {
-    font-size: $loader-size;
+    font-size: 80rem;
     font-weight: 900;
-    opacity: 0;
+    
   }
 }
-
 @keyframes spin-bg {
   0% {
-    background: linear-gradient(0deg, $secondary-color, $primary-color);
+    transform: rotate(0deg);
   }
   5% {
     transform: rotate(18deg);
-    background: linear-gradient(36deg, $secondary-color, $primary-color);
   }
   10% {
     transform: rotate(36deg);
-    background: linear-gradient(72deg, $secondary-color, $primary-color);
   }
   15% {
     transform: rotate(54deg);
-    background: linear-gradient(108deg, $secondary-color, $primary-color);
   }
   20% {
     transform: rotate(72deg);
-    background: linear-gradient(144deg, $secondary-color, $primary-color);
   }
   25% {
     transform: rotate(90deg);
-    background: linear-gradient(180deg, $secondary-color, $primary-color);
   }
   30% {
     transform: rotate(108deg);
-    background: linear-gradient(216deg, $secondary-color, $primary-color);
   }
   35% {
     transform: rotate(126deg);
-    background: linear-gradient(252deg, $secondary-color, $primary-color);
   }
   40% {
     transform: rotate(144deg);
-    background: linear-gradient(288deg, $secondary-color, $primary-color);
   }
   45% {
     transform: rotate(162deg);
-    background: linear-gradient(324deg, $secondary-color, $primary-color);
   }
   50% {
     transform: rotate(180deg);
-    background: linear-gradient(360deg, $secondary-color, $primary-color);
   }
   55% {
     transform: rotate(198deg);
-    background: linear-gradient(396deg, $secondary-color, $primary-color);
   }
   60% {
     transform: rotate(216deg);
-    background: linear-gradient(432deg, $secondary-color, $primary-color);
   }
   65% {
     transform: rotate(234deg);
-    background: linear-gradient(468deg, $secondary-color, $primary-color);
   }
   70% {
     transform: rotate(252deg);
-    background: linear-gradient(504deg, $secondary-color, $primary-color);
   }
   75% {
     transform: rotate(270deg);
-    background: linear-gradient(540deg, $secondary-color, $primary-color);
   }
   80% {
     transform: rotate(288deg);
-    background: linear-gradient(576deg, $secondary-color, $primary-color);
   }
   85% {
     transform: rotate(306deg);
-    background: linear-gradient(612deg, $secondary-color, $primary-color);
   }
   90% {
     transform: rotate(324deg);
-    background: linear-gradient(648deg, $secondary-color, $primary-color);
   }
   95% {
     transform: rotate(342deg);
-    background: linear-gradient(684deg, $secondary-color, $primary-color);
   }
   100% {
     transform: rotate(360deg);
-    background: linear-gradient(720deg, $secondary-color, $primary-color);
   }
 }
 
-@keyframes loader-hide {
-  0% {
-    opacity: 1;
+
+@media screen and (max-width:"762px"){
+  .loader{
+    width:$loader-size-mobile;
+    height:$loader-size-mobile;
   }
-  100% {
-    opacity: 0;
-    z-index: -1;
-    display:none;
-  }
-}}
+}
+  
