@@ -1,109 +1,182 @@
+// Couleurs
+$primary-color: #E85285;
+$secondary-color: #FFF3F7;
+$tertiary-color: #9b9797;
 
+// Tailles
+$loader-size: 220px;
+$loader-size-mobile:100px;
+$border-width: 12px;
+$font-size-min: 1rem;
+$font-size-max: 2.5rem;
+$bounce-speed: 0.25s;
+$pulse-speed: 3.5s;
+$spin-speed: 1.5s;
+$loader-display-time:3.5s;
+// Loader
+.loader-container {
+  z-index:1;
+  background-color: rgba(155,151,151,0.75);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.loader{                                                //SUPERPOSED LAYER
-    z-index:1;
-    background-color :rgba(255, 255, 255, 0.75);
-    width:100%;
-    height:100%;                                       //CREATE LOADER
-    position:fixed;
-    -webkit-animation: loader-display 0.3s 3s ease-in forwards;
-    animation: loader-display 0.3s 3s ease-in forwards;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  animation: loader-display 0.1s $loader-display-time linear forwards;
 }
-.span::after{
-    opacity:0.5
-}
 
-.span-loader{  
+.loader {
+  opacity: 1;
+  position:relative;
+  top:0;
+  left:0;
+  right:50%;bottom: 50%;
+  animation: loader-bounce $bounce-speed infinite;
+  @include column;
+  z-index: 9999;
+  width: $loader-size;
+  height: $loader-size;
+  border: $border-width solid $secondary-color;
+  border-radius: 50%;
+  @include text-center;
+  background: $gradient-color;
+  animation: spin-bg $spin-speed linear forwards, font-pulse $pulse-speed linear forwards;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -$loader-size/2;
+    border-style: solid;
+    border-width: $border-width*2 $border-width $border-width/2;
+    border-color: $primary-color transparent transparent;
     
-    z-index:10;
-    opacity:1;
-    width:100%;
-    height:100%;
-    border:3px solid $darkgrey;                                         //ANIMATEDLOADER;
-    color:$darkgrey;                                   
-    border-radius: 50%;
-    width:220px;
-    height: 220px;
-    @include text-center;
-    background:linear-gradient(170deg,$pink, $violet);
-    animation:spin-bg  0.25s linear  infinite,font-pulse 3.25s linear infinite;
-    -webkit-animation:spin-bg  0.25s linear  infinite,font-pulse 3.25s linear infinite;
-}
+  }
+  }
 
-@keyframes loader-display{                          // displaying loader
-    0%{
-        opacity:.95
-    }
-    99%{
-        
-    }
-    100%{
-        opacity:0;
-        
-        z-index:-1;
-    }
-}
-@keyframes font-pulse{                              //LOADER FONT ANIMATION
-    0%{
-        font-size:1rem;
-        font-weight:100;
-    }
-    25%{
-        font-size:2.5rem;
-        font-weight:900;
-    }
-    50%{
-        font-size:2rem;
-        font-weight:400;
-    }
-    75%{
-        font-size:2.5rem;
-        font-weight:900;
-        opacity:1
-    }
-    100%{
-        font-size:80rem;
-        font-weight:900;
-        opacity:0
-    }
-}
-@keyframes spin-bg{                                 // TURNING BACKGROUND
-    0%{
-        background:linear-gradient(00deg,$pink, $violet);        
-    }
-    10%{
-        background:linear-gradient(36deg,$pink, $violet);
-    }
-    20%{
-        background:linear-gradient(72deg,$pink, $violet);
-    }
-    30%{
-        background:linear-gradient(108deg,$pink, $violet);
-    }
-    40%{
-        background:linear-gradient(144deg,$pink, $violet);
-    }
-    50%{
-        background:linear-gradient(180deg,$pink, $violet);   
-    }
-    60%{
-        background:linear-gradient(216deg,$pink, $violet);
-    }
-    70%{
-        background:linear-gradient(252deg,$pink, $violet);
-    }
-    80%{
-        background:linear-gradient(288deg,$pink, $violet);
-    }
-    90%{
-        background:linear-gradient(324deg,$pink, $violet);
-    }
-    100%{
-        background:linear-gradient(324deg,$pink, $violet);
-    }
-}
 
+@keyframes loader-display {                          // displaying loader
+  
+    0% {
+      z-index:9999;
+      opacity: 1;
+    }
+    1% {
+      opacity: 0.5;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    99% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+@keyframes font-pulse {                              //LOADER FONT ANIMATION
+  0% {
+    font-size: $font-size-min;
+    font-weight: 100;
+  }
+  25% {
+    font-size: $font-size-max;
+    font-weight: 900;
+  }
+  50% {
+    font-size: $font-size-min;
+    font-weight: 400;
+  }
+  75% {
+    font-size: $font-size-max;
+    font-weight: 900;
     
+  }
+ 
+  100% {
+    font-size: 80rem;
+    font-weight: 900;
+    
+  }
+}
+@keyframes spin-bg {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(18deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  15% {
+    transform: rotate(54deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  35% {
+    transform: rotate(126deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  45% {
+    transform: rotate(162deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  55% {
+    transform: rotate(198deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  65% {
+    transform: rotate(234deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  85% {
+    transform: rotate(306deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  95% {
+    transform: rotate(342deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width:"762px"){
+  .loader{
+    width:$loader-size-mobile;
+    height:$loader-size-mobile;
+  }
+}
+  
