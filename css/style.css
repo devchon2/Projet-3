@@ -77,9 +77,9 @@ a {
   display: flex;
   flex-direction: column;
   z-index: 9999;
-  width: 220px;
-  height: 220px;
-  border: 12px solid #FFF3F7;
+  width: 13.75rem;
+  height: 13.75rem;
+  border: 0.75rem solid #FFF3F7;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -95,9 +95,9 @@ a {
   width: 0;
   height: 0;
   position: relative;
-  top: -110px;
+  top: -6.875rem;
   border-style: solid;
-  border-width: 24px 12px 6px;
+  border-width: 1.5rem 0.75rem 0.375rem;
   border-color: #E85285 transparent transparent;
 }
 
@@ -205,12 +205,6 @@ a {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@media screen and (max-width: 762px) {
-  .loader {
-    width: 100px;
-    height: 100px;
   }
 }
 .header {
