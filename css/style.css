@@ -54,50 +54,39 @@ a {
     align-items: center;
   }
 }
-.loader {
+.loader-container {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.75);
   width: 100%;
   height: 100%;
   position: fixed;
-  -webkit-animation: loader-display 0.3s 3s ease-in forwards;
-  animation: loader-display 0.3s 3s ease-in forwards;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: loader-hide 0.3s 3s ease-in-out forwards;
 }
 
-.span::after {
-  opacity: 0.5;
-}
-
-.span-loader {
+.loader {
   z-index: 10;
   opacity: 1;
-  width: 100%;
-  height: 100%;
-  border: 3px solid #353535;
-  color: #353535;
+  border: 3px solid #9356DC;
   border-radius: 50%;
   width: 220px;
   height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  animation: spin-bg 0.25s linear infinite, font-pulse 3.25s linear infinite;
-  -webkit-animation: spin-bg 0.25s linear infinite, font-pulse 3.25s linear infinite;
+  animation: spin-bg 3s linear 0.5s forwards, font-pulse 3s linear 1s forwards;
 }
-
-@keyframes loader-display {
-  0% {
-    opacity: 0.95;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
+.loader::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 20px 0;
+  border-color: #FF79DA transparent transparent;
+  animation: loader-bounce 3s ease-in-out forwards;
+  transform: translateY(-20px);
 }
 @keyframes font-pulse {
   0% {
@@ -118,7 +107,7 @@ a {
     opacity: 1;
   }
   100% {
-    font-size: 80rem;
+    font-size: 220px;
     font-weight: 900;
     opacity: 0;
   }
@@ -127,37 +116,98 @@ a {
   0% {
     background: linear-gradient(0deg, #FF79DA, #9356DC);
   }
-  10% {
+  5% {
+    transform: rotate(18deg);
     background: linear-gradient(36deg, #FF79DA, #9356DC);
   }
-  20% {
+  10% {
+    transform: rotate(36deg);
     background: linear-gradient(72deg, #FF79DA, #9356DC);
   }
-  30% {
+  15% {
+    transform: rotate(54deg);
     background: linear-gradient(108deg, #FF79DA, #9356DC);
   }
-  40% {
+  20% {
+    transform: rotate(72deg);
     background: linear-gradient(144deg, #FF79DA, #9356DC);
   }
-  50% {
+  25% {
+    transform: rotate(90deg);
     background: linear-gradient(180deg, #FF79DA, #9356DC);
   }
-  60% {
+  30% {
+    transform: rotate(108deg);
     background: linear-gradient(216deg, #FF79DA, #9356DC);
   }
-  70% {
+  35% {
+    transform: rotate(126deg);
     background: linear-gradient(252deg, #FF79DA, #9356DC);
   }
-  80% {
+  40% {
+    transform: rotate(144deg);
     background: linear-gradient(288deg, #FF79DA, #9356DC);
   }
-  90% {
+  45% {
+    transform: rotate(162deg);
     background: linear-gradient(324deg, #FF79DA, #9356DC);
+  }
+  50% {
+    transform: rotate(180deg);
+    background: linear-gradient(360deg, #FF79DA, #9356DC);
+  }
+  55% {
+    transform: rotate(198deg);
+    background: linear-gradient(396deg, #FF79DA, #9356DC);
+  }
+  60% {
+    transform: rotate(216deg);
+    background: linear-gradient(432deg, #FF79DA, #9356DC);
+  }
+  65% {
+    transform: rotate(234deg);
+    background: linear-gradient(468deg, #FF79DA, #9356DC);
+  }
+  70% {
+    transform: rotate(252deg);
+    background: linear-gradient(504deg, #FF79DA, #9356DC);
+  }
+  75% {
+    transform: rotate(270deg);
+    background: linear-gradient(540deg, #FF79DA, #9356DC);
+  }
+  80% {
+    transform: rotate(288deg);
+    background: linear-gradient(576deg, #FF79DA, #9356DC);
+  }
+  85% {
+    transform: rotate(306deg);
+    background: linear-gradient(612deg, #FF79DA, #9356DC);
+  }
+  90% {
+    transform: rotate(324deg);
+    background: linear-gradient(648deg, #FF79DA, #9356DC);
+  }
+  95% {
+    transform: rotate(342deg);
+    background: linear-gradient(684deg, #FF79DA, #9356DC);
   }
   100% {
-    background: linear-gradient(324deg, #FF79DA, #9356DC);
+    transform: rotate(360deg);
+    background: linear-gradient(720deg, #FF79DA, #9356DC);
   }
 }
+@keyframes loader-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+}
+
 .header {
   width: 100%;
   height: 60px;
