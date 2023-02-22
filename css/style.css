@@ -86,7 +86,7 @@ a {
   align-items: center;
   text-align: center;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  animation: spin-bg 1.5s linear forwards, font-pulse 3.5s linear forwards;
+  animation: spin-bg 1.5s linear forwards;
 }
 .loader::after {
   content: "";
@@ -99,6 +99,7 @@ a {
   border-style: solid;
   border-width: 1.5rem 0.75rem 0.375rem;
   border-color: #E85285 transparent transparent;
+  animation: plop 1.5s ease 1.5s forwards;
 }
 
 @keyframes loader-display {
@@ -120,14 +121,12 @@ a {
     z-index: -1;
   }
 }
-@keyframes font-pulse {
+@keyframes plop {
   0% {
-    font-size: 1rem;
-    font-weight: 100;
+    position: relative;
   }
   25% {
-    font-size: 2.5rem;
-    font-weight: 900;
+    top: 10px;
   }
   50% {
     font-size: 1rem;

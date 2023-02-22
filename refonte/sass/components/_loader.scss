@@ -1,0 +1,174 @@
+// Couleurs
+$primary-color: #E85285;
+$secondary-color: #FFF3F7;
+$tertiary-color: #9b9797;
+
+// Tailles
+$border-width: 0.75rem;
+$loader-size: 13.75rem;
+$loader-size-mobile: 6.25rem;
+$font-size-min: 1rem;
+$font-size-max: 2.5rem;
+
+// Durées
+$bounce-speed: 0.25s;
+$pulse-speed: 3.5s;
+$spin-speed: 1.5s;
+$plop-speed:2s;
+$loader-display-time: 3.5s;
+
+// Loader
+.loader-container {
+  z-index: 1;
+  background-color: rgba(155, 151, 151, 0.75);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader-display 0.1s $loader-display-time linear forwards;
+  
+}
+
+.loader {
+  opacity: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 50%;
+  animation: loader-bounce $bounce-speed infinite;
+  @include column;
+  z-index: 9999;
+  width: $loader-size;
+  height: $loader-size;
+  border: $border-width solid $secondary-color;
+  border-radius: 50%;
+  @include text-center;
+  background: $gradient-color;
+  animation: spin-bg $spin-speed linear forwards;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -$loader-size / 2;
+    border-style: solid;
+    border-width: ($border-width * 2) $border-width ($border-width / 2);
+    border-color: $primary-color transparent transparent;
+    animation: plop 1.5s ease 1.5s  forwards;
+  }
+}
+
+@keyframes loader-display {
+  // displaying loader
+  0% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  99% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes plop {
+  // TRIANGLE ANIMATION
+  0% {
+    position:relative;
+  }
+  25% {
+    top:+10px;
+  }
+  50% {
+    font-size: $font-size-min;
+    font-weight: 400;
+  }
+  75% {
+    font-size: $font-size-max;
+    font-weight: 900;
+  }
+  100% {
+    font-size: 80rem;
+    font-weight: 900;
+  }
+}
+
+@keyframes spin-bg {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(18deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  15% {
+    transform: rotate(54deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  35% {
+    transform: rotate(126deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  45% {
+    transform: rotate(162deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  55% {
+    transform: rotate(198deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  65% {
+    transform: rotate(234deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  85% {
+    transform: rotate(306deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  95% {
+    transform: rotate(342deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

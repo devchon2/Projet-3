@@ -14,6 +14,7 @@ $font-size-max: 2.5rem;
 $bounce-speed: 0.25s;
 $pulse-speed: 3.5s;
 $spin-speed: 1.5s;
+$plop-speed:2s;
 $loader-display-time: 3.5s;
 
 // Loader
@@ -27,6 +28,7 @@ $loader-display-time: 3.5s;
   align-items: center;
   justify-content: center;
   animation: loader-display 0.1s $loader-display-time linear forwards;
+  
 }
 
 .loader {
@@ -45,7 +47,7 @@ $loader-display-time: 3.5s;
   border-radius: 50%;
   @include text-center;
   background: $gradient-color;
-  animation: spin-bg $spin-speed linear forwards, font-pulse $pulse-speed linear forwards;
+  animation: spin-bg $spin-speed linear forwards;
 
   &::after {
     content: "";
@@ -58,6 +60,7 @@ $loader-display-time: 3.5s;
     border-style: solid;
     border-width: ($border-width * 2) $border-width ($border-width / 2);
     border-color: $primary-color transparent transparent;
+    animation: plop 1.5s ease 1.5s  forwards;
   }
 }
 
@@ -82,15 +85,13 @@ $loader-display-time: 3.5s;
   }
 }
 
-@keyframes font-pulse {
-  // LOADER FONT ANIMATION
+@keyframes plop {
+  // TRIANGLE ANIMATION
   0% {
-    font-size: $font-size-min;
-    font-weight: 100;
+    position:relative;
   }
   25% {
-    font-size: $font-size-max;
-    font-weight: 900;
+    top:+10px;
   }
   50% {
     font-size: $font-size-min;

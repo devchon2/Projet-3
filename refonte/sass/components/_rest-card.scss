@@ -1,0 +1,99 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+.rest-card {
+    cursor: pointer;
+    //CARDS FOR MENU
+    background-color: white;
+    border-radius: 15px;
+    @include row; /* reverse row direction for right column */
+    justify-content: space-between;
+    margin: 12.5px auto;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px #e8e8e8;
+    .rich {
+        /* CONTENTS OF CARD */
+        padding: 10px 10px 10px 0; /* change left padding to right padding */
+        transition: width 0.5s 0.3s;
+        min-width: 50%;
+        width: 80%;
+        justify-self: end; /* align content to end of right column */
+        @include column;
+        box-sizing: border-box;
+        font-weight: 400;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        h5 {
+            /* NAME OF CARDS */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-bottom: 5px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .details {
+            /* DEFINITION OF CARDS */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: $darkgrey;
+        }
+    }
+    .price-check {
+        /* CONTAINER PRICE/CHECK */
+        @include row;
+        transition: transform 0.5s 0.3s;
+        .price {
+            /* PRICE OF MENU */
+            height: 100%;
+            display: block;
+            background-color: white;
+            padding-left: 20px; /* change right padding to left padding */
+            padding-top: 35px;
+            text-align: start; /* align text to start of right column */
+            color: $darkgrey;
+            font-weight: 650;
+            font-size: 0.95rem;
+            overflow: visible;
+        }
+        .checked-box {
+            /* CHECKBOX */
+            margin-left: -4.4rem; /* change right margin to left margin */
+            overflow: visible;
+            width: 60px;
+            height: 100%;
+            @include center;
+            justify-content: center;
+            background-color: $checked-color;
+            border-top-left-radius: 15px; /* change right radius to left radius */
+            border-bottom-left-radius: 15px;
+            box-sizing: content-box;
+            color: white;
+        }
+    }
+    &:hover {
+        .rich {
+            width: 60%;
+        }
+        .price-check {
+            transform: translate(4.4rem); /* change left translation to right translation */
+        }
+        i {
+            animation: check-rotation 0.8s 0.3s forwards;
+            @keyframes check-rotation {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

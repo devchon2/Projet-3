@@ -1,0 +1,29 @@
+@import "../utils/variables";
+@import "../components/nav";
+
+.footer{
+    height:160px;
+    font-size:1rem;
+    color:$bg-lightgrey;
+    padding:5px 0 20px 20px;
+    background-color: $darkgrey;
+    &__title{
+        color: white;
+        padding:15px 0;
+        font-weight:100;
+        font-size:1.1rem;
+        font-family: "shrikhand",sans-serif;
+    }
+}  
+
+@media screen and (min-width:768px){       //FOOTER PLACEMENT FOR TABLET AND DESKTOP
+    .footer{
+        margin: 0 auto;
+        height:200px;
+        &__title{
+            margin-bottom: 20px;
+            font-size:32px;
+            @include center;
+        }
+    }
+}

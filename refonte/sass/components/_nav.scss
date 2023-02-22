@@ -1,0 +1,26 @@
+.footer__nav{
+    > li{
+        padding-bottom: 7px;
+        > i{
+            margin-right:10px;
+        }
+        > a{
+            text-decoration: none;
+            color: #f5f5f5;
+        }
+    }
+} 
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .footer__nav{
+        justify-content: space-evenly;
+        @include row;
+    }
+}
+
+@media screen and (min-width:992px){
+    .footer__nav{
+        justify-content: space-evenly;
+        @include row;
+    }
+}

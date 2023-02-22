@@ -1,0 +1,28 @@
+
+.home-restaurant {                                       // section HOME PAGE RESTAURANT
+    background-color: $bg-lightgrey;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+
+    &__div-list {                                       // liste des cartes restaurant
+        @include center;
+        max-width: 1040px;
+        margin: 0 auto;
+        @include row;
+        @include center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .home-restaurant { 
+        &__div-list {
+            @include center;
+            max-width: 1040px;
+            margin: 0 auto;
+            @include row;
+            @include center;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* Error: $color: linear-gradient(170deg, #FF79DA, #9356DC) is not a color.
+ *    ,
+ * 42 |             color:adjust-hue($color: $gradient-color, $degrees: 10)
+ *    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\utils\_mixins.scss 42:19          call-to-action()
+ *   sass\components\_buttons.scss 9:5      @import
+ *   sass\layout\HOME\_home-cover.scss 3:9  @import
+ *   sass\pages\_accueil.scss 3:9           @import
+ *   sass\main.scss 12:9                    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $color: linear-gradient(170deg, #FF79DA, #9356DC) is not a color.\a    \2577 \a 42 \2502              color:adjust-hue($color: $gradient-color, $degrees: 10)\a    \2502                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\utils\\_mixins.scss 42:19          call-to-action()\a   sass\\components\\_buttons.scss 9:5      @import\a   sass\\layout\\HOME\\_home-cover.scss 3:9  @import\a   sass\\pages\\_accueil.scss 3:9           @import\a   sass\\main.scss 12:9                    root stylesheet";
+}

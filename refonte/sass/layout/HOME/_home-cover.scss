@@ -1,0 +1,59 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../components/buttons";
+@import "../../components/home-card";
+@import "../../components/location-form";
+
+.home-cover {
+  background-color: $bg-lightgrey;
+  margin: 0;
+
+  &__title {
+    max-width: 300px;
+    font-size: 1.30rem;
+    font-weight: 700;
+    margin: 40px auto 20px auto;
+    @include text-center;
+  }
+
+  &__subtitle {
+    max-width: 400px;
+    color: #353535;
+    font-size: 0.95rem;
+    margin: 20px auto 10px;
+    @include text-center;
+  }
+
+  @media screen and (min-width: 992px) {
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    padding-top: 50px;
+    margin: 0 auto;
+
+    &__div {
+      z-index: 0;
+      @include column;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px 0;
+      height: 200px;
+      width: 40%;
+      margin: 100px auto;
+      justify-content: center;
+    }
+
+    &__subtitle {
+      color: $darkgrey;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: black;
+    }
+
+    &__title {
+      margin: 0 auto;
+      color: black;
+      font-size: 1.7rem;
+    }
+  }
+}

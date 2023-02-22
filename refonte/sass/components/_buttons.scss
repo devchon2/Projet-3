@@ -1,0 +1,90 @@
+@import "../utils/variables";
+@import "../utils/variables";
+
+
+.home-steps {
+  &__div-step {
+    @include row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1000px;
+  }
+  
+  &__step-btn {
+    @include column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: $cta-btn-radius;
+    box-shadow: 0px 5px 15px $shadow;
+    
+    &__step-number {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $violet;
+      margin-bottom: 10px;
+    }
+    
+    &__icon {
+      font-size: 3rem;
+      color: $darkgrey;
+      margin-bottom: 10px;
+    }
+    
+    &__text {
+      font-size: 1rem;
+      font-weight: 550;
+      color: $darkgrey;
+      margin-bottom: 10px;
+    }
+    
+    &__cta-btn {
+      @include call-to-action;
+      font-size: 1rem;
+      font-weight: 400;
+      width: 100%;
+      max-width: 200px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &__div-step {
+      justify-content: space-evenly;
+      margin: 100px auto;
+    }
+    
+    &__step-btn {
+      width: auto;
+      max-width: none;
+      margin: 0;
+      padding: 40px 20px;
+      
+      &__step-number {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      
+      &__icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+      
+      &__text {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      
+      &__cta-btn {
+        font-size: 1.2rem;
+        max-width: none;
+        padding: 15px 40px;
+      }
+    }
+  }
+}

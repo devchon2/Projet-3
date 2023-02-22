@@ -1,0 +1,49 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+
+.home-steps {                                           //section HOME PAGE FORMULATION STEPS
+  &__icn {                                                 //icon
+      line-height:1;
+      color:#757575;
+    }
+  &__div-step {                        
+      @include column;
+      @include center; 
+      padding-left:10px;  
+    &__step-btn {
+      a {
+        @include column;
+        width:100%;
+        max-width:420px;
+      }
+      &__step-number {                                        //number
+        font-size:1.2rem;
+        font-weight:bold;
+        margin-right:10px;
+      }
+      &__icn {                                                //icon
+        line-height:1;
+        color:#757575;
+      }
+      &__p {                                                  //text
+        font-size:1rem;
+        color:#757575;
+      }
+    }
+  }
+}
+  @media screen and (min-width:992px){
+    .home-steps {                                           //section HOME PAGE FORMULATION STEPS
+      &__div-step {  
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:50px auto;
+        &__step-btn {
+          a {
+            min-width:330px;
+            max-width:25%;
+          }
+        }
+      }
+    }
+  }

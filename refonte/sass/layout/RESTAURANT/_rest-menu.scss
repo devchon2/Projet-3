@@ -1,0 +1,106 @@
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../components/rest-card";
+@import "../../components/rest-parts-menu";
+
+
+.rest-menu{
+    background-color: $bg-lightgrey;
+    &__container{                                   //RESTAURANT PAGE MENU CONTAINER                        
+        overflow:hidden;
+        margin:0 auto;
+        max-width:520px;
+        padding:30px 20px;
+        position:relative;
+        top:0px;
+        bottom:30px;
+        background-color: $bg-lightgrey;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;     
+    }
+    &__div{ 
+        &-title{                                    //RESTAURANT PAGE RESTAURANT NAME
+            @include rest-heart-icons;
+            @include row;
+            margin-bottom:20px;
+            width:100%;
+            justify-content:start;
+            font-size:1.8rem;
+            overflow:hidden;
+            &-bar{                                  // TITLE PARTS CONTAINER 
+                padding:10px  20px 0px;
+                &:first-child{                             //TITLE PARTS NAME
+                    font-weight:400;
+                    color:#757575;
+                    padding-bottom: 5px;;
+                }
+            }
+            &--title{                             //RESTAURANT TITLE
+            font-size:1.8rem;
+            min-width:80%;
+            font-family: "shrikhand",sans-serif;
+            font-weight: 500;
+            min-width:0;
+            padding-right:20px
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:762px) and (max-width:991px){    //TABLET DISPLAY
+    .rest-menu{
+        &__container{                                         // RESTAURANT PAGE MENU CARD CONTAINER
+            padding:0;
+            padding-bottom:40px;
+            max-width:80%
+        }
+        &__div{
+            &-title{
+                padding-left:0px;
+                &--title{                                      //RESTAURANT PAGE RESTAURANT NAME
+                    text-align:  center;
+                }  
+                
+            }
+            &-part-menu{                                        // RESTAURANT PAGE PARTS OF
+                @include column;    
+                width:50%;
+                margin:0 auto;            
+            }
+        }
+}
+.rest-menu__title{
+    padding-top:40px;
+    justify-content:center;
+                }  
+}
+
+
+@media screen and (min-width:992px)
+    {
+        .rest-menu{
+            &__container{
+                padding:0;
+                border-radius:0;
+                max-width:none;
+            }
+            &__div{
+                &-title{
+                    padding-left:0px;
+                    &--title{
+                        text-align:  center;
+                    }  
+                }
+                &-part-menu{
+                    @include row;
+                    margin-top:50px;
+                    align-items:flex-start;
+                    justify-content: space-evenly;
+                }
+            }
+    }.rest-menu__title{
+        padding-top:40px;
+        justify-content:center;
+                    }  
+    }
