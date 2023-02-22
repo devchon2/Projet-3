@@ -7,6 +7,7 @@ $primary-color: #9356dc;
 // Loader styles
 .loader-container {
   display: flex;
+  z-index:9999;
   @include column;
   justify-content: center;
   align-items: center;
@@ -21,7 +22,7 @@ $primary-color: #9356dc;
   perspective: 1000px;
   span{
     color:blue;
-    font-size: 8rem;
+    font-size: 2.5rem;
     font-weight:600;
     font-family: "shrikhand";
     margin:50px;
@@ -43,9 +44,7 @@ $primary-color: #9356dc;
   justify-content: center;
   align-items: center;
   position: relative;
-  .span{
-    z-index: 9999;
-  }
+  
 }
 
 .loader-dot {
@@ -107,6 +106,7 @@ $primary-color: #9356dc;
   100% {
     transform: translateZ(500px) scale(3);
     opacity: 0;
+    z-index:-1;
   }
 }
 
@@ -122,3 +122,6 @@ $primary-color: #9356dc;
 	}
 }
 
+@media screen and (min-width:768px){
+  
+  }

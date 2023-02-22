@@ -56,6 +56,7 @@ a {
 }
 .loader-container {
   display: flex;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +73,7 @@ a {
 }
 .loader-container span {
   color: blue;
-  font-size: 8rem;
+  font-size: 2.5rem;
   font-weight: 600;
   font-family: "shrikhand";
   margin: 50px;
@@ -93,9 +94,6 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-.loader .span {
-  z-index: 9999;
 }
 
 .loader-dot {
@@ -149,6 +147,7 @@ a {
   100% {
     transform: translateZ(500px) scale(3);
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes gradient {
@@ -1318,11 +1317,31 @@ a {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
+  opacity: 1;
   margin: 12.5px auto;
   width: 100%;
   max-width: 500px;
   overflow: hidden;
   box-shadow: 0px 5px 10px #e8e8e8;
+}
+@keyframes sliding-card {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.rest-card.show:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.rest-card.show:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.rest-card.show:nth-child(3) {
+  animation-delay: 0.6s;
 }
 .rest-card .rich {
   padding: 10px 0 10px 10px;
@@ -1404,18 +1423,48 @@ a {
 }
 
 .part-menu {
-  padding: 10px 0px;
-  margin: 0px auto;
+  padding: 10px 0;
+  margin: 0 auto;
+  opacity: 0;
+  width: 30%;
+  min-width: 310px;
+  animation: bounce 0.8s ease-out;
+  animation-fill-mode: both;
 }
-.part-menu__title-bar .title {
-  font-family: "roboto";
-  color: #353535;
-  font-weight: 400;
-  padding-bottom: 5px;
+@keyframes bounce {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.part-menu__title-bar {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 .part-menu__title-bar .bar {
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
+}
+.part-menu__title-bar .bar .part-menu__title {
+  font-family: "roboto";
+  color: #353535;
+  font-weight: 400;
+  margin: 0;
+}
+.part-menu__title-bar .part-menu__bar {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-left: 10px;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -1423,15 +1472,7 @@ a {
     width: 100%;
     margin: 0;
   }
-  .part-menu__title .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .part-menu__title-bar {
-    display: flex;
-    flex-direction: column;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -1441,20 +1482,9 @@ a {
     width: 30%;
     min-width: 310px;
   }
-  .part-menu__title .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .part-menu__title-bar {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .rest-menu {
+  z-index: 9999;
   background-color: #f5f5f5;
 }
 .rest-menu__container {

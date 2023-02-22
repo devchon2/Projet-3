@@ -1,51 +1,74 @@
-.part-menu{                                   // RESTAURANT PARTS MENU
-        padding:10px 0px;
-        margin:0px auto;
-        &__title-bar{                                     //RESTAURANT PART MENU TITLE
-            .title{    
-                font-family: "roboto"; 
-                color:$darkgrey;
-                font-weight:400;
-                padding-bottom: 5px;
-            }
-            .bar{                                       //BAR UNDER PART MENU TITLE
-            width:40px;
-            border-bottom:$checked-color solid 3px;
-            
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+
+.part-menu {
+    padding: 10px 0;
+    margin: 0 auto;
+    opacity: 0;
+    width:30%;
+    min-width:310px;
+    animation: bounce 0.8s ease-out;
+    animation-fill-mode: both;
+    @keyframes bounce {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
         }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }}
+      
+    
+    
+    &__title-bar {
+      display: flex;
+      @include column;
+      
+      margin-bottom: 10px;
+      .bar{
+                width: 40px;
+                border-bottom: #99E2D0 solid 3px;
+      .part-menu__title {
+        font-family: "roboto"; 
+        color: $darkgrey;
+        font-weight: 400;
+        margin: 0;
         
         }
-}
-
-@media all and (min-width:768px) and (max-width:991px){
-    .part-menu{
-        width:100%;
-        margin:0;
-        &__title{
-           .title{ 
-                @include center;
-            }
-            &-bar{
-                @include column;
-                @include center;
-            }
-        }
-    }
-}
-@media all and (min-width:992px){
-    .part-menu{
-        width:30%;
-        min-width:310px;
+      }
+      
+      .part-menu__bar {
+        width: 40px;
+        height: 3px;
+        background-color: $checked-color;
+        margin-left: 10px;
         
-        &__title{
-           .title{ 
-                @include center;
-            }
-            &-bar{
-                    @include column;
-                    @include center;
-                }
-            }
+        }
+      }
     }
+    
 
-}
+  
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .part-menu {
+      width: 100%;
+      margin: 0;
+      
+      &__title-bar {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  @media all and (min-width: 992px) {
+    .part-menu {
+      width: 30%;
+      min-width: 310px;
+    }
+  }
