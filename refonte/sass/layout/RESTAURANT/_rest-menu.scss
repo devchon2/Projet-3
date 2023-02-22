@@ -1,106 +1,141 @@
-@import "../../utils/variables";
+// Déclaration des variables
+$bg-lightgrey: #f2f2f2;
+
+// Import des mixins et des composants
 @import "../../utils/mixins";
 @import "../../components/rest-card";
 @import "../../components/rest-parts-menu";
 
-
+// Section pour les styles du menu de restaurant
 .rest-menu{
+background-color: $bg-lightgrey;
+
+css
+Copy code
+// Styles de la div principale du menu
+&__container{
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 520px;
+    padding: 30px 20px;
+    position: relative;
+    top: 0px;
+    bottom: 30px;
     background-color: $bg-lightgrey;
-    &__container{                                   //RESTAURANT PAGE MENU CONTAINER                        
-        overflow:hidden;
-        margin:0 auto;
-        max-width:520px;
-        padding:30px 20px;
-        position:relative;
-        top:0px;
-        bottom:30px;
-        background-color: $bg-lightgrey;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;     
-    }
-    &__div{ 
-        &-title{                                    //RESTAURANT PAGE RESTAURANT NAME
-            @include rest-heart-icons;
-            @include row;
-            margin-bottom:20px;
-            width:100%;
-            justify-content:start;
-            font-size:1.8rem;
-            overflow:hidden;
-            &-bar{                                  // TITLE PARTS CONTAINER 
-                padding:10px  20px 0px;
-                &:first-child{                             //TITLE PARTS NAME
-                    font-weight:400;
-                    color:#757575;
-                    padding-bottom: 5px;;
-                }
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;     
+}
+
+// Styles de la div du titre et de la partie de menu
+&__div{ 
+    // Styles du titre
+    &-title{
+        @include rest-heart-icons;
+        @include row;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: start;
+        font-size: 1.8rem;
+        overflow: hidden;
+
+        // Styles de la barre du titre
+        &-bar{
+            padding: 10px 20px 0px;
+
+            // Styles du nom de la partie du titre
+            &:first-child{
+                font-weight: 400;
+                color: #757575;
+                padding-bottom: 5px;;
             }
-            &--title{                             //RESTAURANT TITLE
-            font-size:1.8rem;
-            min-width:80%;
-            font-family: "shrikhand",sans-serif;
+        }
+
+        // Styles du titre de restaurant
+        &--title{
+            font-size: 1.8rem;
+            min-width: 80%;
+            font-family: "shrikhand", sans-serif;
             font-weight: 500;
-            min-width:0;
-            padding-right:20px
-            }
+            min-width: 0;
+            padding-right: 20px
+        }
+    }
+
+    // Styles de la partie de menu
+    &-part-menu{
+        @include column;    
+        width: 50%;
+        margin: 0 auto;            
+    }
+}
+}
+
+// Media query pour les affichages en tablette
+@media screen and (min-width: 762px) and (max-width: 991px){
+.rest-menu{
+&__container{
+padding: 0;
+padding-bottom: 40px;
+max-width: 80%
+}
+
+
+    &__div{
+        &-title{
+            padding-left: 0px;
+
+            &--title{
+                text-align: center;
+            }  
+        }
+
+        &-part-menu{
+            @include row;
+            margin-top: 50px;
+            align-items: flex-start;
+            justify-content: space-evenly;
         }
     }
 }
 
-
-@media screen and (min-width:762px) and (max-width:991px){    //TABLET DISPLAY
-    .rest-menu{
-        &__container{                                         // RESTAURANT PAGE MENU CARD CONTAINER
-            padding:0;
-            padding-bottom:40px;
-            max-width:80%
-        }
-        &__div{
-            &-title{
-                padding-left:0px;
-                &--title{                                      //RESTAURANT PAGE RESTAURANT NAME
-                    text-align:  center;
-                }  
-                
-            }
-            &-part-menu{                                        // RESTAURANT PAGE PARTS OF
-                @include column;    
-                width:50%;
-                margin:0 auto;            
-            }
-        }
-}
+// Styles du titre de restaurant
 .rest-menu__title{
-    padding-top:40px;
-    justify-content:center;
-                }  
+    padding-top: 40px;
+    justify-content: center;
+}
 }
 
-
-@media screen and (min-width:992px)
-    {
+// Media query pour les affichages en grand écran
+@media screen and (min-width: 992px){
+    @media screen and (min-width: 992px){
         .rest-menu{
             &__container{
-                padding:0;
-                border-radius:0;
-                max-width:none;
+                padding: 0;
+                border-radius: 0;
+                max-width: none;
             }
+    
             &__div{
                 &-title{
-                    padding-left:0px;
+                    padding-left: 0px;
+    
                     &--title{
-                        text-align:  center;
+                        text-align: center;
                     }  
                 }
+    
                 &-part-menu{
                     @include row;
-                    margin-top:50px;
-                    align-items:flex-start;
+                    margin-top: 50px;
+                    align-items: flex-start;
                     justify-content: space-evenly;
                 }
             }
-    }.rest-menu__title{
-        padding-top:40px;
-        justify-content:center;
-                    }  
+        }
+    
+        .rest-menu-title{
+            padding-top: 40px;
+            justify-content: center;
+        }  
     }
+}

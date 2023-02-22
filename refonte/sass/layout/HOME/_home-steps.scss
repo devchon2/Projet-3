@@ -1,49 +1,68 @@
+// Déclaration des variables
+$grey: #757575;
+$step-max-width: 420px;
+$step-min-width: 330px;
+$step-max-width-percentage: 25%;
+
+// Import des variables
 @import "../../utils/variables";
 @import "../../utils/mixins";
 
-.home-steps {                                           //section HOME PAGE FORMULATION STEPS
-  &__icn {                                                 //icon
-      line-height:1;
-      color:#757575;
-    }
-  &__div-step {                        
-      @include column;
-      @include center; 
-      padding-left:10px;  
+// Section pour les styles des étapes de la page d'accueil
+.home-steps {
+  // Styles des icônes
+  &__icn {
+    line-height: 1;
+    color: $grey;
+  }
+
+  // Styles de la div principale des étapes
+  &__div-step {
+    @include column;
+    @include center;
+    padding-left: 10px;
+
+    // Styles des boutons des étapes
     &__step-btn {
       a {
         @include column;
-        width:100%;
-        max-width:420px;
+        width: 100%;
+        max-width: $step-max-width;
       }
-      &__step-number {                                        //number
-        font-size:1.2rem;
-        font-weight:bold;
-        margin-right:10px;
+
+      // Styles du numéro d'étape
+      &__step-number {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 10px;
       }
-      &__icn {                                                //icon
-        line-height:1;
-        color:#757575;
-      }
-      &__p {                                                  //text
-        font-size:1rem;
-        color:#757575;
+
+      // Styles du texte d'étape
+      &__p {
+        font-size: 1rem;
+        color: $grey;
       }
     }
   }
 }
-  @media screen and (min-width:992px){
-    .home-steps {                                           //section HOME PAGE FORMULATION STEPS
-      &__div-step {  
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin:50px auto;
-        &__step-btn {
-          a {
-            min-width:330px;
-            max-width:25%;
-          }
+
+// Styles pour les résolutions supérieures à 992px
+@media screen and (min-width:992px) {
+  .home-steps {
+    // Styles de la div principale des étapes pour les résolutions supérieures à 992px
+    &__div-step {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 50px auto;
+
+      // Styles des boutons des étapes pour les résolutions supérieures à 992px
+      &__step-btn {
+        a {
+          min-width: $step-min-width;
+          max-width: $step-max-width-percentage;
         }
       }
     }
   }
+}
+

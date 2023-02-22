@@ -1,99 +1,142 @@
+// Importation des variables, fonctions, mixins, et composants nécessaires
 @import "../utils/variables";
 @import "../utils/functions";
 @import "../utils/mixins";
+@import "../components/buttons";
+@import "../components/home-card";
+
+// Variables
+$card-radius: 15px;
+$card-margin: 12.5px auto;
+$card-shadow: 0px 5px 10px #e8e8e8;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-light: 300;
+$font-weight-semi-bold: 650;
+$font-size-medium: 0.95rem;
+$font-size-large: 1.1rem;
+$checked-color: #06D6A0;
+$checked-box-width: 60px;
+$checked-box-margin: 4.4rem;
+$check-rotation-duration:1.7s;
+$card-transition: 0.5s 0.3s;
+$card-rich-width: 60%;
+$darkgrey: #6e6d7a;
+
+// Importation des variables, fonctions, mixins, et composants nécessaires
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+@import "../components/buttons";
+@import "../components/home-card";
+
+// Section pour les styles des cartes du menu
 .rest-card {
-    cursor: pointer;
-    //CARDS FOR MENU
-    background-color: white;
-    border-radius: 15px;
-    @include row; /* reverse row direction for right column */
-    justify-content: space-between;
-    margin: 12.5px auto;
-    width: 100%;
-    max-width: 500px;
+  // Général
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  background-color: white;
+  border-radius: $card-radius;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: $card-shadow;
+  .appear{
+      opacity: 1;
+      transition-delay: 0.25s;
+    }
+  
+  // Structure de la carte
+  @include row;
+  justify-content: space-between;
+  margin: $card-margin;
+
+  // Contenu de la carte
+  .rich {
+    @include column;
+    padding: 10px 0 10px 10px;
+    min-width: 50%;
+    width: 80%;
+    justify-self: end;
+    box-sizing: border-box;
+    font-weight: $font-weight-normal;
     overflow: hidden;
-    box-shadow: 0px 5px 10px #e8e8e8;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    h5 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding-bottom: 5px;
+      font-size: $font-size-large;
+      font-weight: $font-weight-medium;
+    }
+
+    .details {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: $font-size-medium;
+      font-weight: $font-weight-light;
+      color: $darkgrey;
+    }
+  }
+
+  // Conteneur du prix et de la checkbox
+  .price-check {
+    @include row;
+    transition: transform $card-transition;
+
+    // Prix
+    .price {
+      height: 100%;
+      display: block;
+      background-color: white;
+      padding-left: 20px;
+      padding-top: 35px;
+      text-align: start;
+      color: $darkgrey;
+      font-weight: $font-weight-semi-bold;
+      font-size: $font-size-medium;
+      overflow: visible;
+    }
+
+    // Checkbox
+    .checked-box {
+      margin-left: -$checked-box-margin;
+      overflow: visible;
+      width: $checked-box-width;
+      height: 100%;
+      @include center;
+      justify-content: center;
+      background-color: $checked-color;
+      border-top-left-radius: $card-radius;
+      border-bottom-left-radius: $card-radius;
+      box-sizing: content-box;
+      color: white;
+    }
+  }
+
+  // Animation au survol
+  &:hover {
     .rich {
-        /* CONTENTS OF CARD */
-        padding: 10px 10px 10px 0; /* change left padding to right padding */
-        transition: width 0.5s 0.3s;
-        min-width: 50%;
-        width: 80%;
-        justify-self: end; /* align content to end of right column */
-        @include column;
-        box-sizing: border-box;
-        font-weight: 400;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        h5 {
-            /* NAME OF CARDS */
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            padding-bottom: 5px;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-        .details {
-            /* DEFINITION OF CARDS */
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-size: 0.95rem;
-            font-weight: 300;
-            color: $darkgrey;
-        }
+      width: $card-rich-width;
     }
     .price-check {
-        /* CONTAINER PRICE/CHECK */
-        @include row;
-        transition: transform 0.5s 0.3s;
-        .price {
-            /* PRICE OF MENU */
-            height: 100%;
-            display: block;
-            background-color: white;
-            padding-left: 20px; /* change right padding to left padding */
-            padding-top: 35px;
-            text-align: start; /* align text to start of right column */
-            color: $darkgrey;
-            font-weight: 650;
-            font-size: 0.95rem;
-            overflow: visible;
-        }
-        .checked-box {
-            /* CHECKBOX */
-            margin-left: -4.4rem; /* change right margin to left margin */
-            overflow: visible;
-            width: 60px;
-            height: 100%;
-            @include center;
-            justify-content: center;
-            background-color: $checked-color;
-            border-top-left-radius: 15px; /* change right radius to left radius */
-            border-bottom-left-radius: 15px;
-            box-sizing: content-box;
-            color: white;
-        }
+      transform: translateX($checked-box-margin);
     }
-    &:hover {
-        .rich {
-            width: 60%;
-        }
-        .price-check {
-            transform: translate(4.4rem); /* change left translation to right translation */
-        }
-        i {
-            animation: check-rotation 0.8s 0.3s forwards;
-            @keyframes check-rotation {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(360deg);
-                }
-            }
-        }
-    }
-}
+    i {
+      animation:check-rotation $check-rotation-duration forwards;
+      @keyframes check-rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+      }
+      }
+      }
+      }

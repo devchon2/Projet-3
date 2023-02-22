@@ -1,25 +1,35 @@
+// Variables
+$bg-lightgrey: #f5f5f5;
+$darkgrey: #353535;
+$cover-title-font-size: 1.30rem;
+$cover-title-font-weight: 700;
+$cover-subtitle-font-size: 0.95rem;
+$cover-subtitle-color: $darkgrey;
+
+// Import des fichiers
 @import "../../utils/variables";
 @import "../../utils/mixins";
 @import "../../components/buttons";
 @import "../../components/home-card";
 @import "../../components/location-form";
 
+// Styles pour la section de la page d'accueil
 .home-cover {
   background-color: $bg-lightgrey;
   margin: 0;
 
   &__title {
     max-width: 300px;
-    font-size: 1.30rem;
-    font-weight: 700;
+    font-size: $cover-title-font-size;
+    font-weight: $cover-title-font-weight;
     margin: 40px auto 20px auto;
     @include text-center;
   }
 
   &__subtitle {
     max-width: 400px;
-    color: #353535;
-    font-size: 0.95rem;
+    color: $cover-subtitle-color;
+    font-size: $cover-subtitle-font-size;
     margin: 20px auto 10px;
     @include text-center;
   }
@@ -32,28 +42,36 @@
     padding-top: 50px;
     margin: 0 auto;
 
+    $cover-div-background-color: rgba(255, 255, 255, 0.7);
+    $cover-div-height: 200px;
+    $cover-div-width: 40%;
+
     &__div {
       z-index: 0;
       @include column;
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: $cover-div-background-color;
       padding: 20px 0;
-      height: 200px;
-      width: 40%;
+      height: $cover-div-height;
+      width: $cover-div-width;
       margin: 100px auto;
       justify-content: center;
     }
 
+    $cover-subtitle-font-size-desktop: 1.5rem;
+
     &__subtitle {
       color: $darkgrey;
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: $cover-subtitle-font-size-desktop;
       color: black;
     }
+
+    $cover-title-font-size-desktop: 1.7rem;
 
     &__title {
       margin: 0 auto;
       color: black;
-      font-size: 1.7rem;
+      font-size: $cover-title-font-size-desktop;
     }
   }
 }

@@ -1,67 +1,106 @@
-.part-menu{                                   // RESTAURANT PARTS MENU
-    padding:10px 0px;
-    margin:0px auto;
-    
-    &__title-bar{                                     //RESTAURANT PART MENU TITLE BAR
-      &__title{    
-        font-family: "roboto"; 
-        color:$darkgrey;
-        font-weight:400;
-        padding-bottom: 5px;
-        &--centered{
-          @include center;
-        }
+// Variables
+$card-radius: 15px;
+$card-margin: 12.5px auto;
+$card-shadow: 0px 5px 10px #e8e8e8;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-light: 300;
+$font-weight-semi-bold: 650;
+$font-size-medium: 0.95rem;
+$font-size-large: 1.1rem;
+$checked-color: #06D6A0;
+$checked-box-width: 60px;
+$checked-box-margin: 4.4rem;
+$card-transition: 0.5s 0.3s;
+$card-rich-width: 60%;
+$dark-grey: #6e6d7a;
+
+// Import des fichiers
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+@import "../components/buttons";
+@import "../components/home-card";
+
+// Section pour les styles des cartes du menu
+.part-menu {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 10px 0px;
+    margin: 0px auto;
+    .appear{
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+    // Barre de titre du menu
+    &__title-bar {
+      // Titre de la barre
+      &__title {
+    font-family: "roboto";
+    color: $dark-grey;
+    font-weight: $font-weight-normal;
+    padding-bottom: 5px;
+      &--centered {
+        @include center;
       }
-      
-      &__bar{                                       //BAR UNDER PART MENU TITLE
-        width:40px;
-        border-bottom:$checked-color solid 3px;
-        &--column{
-          @include column;
-          @include center;
-        }
       }
+
+    // Barre sous le titre du menu
+    &__bar {
+    width: 40px;
+    border-bottom: $checked-color solid 3px;
+
+    &--column {
+      @include column;
+      @include center;
+    }
+    }
+}
+}
+// Styles pour les résolutions entre 768px et 991px
+@media all and (min-width:768px) and (max-width:991px) {
+.part-menu {
+width: 100%;
+margin: 0;
+
+&__title {
+  &__title {
+    &--centered {
+      @include center;
     }
   }
-  
-  @media all and (min-width:768px) and (max-width:991px){
-    .part-menu{
-      width:100%;
-      margin:0;
-      
-      &__title{
-        &__title{
-          &--centered{
-            @include center;
-          }
-        }
-        &__bar{
-          &--column{
-            @include column;
-            @include center;
-          }
-        }
-      }
+
+  &__bar {
+    &--column {
+      @include column;
+      @include center;
     }
   }
-  
-  @media all and (min-width:992px){
-    .part-menu{
-      width:30%;
-      min-width:310px;
-      
-      &__title{
-        &__title{
-          &--centered{
-            @include center;
-          }
-        }
-        &__bar{
-          &--column{
-            @include column;
-            @include center;
-          }
-        }
-      }
+}
+}
+}
+
+// Styles pour les résolutions supérieures à 992px
+@media all and (min-width:992px) {
+.part-menu {
+width: 30%;
+min-width: 310px;
+
+&__title {
+  &__title {
+    &--centered {
+      @include center;
     }
   }
+
+  &__bar {
+    &--column {
+      @include column;
+      @include center;
+    }
+  }
+}
+}
+}

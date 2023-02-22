@@ -1,26 +1,36 @@
+// Import des variables
 @import "../../utils/variables";
+// Import des fonctions et mixins
 @import "../../utils/functions";
 @import "../../utils/mixins";
 
-.rest-cover{                                        //RESTAURANT PAGE MENU CONTAINER
-    
-    height:200px;
-    object-fit: cover;
-     
-        width:100%;
-        &__img{                                          //IMAGE ELEMENT
-            height:250px;
-            object-fit:cover;
-            object-position: 50% ;
-            overflow:auto;
-            
-        }
-    }
-    @media screen and (min-width:992px){
-        .rest-cover{
-            height:480px;
-            &__img{                                      //IMAGE ELEMENT ON LARGER SCREENS
-                height:480px;
-            }
-        }
-    }
+// Section pour les styles de la page de couverture du menu des restaurants
+.rest-cover {
+// Styles pour l'image de fond
+height: $rest-cover-height;
+object-fit: cover;
+width: 100%;
+
+// Styles pour l'image de la page de couverture
+&__img {
+height: $rest-cover-img-height;
+object-fit: cover;
+object-position: $rest-cover-img-object-position;
+overflow: auto;
+}
+
+// Styles pour les résolutions supérieures à 992px
+@media screen and (min-width: 992px) {
+height: $rest-cover-height-lg;
+&__img {
+height: $rest-cover-img-height-lg;
+}
+}
+}
+
+// Déclaration des variables
+$rest-cover-height: 200px;
+$rest-cover-img-height: 250px;
+$rest-cover-img-object-position: 50%;
+$rest-cover-height-lg: 480px;
+$rest-cover-img-height-lg: 480px;
