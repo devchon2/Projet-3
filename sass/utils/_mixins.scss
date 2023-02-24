@@ -1,28 +1,29 @@
-@mixin row{
+@mixin row{                             // Crée une ligne flex
     display:flex;
 }
-@mixin column{
+
+@mixin column{                          // Crée une colonne flex
     @include row();
     flex-direction: column;
 }
 
-@mixin center{
+@mixin center{                          // Centre verticalement et horizontalement les éléments d'une ligne flex
     @include row;
     justify-content:center;
     align-items: center
 }
 
-@mixin text-center{
+@mixin text-center{                     // Centre horizontalement et verticalement les textes et les aligne au centre
     @include center;
     text-align: center;
 }
 
-@mixin inset-shadow{
+@mixin inset-shadow{                    // Crée une ombre interne sur la partie haute
     box-shadow: 0px 20px 5px -19px rgba(146, 145, 145, 0.51) inset;
 
 }
 
-@mixin call-to-action{
+@mixin call-to-action{                  // Crée un bouton de call-to-action 
     width:230px;
     line-height: 0.7rem;
     @include center;
@@ -37,16 +38,16 @@
     background: $gradient-color;
     box-shadow: 0 5px 15px $shadow;
     a{
-            color:white;
+        color:white;
     }
     &:hover{
-        background:linear-gradient(170deg,lighten($pink, 5%),lighten($violet, 5%));
-        box-shadow: 0 5px 15px darken($color: $shadow, $amount: 20deg);
+        background:linear-gradient(170deg,lighten($pink, 5%),lighten($violet, 5%)); //Crée  une transition en eclaircisaant les couleurs
+        box-shadow: 0 5px 15px darken($color: $shadow, $amount: 20deg);             //Crée une transition en obscurcissant les couleurs de l'ombres
     };
 }
 
 
-@mixin home-heart-icons{                                //HEART ICON ON HOME RESTAURANT
+@mixin home-heart-icons{                // Crée une icône de cœur pour la page d'accueil des restaurants
     .heart{
         align-items:center;
         .fa-heart{
@@ -58,14 +59,14 @@
         justify-content:end;
         font-size: 25px;
         padding-right:20px;
-        
-        .full-heart{                                    //FULL HEART DISPLAYED :NONE BY DEFAULT
+
+        .full-heart{                    // Affiche un cœur complet : par défaut none
             opacity:0;
             background-image: -webkit-linear-gradient(170deg,$pink, $violet);
-                    background-image: $gradient-color;
-                    color:transparent;
-                    -webkit-background-clip: text;
-                    background-clip: text;
+            background-image: $gradient-color;
+            color:transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
         }
         .empty-heart{
             opacity:1;
@@ -81,11 +82,10 @@
     }
 } 
   
-@mixin rest-heart-icons{
+@mixin rest-heart-icons{                // Crée une icône de cœur pour les pages de restaurants
     @include home-heart-icons;
     .rest-heart{
-        
         padding-left:20px;
-        margin:0;
-        
-    }}
+        margin:0;        
+    }
+}

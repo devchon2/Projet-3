@@ -5,6 +5,7 @@
 
 
 .rest-menu{
+    z-index: 9999;
     background-color: $bg-lightgrey;
     &__container{                                   //RESTAURANT PAGE MENU CONTAINER                        
         overflow:hidden;
@@ -33,6 +34,8 @@
                     font-weight:400;
                     color:#757575;
                     padding-bottom: 5px;;
+                
+                
                 }
             }
             &--title{                             //RESTAURANT TITLE

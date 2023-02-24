@@ -1,20 +1,55 @@
 @import "../utils/variables";
 @import "../utils/functions";
 @import "../utils/mixins";
-.rest-card{    
-    cursor:pointer;
-                                       //CARDS FOR MENU
-    background-color: white;//overflow:hidden;
-    border-radius:15px;
+.rest-card {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
     @include row;
-    justify-content:space-between;
- //   animation: sliding-card 1s linear 0.3s for;
-    margin:12.5px auto;
-    width:100%;
-    max-width:500px;
-    overflow:hidden;
+    justify-content: space-between;
+    opacity: 1;
+    margin: 12.5px auto;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
     box-shadow: 0px 5px 10px #e8e8e8;
     
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out forwards;
+    transition: translate 0.3 ease-in-out forwards;
+    @keyframes sliding-card {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+          }
+        80% {
+            opacity:0.1;
+            
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+    
+    
+    &.show:nth-child(1) {
+        animation: sliding-card 1s 0.4 ease-in-out forwards;
+    }
+        
+    &.show:nth-child(2) {
+        animation: sliding-card 1s 0.8 ease-in-out forwards;
+    }
+        
+    &.show:nth-child(3) {
+        animation: sliding-card 1s 0.12 ease-in-out forwards;
+        
+    }
+    &.show:nth-child(4) {
+        animation: sliding-card 1s 0.16 ease-in-out forwards;
+        
+    }
+
     .rich{                                          //CONTENTS OF CARD
         padding:10px 0 10px 10px ;  
         transition:width 0.5s 0.3s;                            
