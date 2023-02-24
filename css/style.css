@@ -1317,40 +1317,31 @@ a {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  opacity: 0;
+  opacity: 1;
   margin: 12.5px auto;
   width: 100%;
   max-width: 500px;
   overflow: hidden;
   box-shadow: 0px 5px 10px #e8e8e8;
-  opacity: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 @keyframes sliding-card {
-  0% {
+  from {
     opacity: 0;
     transform: translateX(100%);
   }
-  80% {
-    opacity: 0.1;
-  }
-  100% {
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 .rest-card.show:nth-child(1) {
-  animation: sliding-card 1s 0.2 ease-in-out forwards;
+  animation-delay: 0.3s;
 }
 .rest-card.show:nth-child(2) {
-  animation: sliding-card 1s 0.4 ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 .rest-card.show:nth-child(3) {
-  animation: sliding-card 1s 0.6 ease-in-out forwards;
-}
-.rest-card.show:nth-child(4) {
-  animation: sliding-card 1s 0.8 ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 .rest-card .rich {
   padding: 10px 0 10px 10px;
@@ -1437,31 +1428,29 @@ a {
   opacity: 0;
   width: 30%;
   min-width: 310px;
-  transform: translateX(50px);
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-  animation: sliding 0.4s ease-in-out forwards;
+  animation: bounce 0.5s 0.8s ease-out both;
 }
-@keyframes sliding {
+@keyframes bounce {
   0% {
-    transform: translateX(50px);
+    transform: scale(0.1);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1);
     opacity: 1;
   }
 }
-.part-menu.show:nth-child(1) {
-  transition-delay: 0.5s;
+.part-menu:nth-child(1) {
+  animation-delay: 0.8s;
 }
-.part-menu.show:nth-child(2) {
-  transition-delay: 1s;
+.part-menu:nth-child(2) {
+  animation-delay: 1.2s;
 }
-.part-menu.show:nth-child(3) {
-  transition-delay: 1.5s;
+.part-menu:nth-child(3) {
+  animation-delay: 1.6s;
 }
 .part-menu__title-bar {
   display: flex;
@@ -1469,7 +1458,11 @@ a {
   flex-direction: column;
   margin-bottom: 10px;
 }
-.part-menu__title-bar .part-menu__title {
+.part-menu__title-bar .bar {
+  width: 40px;
+  border-bottom: #99E2D0 solid 3px;
+}
+.part-menu__title-bar .bar .part-menu__title {
   font-family: "roboto";
   color: #353535;
   font-weight: 400;

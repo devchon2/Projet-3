@@ -14,19 +14,12 @@
     overflow: hidden;
     box-shadow: 0px 5px 10px #e8e8e8;
     
-    visibility: visible;
-    transition: opacity 0.3s ease-in-out forwards, transform 0.3s ease-in-out forwards;
-    
     @keyframes sliding-card {
-        0% {
+        from {
             opacity: 0;
             transform: translateX(100%);
           }
-        80% {
-            opacity:0.1;
-            
-        }
-        100% {
+          to {
             opacity: 1;
             transform: translateX(0);
           }
@@ -34,20 +27,15 @@
     
     
     &.show:nth-child(1) {
-        animation: sliding-card 1s 0.4 ease-in-out forwards;
+      animation-delay: 0.3s;
     }
         
     &.show:nth-child(2) {
-        animation: sliding-card 1s 0.8 ease-in-out forwards;
+      animation-delay: 0.6s;
     }
         
     &.show:nth-child(3) {
-        animation: sliding-card 1s 0.12 ease-in-out forwards;
-        
-    }
-    &.show:nth-child(4) {
-        animation: sliding-card 1s 0.16 ease-in-out forwards;
-        
+      animation-delay: 0.6s;
     }
 
     .rich{                                          //CONTENTS OF CARD
