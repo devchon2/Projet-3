@@ -8,29 +8,29 @@
     opacity: 0;
     width:30%;
     min-width:310px;
-    animation: bounce 0.5s 0.8s ease-out both;
+    animation: bounce 0.2s  ease-in-out both;
     
     @keyframes bounce {
         0% {
-          transform: scale(0.1);
+          transform: translateX(0.5);
           opacity: 0;
         }
         50% {
           opacity: 0.5;
         }
         100% {
-          transform: scale(1);
+          transform: translateX(1);
           opacity: 1;
         }}
       
     &:nth-child(1){
-      animation-delay:0.8s
+      animation-delay:0.4s
     }
     &:nth-child(2){
-      animation-delay:1.2s
+      animation-delay:0.6s
     }
     &:nth-child(3){
-      animation-delay:1.6s
+      animation-delay:0.8s
     }
     
     &__title-bar {
