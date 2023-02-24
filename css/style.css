@@ -1437,7 +1437,7 @@ a {
   margin: 0 auto;
   opacity: 0;
   width: 30%;
-  min-width: 310px;
+  min-width: 280px;
   animation: bounce 0.2s ease-in-out both;
 }
 @keyframes bounce {
