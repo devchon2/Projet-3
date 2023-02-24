@@ -37,12 +37,14 @@
     border-radius: $cta-btn-radius;
     background: $gradient-color;
     box-shadow: 0 5px 15px $shadow;
+    
     a{
         color:white;
     }
     &:hover{
         background:linear-gradient(170deg,lighten($pink, 5%),lighten($violet, 5%)); //Crée  une transition en eclaircisaant les couleurs
-        box-shadow: 0 5px 15px darken($color: $shadow, $amount: 20deg);             //Crée une transition en obscurcissant les couleurs de l'ombres
+        
+        box-shadow:0 5px 15px darken($color: $shadow, $amount: 20deg);             //Crée une transition en obscurcissant les couleurs de l'ombres
     };
 }
 

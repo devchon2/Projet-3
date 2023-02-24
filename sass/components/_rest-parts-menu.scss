@@ -38,6 +38,7 @@
       @include column;
       
       margin-bottom: 10px;
+      max-width:500px;
       .bar{
                 width: 40px;
                 border-bottom: #99E2D0 solid 3px;
@@ -78,5 +79,9 @@
     .part-menu {
       width: 30%;
       min-width: 310px;
+       &__title-bar{
+          
+          margin:auto;
+       }
     }
   }
