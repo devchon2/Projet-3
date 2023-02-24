@@ -13,30 +13,35 @@
     max-width: 500px;
     overflow: hidden;
     box-shadow: 0px 5px 10px #e8e8e8;
+    animation: slide 0.2s  linear both;
     
-    @keyframes sliding-card {
-        from {
-            opacity: 0;
-            transform: translateX(100%);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
+    @keyframes slide {
+        0% {
+          transform: scale3d(0,0,0);
+          opacity: 0;
         }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          transform: scale3d(1,1,1);
+          opacity: 1;
+        }}
+      
+    &:nth-child(1){
+      animation-delay:0.8s
+    }
+    &:nth-child(2){
+      animation-delay:1.2s
+    }
+    &:nth-child(3){
+      animation-delay:1.6s
+    }
+    &:nth-child(4){
+      animation-delay:2s
+    }
     
     
-    &.show:nth-child(1) {
-      animation-delay: 0.3s;
-    }
-        
-    &.show:nth-child(2) {
-      animation-delay: 0.6s;
-    }
-        
-    &.show:nth-child(3) {
-      animation-delay: 0.6s;
-    }
 
     .rich{                                          //CONTENTS OF CARD
         padding:10px 0 10px 10px ;  
