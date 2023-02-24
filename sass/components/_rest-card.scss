@@ -14,9 +14,9 @@
     overflow: hidden;
     box-shadow: 0px 5px 10px #e8e8e8;
     
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out forwards;
-    transition: translate 0.3 ease-in-out forwards;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out forwards, transform 0.3s ease-in-out forwards;
+    
     @keyframes sliding-card {
         0% {
             opacity: 0;
