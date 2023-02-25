@@ -9,6 +9,7 @@
     max-width: 450px;
     animation: bounce 0.2s  ease-in-out both;
     
+    // Animation de rebondissement pour chaque élément de la liste
     @keyframes bounce {
         0% {
           transform: translateX(0.5);
@@ -20,7 +21,8 @@
         100% {
           transform: translateX(1);
           opacity: 1;
-        }}
+        }
+    }
       
     &:nth-child(1){
       animation-delay:0.4s
@@ -32,55 +34,62 @@
       animation-delay:0.8s
     }
     
+    // Barre de titre de chaque élément de la liste
     &__title-bar {
       display: flex;
       @include column;
       
       margin-bottom: 10px;
       max-width:500px;
-      .bar{
-                width: 40px;
-                border-bottom: #99E2D0 solid 3px;
+      
+      // Barre verticale pour la barre de titre
+      .bar {
+        width: 40px;
+        border-bottom: #99E2D0 solid 3px;
+      }
+      
+      // Titre de la barre
       .part-menu__title {
         font-family: "roboto"; 
         color: $darkgrey;
         font-weight: 400;
         margin: 0;
-        
-        }
       }
       
+      // Barre de séparation sous le titre
       .part-menu__bar {
         width: 40px;
         height: 3px;
         background-color: $checked-color;
         margin-left: 10px;
-        
-        }
       }
     }
-    
+}
 
-  
-  @media all and (min-width: 768px) and (max-width: 991px) {
-    .part-menu {
-      width: 100%;
-      margin: 0;
-      max-width: 600px;
-      &__title-bar {
-        justify-content: center;
-        align-items: center;
-      }
+// Media query pour les écrans de taille moyenne (tablette)
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .part-menu {
+    width: 100%;
+    margin: 0;
+    max-width: 600px;
+    
+    // Centrage du titre de chaque élément de la liste
+    &__title-bar {
+      justify-content: center;
+      align-items: center;
     }
   }
-  
-  @media all and (min-width: 992px) {
-    .part-menu {
-      width: 30%;
-      min-width: 310px;
-       &__title-bar{
-          
-          margin:auto;
-       }
+}
+
+// Media query pour les grands écrans (ordinateurs)
+@media all and (min-width: 992px) {
+  .part-menu {
+    width: 30%;
+    min-width: 310px;
+    
+    // Centrage horizontal de la barre de titre
+    &__title-bar{
+      margin:auto;
     }
   }
+}

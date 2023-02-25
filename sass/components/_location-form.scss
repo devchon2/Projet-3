@@ -3,56 +3,54 @@
 @import "../components/buttons";
 @import "../components/home-card";
 
-
-.home-cover{                                                 //section cover
-        &__location{                                        //Form div location
-            @include inset-shadow;       
-            width:100%;                                                
+.home-cover{                                                 // Section de couverture
+    &__location{                                            // Formulaire de recherche de location
+        @include inset-shadow;       
+        width:100%;                                                
+        @include text-center;
+        background-color: #eaeaea ;
+        font-weight:700;
+        font-size: 16px;
+        color:$darkgrey;
+        font-family:"roboto";
+        &-form{                                             // Formulaire de recherche de location (input)
+            @include row;
             @include text-center;
-            background-color: #eaeaea ;
-            font-weight:700;
-            font-size: 16px;
-            color:$darkgrey;
-            font-family:"roboto";
-            &-form{                                             //FORM OF IMPUT LOCATION SEARCH
-                @include row;
-                @include text-center;
-                @include center;
-                background-color: #eaeaea;
-                .icn{                                              //ICON OF IMPUT LOCATION
-                    padding-right:20px;
-                }
-                input{
-                    height:20px;
-                    width:140px;
-                }
-                
-            }
-        }
-        &__div-location{ 
-            color: #353535;
             @include center;
             background-color: #eaeaea;
-            @include inset-shadow;
-            height:50px;
+            .icn{                                          // Icône de recherche de location
+                padding-right:20px;
+            }
+            input{
+                height:20px;
+                width:140px;
+            }       
         }
-        &__input-location{
-         @include row;
-            border:none;
-            box-sizing: content-box;                                              
-            @include center;
-            background-color: #eaeaea ;
-            font-weight:550;
-            font-size: 16px;;
+    }
+    &__div-location{                                       // Div pour l'affichage de la location
+        color: #353535;
+        @include center;
+        background-color: #eaeaea;
+        @include inset-shadow;
+        height:50px;
+    }
+    &__input-location{                                     // Champ de recherche de location
+        @include row;
+        border:none;
+        box-sizing: content-box;                                              
+        @include center;
+        background-color: #eaeaea ;
+        font-weight:550;
+        font-size: 16px;;
+        color:$darkgrey;
+        font-family:"roboto";
+        &:focus{                                            // Au focus
+            outline:none;  
+        }
+        &::placeholder{                                     // Placeholder
             color:$darkgrey;
-            font-family:"roboto";
-            &:focus{                                                //when focus
-                outline:none;  
-            }
-            &::placeholder{                                         //content of placeholder
-                color:$darkgrey;
-            }
         }
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -62,7 +60,7 @@
             background-color: transparent;     
         }
         &__div{
-            &-location{                                     //DIV CONTENT FOR INPUT LOCATION
+            &-location{                                     // Div pour l'affichage de la location (input)
                 margin:0 auto;
                 background-color:white;
                 border-radius: 25px;
@@ -72,15 +70,12 @@
                 height:50px;
             }
         }
-       
-        
-        
-        &__input-location{
+        &__input-location{                                 // Champ de recherche de location
             background-color: white;
-               border:none;
-               font-weight:550;
-               font-size: 16px;;
-               color:$darkgrey; 
+            border:none;
+            font-weight:550;
+            font-size: 16px;;
+            color:$darkgrey; 
         }
     }
 }

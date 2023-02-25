@@ -1,22 +1,20 @@
-.home-card {                                        //HOME RESTAURANT CARDS
-    
-   
-    @include row;
+.home-card {                             // Cartes d'accueil des restaurants
+    @include row;                        // Appelle le mixin "row"
     overflow: hidden;
-    border-radius: $card-radius;
+    border-radius: $card-radius;         // Utilise une variable pour le border-radius
     width:300px;
     max-width: 350px;
-    margin: 0px auto 15px auto;; /*2*/
-    background-color: white; /*3*/
-    box-shadow:0px 1px 15px -10px #000000;
+    margin: 0px auto 15px auto;;         // Définit les marges
+    background-color: white;
+    box-shadow:0px 1px 15px -10px #000000;    // Ajoute une ombre portée
     a{
         width:100%
     }
-    &__figure{
+    &__figure{                          // Figure dans la carte
         width:100%;
         display:inline-block;
         &-div{
-            @include row
+            @include row                  // Appelle le mixin "row"
         }
         .span{
             border:none;
@@ -25,12 +23,11 @@
             justify-self: end;
             position:relative;
             span{
-                @include row;
+                @include row;              // Appelle le mixin "row"
                 overflow:visible ;
                 color:#008766;
                 padding:10px 15px;
-                @include text-center;
-                
+                @include text-center;      // Appelle le mixin "text-center"
                 width:40px;
                 font-size:12px;
                 font-weight:550;
@@ -40,48 +37,48 @@
                 bottom:180px;       
             }
         }
-    &-img{
+    &-img{                               // Image dans la carte
             width:100%;
             height:160px;
             object-fit: cover;
             object-position: center;
         }
     }
-    &__figcaption{
+    &__figcaption{                      // Légende dans la carte
         height:60px;
-            padding:0 5px 5px 15px;
-            @include row;
-            background:white;
-            @include center;
-            justify-content: space-between;
-            @include home-heart-icons
-        }
-        &-title{
-            font-size:1.1rem;
-            padding-bottom: 5px;;
-        }
-        p{                                                                  //HOME CARD DETAILS
-            font-size:1rem;
-        }
+        padding:0 5px 5px 15px;
+        @include row;                   // Appelle le mixin "row"
+        background:white;
+        @include center;                // Appelle le mixin "center"
+        justify-content: space-between;
+        @include home-heart-icons       // Appelle le mixin "home-heart-icons"
+    }
+    &-title{                            // Titre dans la carte
+        font-size:1.1rem;
+        padding-bottom: 5px;;
+    }
+    p{                                  // Détails de la carte
+        font-size:1rem;
+    }
 }
     
 @media screen and (min-width:762px) and (max-width:992px){
-        .home-card{
-            max-width: none;
-            width: 600px; 
-            margin:25px auto;
-            .span{
-                right:-150px;
-            }
+    .home-card{
+        max-width: none;
+        width: 600px; 
+        margin:25px auto;
+        .span{
+            right:-150px;
         }
+    }
 }
 @media screen and (min-width:992px){
-        .home-card{
-            max-width:none;
-            width: 480px; 
-            margin:25px auto;
-            .span{
-                right:-90px;
-            }
+    .home-card{
+        max-width:none;
+        width: 480px; 
+        margin:25px auto;
+        .span{
+            right:-90px;
         }
+    }
 }

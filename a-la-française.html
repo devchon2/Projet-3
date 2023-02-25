@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,65 +10,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Shrikhand:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6b75d90fa.js" crossorigin="anonymous"></script>
+php
+Copy code
+<title>Accueil HoMyFood!</title>
+  </head>
+  <body>
+    <!-- HEADER DE LA PAGE -->
+    <header class="header">
+      <div class="header__div ">
+        <div class="header__div-img">
+          <a href="./index.html"><i class="fa-solid fa-arrow-left fa-2x  .icn"></i></a>
+          <img class="header__img return-display" src="images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise Booki">
+        </div>
+      </div>
+    </header>
+php
+Copy code
+<main>
+  <!-- IMAGE DE COUVERTURE DE LA PAGE -->
+  <div class="rest-cover">
+    <img class="rest-cover img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Une assiette sur une table de restaurant">
+  </div>
 
-
-    <title>Accueil HoMyFood!</title>
-</head>
-    <body>
-        <header class="header">
-            <div class="header__div ">
-                
-                <div class="header__div-img">
-                    <a href="./index.html"><i class="fa-solid fa-arrow-left fa-2x  .icn"></i></a>
-                    <img class="header__img return-display" src="images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise Booki">
+  <!-- CONTENEUR DU MENU COMPLET -->
+  <div class="rest-menu__container">
+    <!-- TITRE COMPLET + ICÔNE -->
+    <div class="rest-menu__div-title rest-menu-title">
+      <h3 class="rest-menu__div-title--title">À la française</h3>
+      <div class="heart rest-heart">
+        <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
+      </div>
+    </div>
+    <div class="rest-menu__div-part-menu">
+      <!-- CARTES DES ENTRÉES DU MENU -->
+      <div class="part-menu">
+        <div class="part-menu__title-bar">
+          <h4 class="title">ENTRÉES</h4>
+          <div class="bar"></div>
+        </div>
+        <div class="rest-card ">
+          <div class="rich">
+            <h5>Tartare de poulpe acidulé</h5>
+            <p class="details">Aux zestes d'orange</p>
+          </div>
+          <div class="price-check">
+            <p class="price">40€</p>
+            <div class="checked-box">
+              <i class="fa-solid fa-circle-check fa-xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="rest-card ">
+          <div class="rich">
+            <h5>Velouté de légumes d'antan</h5>
+            <p class="details">Carotte, panais, topinambour</p>
+          </div>
+          <div class="price-check">
+            <span class="price">40€</span>
+                <div class="checked-box">
+                    <i class="fa-solid fa-circle-check fa-xl"></i>
                 </div>
             </div>
-            
-        </header>
-
-        <main >
-           
-            <div class="rest-cover">                                    <!--COVER IMG BLOCK-->
-                <img class="rest-cover img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Une assiette sur une table de restaurant">
             </div>
-
-            
-            <div class="rest-menu__container">                         <!-- FULL MENU CONTAINER-->
-                <div class="rest-menu__div-title rest-menu-title">                      <!--FULL TITLE + ICON-->
-                    <h3 class="rest-menu__div-title--title">À la française</h3>
-                    
-                    <div class="heart rest-heart">
-                        <i class="fa-solid fa-heart full-heart"></i> <i class="fa-regular fa-heart empty-heart"></i> 
-                    </div>
-                </div>
-                <div class="rest-menu__div-part-menu">
-                    <div class="part-menu">           <!-- ENTRIES CARD MENU-->
-                        <div class="part-menu__title-bar">
-                            <h4 class="title">ENTRÉES</h4>
-                            <div class="bar"></div>
-                        </div>
-                        <div class="rest-card ">
-                            <div class="rich">
-                                <h5>Tartare de poulpe acidulé</h5>
-                                <p class="details">Aux zestes d'orange</p>
-                            </div>
-                            <div class="price-check"><p class="price">40€</p>
-                                <div class="checked-box">
-                                    <i class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rest-card ">
-                            <div class="rich">
-                                <h5>Veloouté de légumes d'antan</h5>
-                                <p class="details">Carotte, panais, topinambour</p>
-                            </div>
-                            <div class="price-check"><span class="price">40€</span>
-                                <div class="checked-box">
-                                    <i class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                            </div>
-                        </div>
                         <div class="rest-card ">
                             <div class="rich">
                                 <h5>Soupe à l'oignon</h5>

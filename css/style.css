@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -84,7 +85,7 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 400% 400%;
-  animation: gradient 1.5s ease-in infinite;
+  animation: gradient 1.5s ease-in infinite, pulse 1s ease-in-out infinite;
 }
 
 .loader {
@@ -95,7 +96,6 @@ a {
   align-items: center;
   position: relative;
 }
-
 .loader-dot {
   width: 30px;
   height: 30px;
@@ -159,6 +159,19 @@ a {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .loader {
+    width: 50px;
+    height: 50px;
+  }
+  .loader-dot {
+    width: 15px;
+    height: 15px;
+  }
+  .loader-container span {
+    font-size: 1.25rem;
   }
 }
 .header {
@@ -387,8 +400,8 @@ a {
   border-radius: 15px;
   width: 300px;
   max-width: 350px;
-  margin: 0px auto 15px auto; /*2*/
-  background-color: white; /*3*/
+  margin: 0px auto 15px auto;
+  background-color: white;
   box-shadow: 0px 1px 15px -10px #000000;
 }
 .home-card a {
@@ -665,8 +678,8 @@ a {
   border-radius: 15px;
   width: 300px;
   max-width: 350px;
-  margin: 0px auto 15px auto; /*2*/
-  background-color: white; /*3*/
+  margin: 0px auto 15px auto;
+  background-color: white;
   box-shadow: 0px 1px 15px -10px #000000;
 }
 .home-card a {
@@ -1109,8 +1122,8 @@ a {
   border-radius: 15px;
   width: 300px;
   max-width: 350px;
-  margin: 0px auto 15px auto; /*2*/
-  background-color: white; /*3*/
+  margin: 0px auto 15px auto;
+  background-color: white;
   box-shadow: 0px 1px 15px -10px #000000;
 }
 .home-card a {
@@ -1312,6 +1325,7 @@ a {
   }
 }
 .rest-card {
+  /* Carte qui contient les éléments de la liste de restaurant */
   cursor: pointer;
   background-color: white;
   border-radius: 15px;
@@ -1338,6 +1352,7 @@ a {
   animation-delay: 1.8s;
 }
 @keyframes slide {
+  /* Animation qui crée l'effet de slide pour la carte */
   0% {
     transform: scale3d(0, 0, 0);
     opacity: 0;
@@ -1351,6 +1366,7 @@ a {
   }
 }
 .rest-card .rich {
+  /* Contient les éléments qui décrivent la carte */
   padding: 10px 0 10px 10px;
   transition: width 0.5s 0.3s;
   min-width: 50%;
@@ -1365,6 +1381,7 @@ a {
   text-overflow: ellipsis;
 }
 .rest-card .rich h5 {
+  /* Nom du restaurant */
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1373,6 +1390,7 @@ a {
   font-weight: 500;
 }
 .rest-card .rich .details {
+  /* Description de la carte */
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1381,10 +1399,12 @@ a {
   color: #353535;
 }
 .rest-card .price-check {
+  /* Contient le prix et le bouton pour ajouter au panier */
   display: flex;
   transition: transform 0.5s 0.3s;
 }
 .rest-card .price-check .price {
+  /* Prix de la carte */
   height: 100%;
   display: block;
   background-color: white;
@@ -1396,7 +1416,7 @@ a {
   font-size: 0.95rem;
   overflow: visible;
 }
-.rest-card .price-check .checked-box {
+.rest-card .checked-box {
   margin-right: -4.4rem;
   overflow: visible;
   width: 60px;
@@ -1469,7 +1489,7 @@ a {
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
 }
-.part-menu__title-bar .bar .part-menu__title {
+.part-menu__title-bar .part-menu__title {
   font-family: "roboto";
   color: #353535;
   font-weight: 400;

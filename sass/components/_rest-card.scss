@@ -2,6 +2,7 @@
 @import "../utils/functions";
 @import "../utils/mixins";
 .rest-card {
+    /* Carte qui contient les éléments de la liste de restaurant */
     cursor: pointer;
     background-color: white;
     border-radius: 15px;
@@ -13,21 +14,22 @@
     max-width: 500px;
     overflow: hidden;
     box-shadow: 0px 5px 10px #e8e8e8;
-    animation: slide 1.2s  linear both;
+    animation: slide 1.2s linear both;
     &:nth-child(2){
         animation-delay:1.2s
-      }
+    }
     &:nth-child(3){
         animation-delay:1.4s
-      }
+    }
     &:nth-child(4){
         animation-delay:1.6s
-      }
+    }
     &:nth-child(5){
         animation-delay:1.8s
-      }
+    }
      
     @keyframes slide {
+        /* Animation qui crée l'effet de slide pour la carte */
         0% {
           transform: scale3d(0,0,0);
           opacity: 0;
@@ -38,9 +40,11 @@
         100% {
           transform: scale3d(1,1,1);
           opacity: 1;
-        }}
+        }
+    }
 
-    .rich{                                          //CONTENTS OF CARD
+    .rich {
+        /* Contient les éléments qui décrivent la carte */
         padding:10px 0 10px 10px ;  
         transition:width 0.5s 0.3s;                            
         min-width:50%;
@@ -50,43 +54,49 @@
         box-sizing: border-box;
         font-weight:400;
         overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis ;
-        h5{                                     //NAME OF CARDS
+        white-space: nowrap;
+        text-overflow: ellipsis ;
+        
+        h5 {
+            /* Nom du restaurant */
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis ;
             padding-bottom: 5px;
             font-size:1.1rem;
             font-weight:500;
-            
-            }
-        .details{   
-                                              //DEFINITION OF CARDS
-            
+        }
+        
+        .details {
+            /* Description de la carte */
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis ;
             font-size:0.95rem;
             font-weight:300;
-            color:$darkgrey;
-            
+            color:$darkgrey;            
         }
     }
-    .price-check{                                         //CONTAINER PRICE/CHECK
+
+    .price-check {
+        /* Contient le prix et le bouton pour ajouter au panier */
         @include row;
         transition:transform 0.5s 0.3s;
-        .price{                                         //PRICE OF MENU
-        height:100%;
-        display:block;
-        background-color: white;;
-        padding-right:20px;
-        padding-top:35px;
-        text-align: end;
-        color:$darkgrey;
-        font-weight:650;
-        font-size: 0.95rem;
-        overflow:visible;}  
+        .price {
+            /* Prix de la carte */
+            height:100%;
+            display:block;
+            background-color: white;;
+            padding-right:20px;
+            padding-top:35px;
+            text-align: end;
+            color:$darkgrey;
+            font-weight:650;
+            font-size: 0.95rem;
+            overflow:visible;
+        }  
+    }
+
     .checked-box{                               //CHECKBOX
         margin-right:-4.4rem;
         
@@ -100,8 +110,6 @@
         border-bottom-right-radius: 15px;box-sizing: content-box;color:white; 
     }
 
-    
-    }
     &:hover{
         .rich{
            width:60%; 
@@ -110,7 +118,6 @@
             transform:translate(-4.4rem)
         }
         i{
-            
             animation:check-rotation 0.8s 0.3s forwards;
             @keyframes check-rotation{
                 from{

@@ -1,3 +1,4 @@
+// Section de navigation de pied de page
 .footer__nav{
     li{
         padding-bottom: 7px;
@@ -11,13 +12,18 @@
     }
 } 
 
+// Media queries pour les tailles d'écran entre 768 et 991px
 @media screen and (min-width:768px) and (max-width:991px){
     .footer__nav{
         justify-content: space-evenly;
         @include row;
-    }}
+    }
+}
+
+// Media queries pour les tailles d'écran supérieures à 992px
 @media screen and (min-width:992px){
     .footer__nav{
         justify-content: space-evenly;
         @include row;
-    }}
+    }
+}
