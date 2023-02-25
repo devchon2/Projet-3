@@ -28,12 +28,13 @@ $primary-color: #9356dc;
     margin:50px;
     animation: pulse 1s linear infinite;
     background-image: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-image: $gradient-color;
-            color:transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            background-size: 400% 400%;
-            animation: gradient 1.5s ease-in infinite;
+    // animation de dégradé de couleur
+    background-image: $gradient-color;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400% 400%;
+    animation: gradient 1.5s ease-in infinite,pulse 1s ease-in-out infinite;
   }
 }
 
@@ -44,16 +45,13 @@ $primary-color: #9356dc;
   justify-content: center;
   align-items: center;
   position: relative;
-  
-}
-
-.loader-dot {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: radial-gradient($pink,$violet);
-  position: absolute;
-  animation: pulse 1s ease-in-out infinite;
+  &-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient($pink,$violet);
+    position: absolute;
+    animation: pulse 1s ease-in-out infinite;
 
   &:nth-child(1) {
     top: 0;
@@ -75,8 +73,8 @@ $primary-color: #9356dc;
     right: 0;
   }
 }
-
-// Keyframes
+}
+// Keyframes battement
 @keyframes pulse {
   0% {
     font-size: 2rem;
@@ -95,7 +93,7 @@ $primary-color: #9356dc;
     font-size:2rem;
   }
 }
-
+//Keyframe de fin de chargement (agrandissement jusqu'a disparition)
 @keyframes explode {
   0% {
     transform: translateZ(0);
@@ -111,17 +109,31 @@ $primary-color: #9356dc;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-@media screen and (min-width:768px){
-  
+
+//Media jusque tablette
+@media screen and (max-width:991px){
+  .loader {
+    width: 50px;
+    height: 50px;
+    &-dot {
+      width: 15px;
+      height: 15px;
+    }
   }
+  .loader-container{
+    span{
+      font-size:1.25rem;
+    }
+  }
+}
