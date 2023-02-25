@@ -6,8 +6,7 @@
     padding: 10px 0;
     margin: 0 auto;
     opacity: 0;
-    width:30%;
-    min-width:280px;
+    max-width: 450px;
     animation: bounce 0.2s  ease-in-out both;
     
     @keyframes bounce {
@@ -67,7 +66,7 @@
     .part-menu {
       width: 100%;
       margin: 0;
-      
+      max-width: 600px;
       &__title-bar {
         justify-content: center;
         align-items: center;
