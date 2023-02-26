@@ -1465,7 +1465,7 @@ a {
     opacity: 0.5;
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(0%);
     opacity: 1;
   }
 }
