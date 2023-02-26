@@ -12,14 +12,14 @@
     // Animation de rebondissement pour chaque élément de la liste
     @keyframes bounce {
         0% {
-          transform: translateX(0.5);
+          transform: translateX(50%);
           opacity: 0;
         }
         50% {
           opacity: 0.5;
         }
         100% {
-          transform: translateX(1);
+          transform: translateX(100%);
           opacity: 1;
         }
     }
